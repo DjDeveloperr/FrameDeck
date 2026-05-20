@@ -1,0 +1,139 @@
+{
+  "chromeIdentifier" : "com.apple.dt.devicekit.chrome.tablet2",
+  "chromeName" : "tablet2",
+  "family" : "ipad",
+  "geometry" : {
+    "buttons" : [
+      {
+        "align" : "leading",
+        "anchor" : "right",
+        "height" : 52,
+        "imageDownName" : "Vol BTN Dn",
+        "imageName" : "Vol BTN",
+        "label" : "Volume Up",
+        "name" : "volume-up",
+        "normalOffset" : {
+          "x" : -8,
+          "y" : 113
+        },
+        "onTop" : false,
+        "rolloverOffset" : {
+          "x" : -3,
+          "y" : 113
+        },
+        "type" : "button",
+        "usage" : 233,
+        "usagePage" : 12,
+        "width" : 16,
+        "x" : 1108,
+        "y" : 122
+      },
+      {
+        "align" : "leading",
+        "anchor" : "right",
+        "height" : 52,
+        "imageDownName" : "Vol BTN Dn",
+        "imageName" : "Vol BTN",
+        "label" : "Volume Down",
+        "name" : "volume-down",
+        "normalOffset" : {
+          "x" : -8,
+          "y" : 167
+        },
+        "onTop" : false,
+        "rolloverOffset" : {
+          "x" : -3,
+          "y" : 167
+        },
+        "type" : "button",
+        "usage" : 234,
+        "usagePage" : 12,
+        "width" : 16,
+        "x" : 1108,
+        "y" : 176
+      },
+      {
+        "align" : "trailing",
+        "anchor" : "top",
+        "height" : 16,
+        "imageDownName" : "iPad Power BTN Dn",
+        "imageName" : "iPad Power BTN",
+        "label" : "Sleep\/Wake",
+        "name" : "power",
+        "normalOffset" : {
+          "x" : -130,
+          "y" : 8
+        },
+        "onTop" : false,
+        "rolloverOffset" : {
+          "x" : -130,
+          "y" : 3
+        },
+        "type" : "button",
+        "usage" : 48,
+        "usagePage" : 12,
+        "width" : 63,
+        "x" : 923,
+        "y" : 1
+      }
+    ],
+    "chromeCornerRadius" : 15,
+    "chromeHeight" : 1458,
+    "chromeWidth" : 1116,
+    "chromeX" : -0,
+    "chromeY" : 9,
+    "contentHeight" : 1366,
+    "contentWidth" : 1024,
+    "contentX" : 46,
+    "contentY" : 55,
+    "cornerRadius" : 15,
+    "hasScreenMask" : false,
+    "screenHeight" : 1366,
+    "screenWidth" : 1024,
+    "screenX" : 46,
+    "screenY" : 55,
+    "totalHeight" : 1467,
+    "totalWidth" : 1126
+  },
+  "modelIdentifier" : "iPad8,5",
+  "name" : "iPad Pro (12.9-inch) (3rd generation)",
+  "productClass" : "J320",
+  "screen" : {
+    "heightDPI" : 264,
+    "pixelHeight" : 2732,
+    "pixelWidth" : 2048,
+    "scale" : 2,
+    "widthDPI" : 264
+  },
+  "slug" : "ipad-pro-12-9-inch-3rd-generation-ipad8-5",
+  "source" : {
+    "chromeResourcesPath" : "\/Library\/Developer\/DeviceKit\/Chrome\/tablet2.devicechrome\/Contents\/Resources",
+    "deviceProfilePath" : "\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPad Pro (12.9-inch) (3rd generation).simdevicetype\/Contents\/Resources\/profile.plist",
+    "deviceResourcesPath" : "\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPad Pro (12.9-inch) (3rd generation).simdevicetype\/Contents\/Resources",
+    "framebufferMask" : "BC6B4A41-D24A-4850-B94A-B1C8D3AD62A5",
+    "sensorBarImage" : null
+  },
+  "vectors" : {
+    "capabilitiesPlist" : "device-profiles\/ipad-pro-12-9-inch-3rd-generation-ipad8-5\/capabilities.plist",
+    "chromeBundle" : "chrome\/tablet2",
+    "chromeJson" : "chrome\/tablet2\/chrome.json",
+    "chromePdfs" : [
+      "chrome\/tablet2\/iPad BL.pdf",
+      "chrome\/tablet2\/iPad BR.pdf",
+      "chrome\/tablet2\/iPad Power BTN Dn.pdf",
+      "chrome\/tablet2\/iPad Power BTN.pdf",
+      "chrome\/tablet2\/iPad TL.pdf",
+      "chrome\/tablet2\/iPad TR.pdf",
+      "chrome\/tablet2\/iPadBase.pdf",
+      "chrome\/tablet2\/iPadLeft.pdf",
+      "chrome\/tablet2\/iPadRight.pdf",
+      "chrome\/tablet2\/iPadTop.pdf",
+      "chrome\/tablet2\/Screen.pdf",
+      "chrome\/tablet2\/Vol BTN Dn.pdf",
+      "chrome\/tablet2\/Vol BTN.pdf"
+    ],
+    "framebufferMask" : "framebuffer-masks\/BC6B4A41-D24A-4850-B94A-B1C8D3AD62A5.pdf",
+    "profilePlist" : "device-profiles\/ipad-pro-12-9-inch-3rd-generation-ipad8-5\/profile.plist",
+    "sensorBar" : null
+  }
+}

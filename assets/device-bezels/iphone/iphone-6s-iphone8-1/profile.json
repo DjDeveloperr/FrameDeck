@@ -1,0 +1,184 @@
+{
+  "chromeIdentifier" : "com.apple.dt.devicekit.chrome.phone",
+  "chromeName" : "phone",
+  "family" : "iphone",
+  "geometry" : {
+    "buttons" : [
+      {
+        "align" : "leading",
+        "anchor" : "left",
+        "height" : 36,
+        "imageDownDrawMode" : "replace",
+        "imageDownName" : "Mute BTN Dn",
+        "imageName" : "Mute BTN",
+        "label" : "Mute",
+        "name" : "mute",
+        "normalOffset" : {
+          "x" : 8,
+          "y" : 114
+        },
+        "onTop" : false,
+        "rolloverOffset" : {
+          "x" : 3,
+          "y" : 114
+        },
+        "type" : "switch",
+        "usage" : 46,
+        "usagePage" : 11,
+        "width" : 16,
+        "x" : 1,
+        "y" : 114
+      },
+      {
+        "align" : "leading",
+        "anchor" : "left",
+        "height" : 68,
+        "imageDownDrawMode" : "replace",
+        "imageDownName" : "Vol BTN Dn",
+        "imageName" : "Vol BTN",
+        "label" : "Volume Up",
+        "name" : "volume-up",
+        "normalOffset" : {
+          "x" : 8,
+          "y" : 188
+        },
+        "onTop" : false,
+        "rolloverOffset" : {
+          "x" : 3,
+          "y" : 188
+        },
+        "type" : "button",
+        "usage" : 233,
+        "usagePage" : 12,
+        "width" : 16,
+        "x" : 1,
+        "y" : 188
+      },
+      {
+        "align" : "leading",
+        "anchor" : "left",
+        "height" : 68,
+        "imageDownDrawMode" : "replace",
+        "imageDownName" : "Vol BTN Dn",
+        "imageName" : "Vol BTN",
+        "label" : "Volume Down",
+        "name" : "volume-down",
+        "normalOffset" : {
+          "x" : 8,
+          "y" : 269
+        },
+        "onTop" : false,
+        "rolloverOffset" : {
+          "x" : 3,
+          "y" : 269
+        },
+        "type" : "button",
+        "usage" : 234,
+        "usagePage" : 12,
+        "width" : 16,
+        "x" : 1,
+        "y" : 269
+      },
+      {
+        "align" : "leading",
+        "anchor" : "right",
+        "height" : 68,
+        "imageDownDrawMode" : "replace",
+        "imageDownName" : "Power BTN Dn",
+        "imageName" : "Power BTN",
+        "label" : "Sleep\/Wake",
+        "name" : "power",
+        "normalOffset" : {
+          "x" : -8,
+          "y" : 188
+        },
+        "onTop" : false,
+        "rolloverOffset" : {
+          "x" : -3,
+          "y" : 188
+        },
+        "type" : "button",
+        "usage" : 48,
+        "usagePage" : 12,
+        "width" : 16,
+        "x" : 432,
+        "y" : 188
+      },
+      {
+        "align" : "center",
+        "anchor" : "bottom",
+        "height" : 67,
+        "imageDownDrawMode" : "compositeUnder",
+        "imageDownName" : "Home BTN Dn",
+        "imageName" : "Home BTN",
+        "label" : "Home",
+        "name" : "home",
+        "normalOffset" : {
+          "x" : 0,
+          "y" : -90
+        },
+        "onTop" : true,
+        "rolloverOffset" : {
+          "x" : 0,
+          "y" : -90
+        },
+        "type" : "button",
+        "usage" : 64,
+        "usagePage" : 12,
+        "width" : 67,
+        "x" : 191,
+        "y" : 799
+      }
+    ],
+    "chromeCornerRadius" : 0,
+    "chromeHeight" : 889,
+    "chromeWidth" : 431,
+    "chromeX" : 9,
+    "chromeY" : -0,
+    "contentHeight" : 667,
+    "contentWidth" : 375,
+    "contentX" : 37,
+    "contentY" : 111,
+    "cornerRadius" : 0,
+    "hasScreenMask" : false,
+    "screenHeight" : 667,
+    "screenWidth" : 375,
+    "screenX" : 37,
+    "screenY" : 111,
+    "totalHeight" : 889,
+    "totalWidth" : 449
+  },
+  "images" : {
+    "bezel" : "iphone\/iphone-6s-iphone8-1\/bezel.png",
+    "bezelNoButtons" : "iphone\/iphone-6s-iphone8-1\/bezel-no-buttons.png",
+    "screenMask" : null
+  },
+  "modelIdentifier" : "iPhone8,1",
+  "name" : "iPhone 6s",
+  "productClass" : "N71",
+  "rendered" : {
+    "bezel" : {
+      "pixelHeight" : 2667,
+      "pixelWidth" : 1347
+    },
+    "bezelNoButtons" : {
+      "pixelHeight" : 2667,
+      "pixelWidth" : 1347
+    }
+  },
+  "screen" : {
+    "heightDPI" : 326,
+    "pixelHeight" : 1334,
+    "pixelWidth" : 750,
+    "scale" : 2,
+    "widthDPI" : 326
+  },
+  "slug" : "iphone-6s-iphone8-1",
+  "source" : {
+    "chromeResourcesPath" : "\/Library\/Developer\/DeviceKit\/Chrome\/phone.devicechrome\/Contents\/Resources",
+    "deviceProfilePath" : "\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPhone 6s.simdevicetype\/Contents\/Resources\/profile.plist",
+    "deviceResourcesPath" : "\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPhone 6s.simdevicetype\/Contents\/Resources",
+    "framebufferMask" : null,
+    "sensorBarImage" : null
+  }
+}

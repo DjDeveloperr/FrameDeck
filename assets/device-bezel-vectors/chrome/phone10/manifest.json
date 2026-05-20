@@ -1,0 +1,27 @@
+{
+  "bundlePath" : "\/Library\/Developer\/DeviceKit\/Chrome\/phone10.devicechrome",
+  "chromeJson" : "chrome\/phone10\/chrome.json",
+  "chromeName" : "phone10",
+  "localPath" : "chrome\/phone10",
+  "pdfs" : [
+    "chrome\/phone10\/Home BTN Dn.pdf",
+    "chrome\/phone10\/Home BTN.pdf",
+    "chrome\/phone10\/Mute BTN Dn.pdf",
+    "chrome\/phone10\/Mute BTN.pdf",
+    "chrome\/phone10\/Phone BL.pdf",
+    "chrome\/phone10\/Phone BR.pdf",
+    "chrome\/phone10\/Phone TL.pdf",
+    "chrome\/phone10\/Phone TR.pdf",
+    "chrome\/phone10\/PhoneBase.pdf",
+    "chrome\/phone10\/PhoneComposite.pdf",
+    "chrome\/phone10\/PhoneLeft.pdf",
+    "chrome\/phone10\/PhoneRight.pdf",
+    "chrome\/phone10\/PhoneTop.pdf",
+    "chrome\/phone10\/Screen.pdf",
+    "chrome\/phone10\/Vol BTN Dn.pdf",
+    "chrome\/phone10\/Vol BTN.pdf",
+    "chrome\/phone10\/X_Power BTN Dn.pdf",
+    "chrome\/phone10\/X_Power BTN.pdf"
+  ],
+  "resourcesPath" : "\/Library\/Developer\/DeviceKit\/Chrome\/phone10.devicechrome\/Contents\/Resources"
+}

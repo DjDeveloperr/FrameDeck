@@ -1,0 +1,187 @@
+{
+  "identifier": "com.apple.dt.devicekit.chrome.watch5s",
+  "images": {
+    "topLeft": "WatchTL",
+    "top": "WatchTop",
+    "topRight": "WatchTR",
+    "right": "WatchRight",
+    "bottomRight": "WatchBR",
+    "bottom": "WatchBottom",
+    "bottomLeft": "WatchBL",
+    "left": "WatchLeft",
+    "composite": "WatchComposite",
+    "screen": "Screen",
+    "sizing": {
+      "leftWidth": 22,
+      "rightWidth": 22,
+      "topHeight": 22,
+      "bottomHeight": 22
+    },
+    "padding": {
+      "width": 12,
+      "height": 0
+    },
+    "devicePadding": {
+      "top": 0,
+      "left": 0,
+      "bottom": 0,
+      "right": 11
+    }
+  },
+  "paths": {
+    "simpleOutsideBorder": {
+      "insets": {
+        "top": 0,
+        "left": 0,
+        "bottom": 0,
+        "right": 0
+      },
+      "cornerRadiusX": 65.5,
+      "cornerRadiusY": 65.5
+    }
+  },
+  "inputs": [
+    {
+      "name": "digital-crown",
+      "accessibilityTitle": "Crown",
+      "type": "crown",
+      "usagePage": 12,
+      "usage": 64,
+      "image": "DigitalCrown",
+      "imageDown": "DigitalCrown Dn",
+      "onTop": true,
+      "anchor": "right",
+      "align": "leading",
+      "offsets": {
+        "normal": {
+          "x": -7,
+          "y": 55
+        },
+        "rollover": {
+          "x": -7,
+          "y": 55
+        }
+      }
+    },
+    {
+      "name": "side-button",
+      "accessibilityTitle": "Side",
+      "type": "button",
+      "usagePage": 12,
+      "usage": 149,
+      "image": "SideButton",
+      "imageDown": "SideButton Dn",
+      "onTop": true,
+      "anchor": "right",
+      "align": "leading",
+      "offsets": {
+        "normal": {
+          "x": -5,
+          "y": 137
+        },
+        "rollover": {
+          "x": -4,
+          "y": 137
+        }
+      }
+    }
+  ],
+  "resizeRects": [
+    {
+      "type": "lowerLeft",
+      "scales": true,
+      "centerPoint": {
+        "x": 28,
+        "y": 18
+      },
+      "size": {
+        "width": 40,
+        "height": 20
+      }
+    },
+    {
+      "type": "lowerLeft",
+      "scales": true,
+      "centerPoint": {
+        "x": 18,
+        "y": 28
+      },
+      "size": {
+        "width": 20,
+        "height": 40
+      }
+    },
+    {
+      "type": "lowerRight",
+      "scales": true,
+      "centerPoint": {
+        "x": -28,
+        "y": 18
+      },
+      "size": {
+        "width": 40,
+        "height": 20
+      }
+    },
+    {
+      "type": "lowerRight",
+      "scales": true,
+      "centerPoint": {
+        "x": -18,
+        "y": 28
+      },
+      "size": {
+        "width": 20,
+        "height": 40
+      }
+    },
+    {
+      "type": "upperRight",
+      "scales": true,
+      "centerPoint": {
+        "x": -28,
+        "y": -18
+      },
+      "size": {
+        "width": 40,
+        "height": 20
+      }
+    },
+    {
+      "type": "upperRight",
+      "scales": true,
+      "centerPoint": {
+        "x": -18,
+        "y": -28
+      },
+      "size": {
+        "width": 20,
+        "height": 40
+      }
+    },
+    {
+      "type": "upperLeft",
+      "scales": true,
+      "centerPoint": {
+        "x": 28,
+        "y": -18
+      },
+      "size": {
+        "width": 40,
+        "height": 20
+      }
+    },
+    {
+      "type": "upperLeft",
+      "scales": true,
+      "centerPoint": {
+        "x": 18,
+        "y": -28
+      },
+      "size": {
+        "width": 20,
+        "height": 40
+      }
+    }
+  ]
+}

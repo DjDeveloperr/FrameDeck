@@ -1,0 +1,114 @@
+{
+  "identifier": "com.apple.dt.devicekit.chrome.watch2b",
+  "images": {
+    "topLeft": "WatchTL",
+    "top": "WatchTop",
+    "topRight": "WatchTR",
+    "right": "WatchRight",
+    "bottomRight": "WatchBR",
+    "bottom": "WatchBottom",
+    "bottomLeft": "WatchBL",
+    "left": "WatchLeft",
+    "screen": "Screen",
+    "sizing": {
+      "leftWidth": 28,
+      "rightWidth": 28,
+      "topHeight": 28,
+      "bottomHeight": 28
+    },
+    "padding": {
+        "width": 12,
+        "height": 0
+    },
+    "devicePadding": {
+        "top": 0,
+        "left": 0,
+        "bottom": 0,
+        "right": 11
+    }
+  },
+  "paths": {
+    "simpleOutsideBorder": {
+      "insets": {
+        "top": 0,
+        "left": 0,
+        "bottom": 0,
+        "right": 0
+      },
+      "cornerRadiusX": 61.5,
+      "cornerRadiusY": 61.5
+    }
+  },
+  "inputs": [
+    {
+      "name": "digital-crown",
+      "accessibilityTitle": "Crown",
+      "type": "crown",
+      "usagePage": 12,
+      "usage": 64,
+      "image": "DigitalCrown",
+      "imageDown": "DigitalCrown Dn",
+      "onTop": true,
+      "anchor": "right",
+      "align": "leading",
+      "offsets": {
+	"normal": { "x": -7, "y": 62 },
+	"rollover": { "x": -7, "y": 62 }
+      }
+    },
+    {
+      "name": "side-button",
+      "accessibilityTitle": "Side",
+      "type": "button",
+      "usagePage": 12,
+      "usage": 149,
+      "image": "SideButton",
+      "imageDown": "SideButton Dn",
+      "onTop": true,
+      "anchor": "right",
+      "align": "leading",
+      "offsets": {
+	"normal": { "x": -5, "y": 150 },
+	"rollover": { "x": -4, "y": 150 }
+      }
+    }
+  ],
+  "resizeRects": [
+    {
+      "type": "lowerLeft",
+      "scales": false,
+      "centerPoint": { "x": 18, "y": 18 },
+      "size": {
+        "width": 18,
+        "height": 18
+      }
+    },
+    {
+      "type": "lowerRight",
+      "scales": false,
+      "centerPoint": { "x": -18, "y": 18 },
+      "size": {
+        "width": 18,
+        "height": 18
+      }
+    },
+    {
+      "type": "upperRight",
+      "scales": false,
+      "centerPoint": { "x": -18, "y": -18 },
+      "size": {
+        "width": 18,
+        "height": 18
+      }
+    },
+    {
+      "type": "upperLeft",
+      "scales": false,
+      "centerPoint": { "x": 18, "y": -18 },
+      "size": {
+        "width": 18,
+        "height": 18
+      }
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "bundlePath" : "\/Library\/Developer\/DeviceKit\/Chrome\/phone8.devicechrome",
+  "chromeJson" : "chrome\/phone8\/chrome.json",
+  "chromeName" : "phone8",
+  "localPath" : "chrome\/phone8",
+  "pdfs" : [
+    "chrome\/phone8\/Home BTN Dn.pdf",
+    "chrome\/phone8\/Home BTN.pdf",
+    "chrome\/phone8\/Mute BTN Dn.pdf",
+    "chrome\/phone8\/Mute BTN.pdf",
+    "chrome\/phone8\/Phone BL.pdf",
+    "chrome\/phone8\/Phone BR.pdf",
+    "chrome\/phone8\/Phone TL.pdf",
+    "chrome\/phone8\/Phone TR.pdf",
+    "chrome\/phone8\/PhoneBase.pdf",
+    "chrome\/phone8\/PhoneComposite.pdf",
+    "chrome\/phone8\/PhoneLeft.pdf",
+    "chrome\/phone8\/PhoneRight.pdf",
+    "chrome\/phone8\/PhoneTop.pdf",
+    "chrome\/phone8\/Screen.pdf",
+    "chrome\/phone8\/Vol BTN Dn.pdf",
+    "chrome\/phone8\/Vol BTN.pdf",
+    "chrome\/phone8\/X_Power BTN Dn.pdf",
+    "chrome\/phone8\/X_Power BTN.pdf"
+  ],
+  "resourcesPath" : "\/Library\/Developer\/DeviceKit\/Chrome\/phone8.devicechrome\/Contents\/Resources"
+}

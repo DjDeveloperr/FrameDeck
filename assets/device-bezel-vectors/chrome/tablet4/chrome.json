@@ -1,0 +1,130 @@
+{
+  "identifier": "com.apple.dt.devicekit.chrome.tablet4",
+  "images": {
+    "topLeft": "iPad TL",
+    "top": "iPadTop",
+    "topRight": "iPad TR",
+    "right": "iPadRight",
+    "bottomRight": "iPad BR",
+    "bottom": "iPadBase",
+    "bottomLeft": "iPad BL",
+    "left": "iPadLeft",
+    "screen": "Screen",
+    "sizing": {
+      "leftWidth": 59,
+      "rightWidth": 59,
+      "topHeight": 59,
+      "bottomHeight": 59
+    },
+    "padding": {
+        "width": 10,
+        "height": 9
+    },
+    "devicePadding": {
+        "top": 10,
+        "left": 0,
+        "bottom": 0,
+        "right": 10
+    }
+  },
+  "paths": {
+    "simpleOutsideBorder": {
+      "insets": {
+        "top": 0,
+        "left": 0,
+        "bottom": 0,
+        "right": 0
+      },
+      "cornerRadiusX": 81,
+      "cornerRadiusY": 81
+    }
+  },
+  "inputs": [
+    {
+      "name": "volume-up",
+      "accessibilityTitle": "Volume Up",
+      "type": "button",
+      "usagePage": 12,
+      "usage": 233,
+      "image": "Vol BTN",
+      "imageDown": "Vol BTN Dn",
+      "onTop": false,
+      "anchor": "right",
+      "align": "leading",
+      "offsets": {
+        "normal": { "x": -8, "y": 120 },
+        "rollover": { "x": -3, "y": 120 }
+      }
+    },
+    {
+      "name": "volume-down",
+      "accessibilityTitle": "Volume Down",
+      "type": "button",
+      "usagePage": 12,
+      "usage": 234,
+      "image": "Vol BTN",
+      "imageDown": "Vol BTN Dn",
+      "onTop": false,
+      "anchor": "right",
+      "align": "leading",
+      "offsets": {
+        "normal": { "x": -8, "y": 182 },
+        "rollover": { "x": -3, "y": 182 }
+      }
+    },
+    {
+      "name": "power",
+      "accessibilityTitle": "Sleep/Wake",
+      "type": "button",
+      "usagePage": 12,
+      "usage": 48,
+      "image": "iPad Power BTN",
+      "imageDown": "iPad Power BTN Dn",
+      "onTop": false,
+      "anchor": "top",
+      "align": "trailing",
+      "offsets": {
+        "normal": { "x": -84, "y": 8 },
+        "rollover": { "x": -84, "y": 3 }
+      }
+    }
+  ],
+  "resizeRects": [
+    {
+      "type": "lowerLeft",
+      "scales": true,
+      "centerPoint": { "x": 24, "y": 24 },
+      "size": {
+        "width": 20,
+        "height": 20
+      }
+    },
+    {
+      "type": "lowerRight",
+      "scales": true,
+      "centerPoint": { "x": -24, "y": 24 },
+      "size": {
+        "width": 20,
+        "height": 20
+      }
+    },
+    {
+      "type": "upperRight",
+      "scales": true,
+      "centerPoint": { "x": -24, "y": -24 },
+      "size": {
+        "width": 20,
+        "height": 20
+      }
+    },
+    {
+      "type": "upperLeft",
+      "scales": true,
+      "centerPoint": { "x": 24, "y": -24 },
+      "size": {
+        "width": 20,
+        "height": 20
+      }
+    }
+  ]
+}

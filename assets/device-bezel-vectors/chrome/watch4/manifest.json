@@ -1,0 +1,26 @@
+{
+  "bundlePath" : "\/Library\/Developer\/DeviceKit\/Chrome\/watch4.devicechrome",
+  "chromeJson" : "chrome\/watch4\/chrome.json",
+  "chromeName" : "watch4",
+  "localPath" : "chrome\/watch4",
+  "pdfs" : [
+    "chrome\/watch4\/DigitalCrown Dn.pdf",
+    "chrome\/watch4\/DigitalCrown.pdf",
+    "chrome\/watch4\/Screen.pdf",
+    "chrome\/watch4\/SideButton Dn.pdf",
+    "chrome\/watch4\/SideButton.pdf",
+    "chrome\/watch4\/StingButton Dn.pdf",
+    "chrome\/watch4\/StingButton.pdf",
+    "chrome\/watch4\/WatchBL.pdf",
+    "chrome\/watch4\/WatchBottom.pdf",
+    "chrome\/watch4\/WatchBR.pdf",
+    "chrome\/watch4\/WatchComposite.pdf",
+    "chrome\/watch4\/WatchLeft.pdf",
+    "chrome\/watch4\/WatchRight.pdf",
+    "chrome\/watch4\/WatchSimpleComposite.pdf",
+    "chrome\/watch4\/WatchTL.pdf",
+    "chrome\/watch4\/WatchTop.pdf",
+    "chrome\/watch4\/WatchTR.pdf"
+  ],
+  "resourcesPath" : "\/Library\/Developer\/DeviceKit\/Chrome\/watch4.devicechrome\/Contents\/Resources"
+}

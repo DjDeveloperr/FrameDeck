@@ -1,0 +1,139 @@
+{
+  "chromeIdentifier" : "com.apple.dt.devicekit.chrome.tablet3",
+  "chromeName" : "tablet3",
+  "family" : "ipad",
+  "geometry" : {
+    "buttons" : [
+      {
+        "align" : "leading",
+        "anchor" : "top",
+        "height" : 16,
+        "imageDownName" : "Vol BTN Dn",
+        "imageName" : "Vol BTN",
+        "label" : "Volume Up",
+        "name" : "volume-up",
+        "normalOffset" : {
+          "x" : 158,
+          "y" : 8
+        },
+        "onTop" : false,
+        "rolloverOffset" : {
+          "x" : 158,
+          "y" : 3
+        },
+        "type" : "button",
+        "usage" : 233,
+        "usagePage" : 12,
+        "width" : 65,
+        "x" : 158,
+        "y" : 1
+      },
+      {
+        "align" : "leading",
+        "anchor" : "top",
+        "height" : 16,
+        "imageDownName" : "Vol BTN Dn",
+        "imageName" : "Vol BTN",
+        "label" : "Volume Down",
+        "name" : "volume-down",
+        "normalOffset" : {
+          "x" : 82,
+          "y" : 8
+        },
+        "onTop" : false,
+        "rolloverOffset" : {
+          "x" : 82,
+          "y" : 3
+        },
+        "type" : "button",
+        "usage" : 234,
+        "usagePage" : 12,
+        "width" : 65,
+        "x" : 82,
+        "y" : 1
+      },
+      {
+        "align" : "trailing",
+        "anchor" : "top",
+        "height" : 16,
+        "imageDownName" : "iPad Power BTN Dn",
+        "imageName" : "iPad Power BTN",
+        "label" : "Sleep\/Wake",
+        "name" : "power",
+        "normalOffset" : {
+          "x" : -82,
+          "y" : 8
+        },
+        "onTop" : false,
+        "rolloverOffset" : {
+          "x" : -82,
+          "y" : 3
+        },
+        "type" : "button",
+        "usage" : 48,
+        "usagePage" : 12,
+        "width" : 111,
+        "x" : 671,
+        "y" : 1
+      }
+    ],
+    "chromeCornerRadius" : 21,
+    "chromeHeight" : 1253,
+    "chromeWidth" : 864,
+    "chromeX" : -0,
+    "chromeY" : 9,
+    "contentHeight" : 1133,
+    "contentWidth" : 744,
+    "contentX" : 60,
+    "contentY" : 69,
+    "cornerRadius" : 21,
+    "hasScreenMask" : false,
+    "screenHeight" : 1133,
+    "screenWidth" : 744,
+    "screenX" : 60,
+    "screenY" : 69,
+    "totalHeight" : 1262,
+    "totalWidth" : 874
+  },
+  "modelIdentifier" : "iPad16,2",
+  "name" : "iPad mini (A17 Pro)",
+  "productClass" : "J411",
+  "screen" : {
+    "heightDPI" : 326,
+    "pixelHeight" : 2266,
+    "pixelWidth" : 1488,
+    "scale" : 2,
+    "widthDPI" : 326
+  },
+  "slug" : "ipad-mini-a17-pro-ipad16-2",
+  "source" : {
+    "chromeResourcesPath" : "\/Library\/Developer\/DeviceKit\/Chrome\/tablet3.devicechrome\/Contents\/Resources",
+    "deviceProfilePath" : "\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPad mini (A17 Pro).simdevicetype\/Contents\/Resources\/profile.plist",
+    "deviceResourcesPath" : "\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPad mini (A17 Pro).simdevicetype\/Contents\/Resources",
+    "framebufferMask" : "6C3E86A6-7852-4766-A147-E3A56F876E82",
+    "sensorBarImage" : null
+  },
+  "vectors" : {
+    "capabilitiesPlist" : "device-profiles\/ipad-mini-a17-pro-ipad16-2\/capabilities.plist",
+    "chromeBundle" : "chrome\/tablet3",
+    "chromeJson" : "chrome\/tablet3\/chrome.json",
+    "chromePdfs" : [
+      "chrome\/tablet3\/iPad BL.pdf",
+      "chrome\/tablet3\/iPad BR.pdf",
+      "chrome\/tablet3\/iPad Power BTN Dn.pdf",
+      "chrome\/tablet3\/iPad Power BTN.pdf",
+      "chrome\/tablet3\/iPad TL.pdf",
+      "chrome\/tablet3\/iPad TR.pdf",
+      "chrome\/tablet3\/iPadBase.pdf",
+      "chrome\/tablet3\/iPadLeft.pdf",
+      "chrome\/tablet3\/iPadRight.pdf",
+      "chrome\/tablet3\/iPadTop.pdf",
+      "chrome\/tablet3\/Screen.pdf",
+      "chrome\/tablet3\/Vol BTN Dn.pdf",
+      "chrome\/tablet3\/Vol BTN.pdf"
+    ],
+    "framebufferMask" : "framebuffer-masks\/6C3E86A6-7852-4766-A147-E3A56F876E82.pdf",
+    "profilePlist" : "device-profiles\/ipad-mini-a17-pro-ipad16-2\/profile.plist",
+    "sensorBar" : null
+  }
+}

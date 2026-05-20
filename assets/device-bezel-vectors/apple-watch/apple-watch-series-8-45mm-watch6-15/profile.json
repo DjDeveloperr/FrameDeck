@@ -1,0 +1,115 @@
+{
+  "chromeIdentifier" : "com.apple.dt.devicekit.chrome.watch3b",
+  "chromeName" : "watch3b",
+  "family" : "apple-watch",
+  "geometry" : {
+    "buttons" : [
+      {
+        "align" : "leading",
+        "anchor" : "right",
+        "height" : 92,
+        "imageDownName" : "DigitalCrown Dn",
+        "imageName" : "DigitalCrown",
+        "label" : "Crown",
+        "name" : "digital-crown",
+        "normalOffset" : {
+          "x" : -14,
+          "y" : 130
+        },
+        "onTop" : true,
+        "rolloverOffset" : {
+          "x" : -14,
+          "y" : 130
+        },
+        "type" : "crown",
+        "usage" : 64,
+        "usagePage" : 12,
+        "width" : 36,
+        "x" : 438,
+        "y" : 130
+      },
+      {
+        "align" : "leading",
+        "anchor" : "right",
+        "height" : 122,
+        "imageDownName" : "SideButton Dn",
+        "imageName" : "SideButton",
+        "label" : "Side",
+        "name" : "side-button",
+        "normalOffset" : {
+          "x" : -10,
+          "y" : 306
+        },
+        "onTop" : true,
+        "rolloverOffset" : {
+          "x" : -8,
+          "y" : 306
+        },
+        "type" : "button",
+        "usage" : 149,
+        "usagePage" : 12,
+        "width" : 16,
+        "x" : 442,
+        "y" : 306
+      }
+    ],
+    "chromeCornerRadius" : 85,
+    "chromeHeight" : 528,
+    "chromeWidth" : 440,
+    "chromeX" : 12,
+    "chromeY" : -0,
+    "contentHeight" : 484,
+    "contentWidth" : 396,
+    "contentX" : 34,
+    "contentY" : 22,
+    "cornerRadius" : 85,
+    "hasScreenMask" : true,
+    "screenHeight" : 484,
+    "screenWidth" : 396,
+    "screenX" : 34,
+    "screenY" : 22,
+    "totalHeight" : 528,
+    "totalWidth" : 474
+  },
+  "modelIdentifier" : "Watch6,15",
+  "name" : "Apple Watch Series 8 (45mm)",
+  "productClass" : "N197b",
+  "screen" : {
+    "heightDPI" : 326,
+    "pixelHeight" : 484,
+    "pixelWidth" : 396,
+    "scale" : 2,
+    "widthDPI" : 326
+  },
+  "slug" : "apple-watch-series-8-45mm-watch6-15",
+  "source" : {
+    "chromeResourcesPath" : "\/Library\/Developer\/DeviceKit\/Chrome\/watch3b.devicechrome\/Contents\/Resources",
+    "deviceProfilePath" : "\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/Apple Watch Series 8 (45mm).simdevicetype\/Contents\/Resources\/profile.plist",
+    "deviceResourcesPath" : "\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/Apple Watch Series 8 (45mm).simdevicetype\/Contents\/Resources",
+    "framebufferMask" : "778EF3B4-5182-46D3-A265-61B9105DF822",
+    "sensorBarImage" : null
+  },
+  "vectors" : {
+    "capabilitiesPlist" : "device-profiles\/apple-watch-series-8-45mm-watch6-15\/capabilities.plist",
+    "chromeBundle" : "chrome\/watch3b",
+    "chromeJson" : "chrome\/watch3b\/chrome.json",
+    "chromePdfs" : [
+      "chrome\/watch3b\/DigitalCrown Dn.pdf",
+      "chrome\/watch3b\/DigitalCrown.pdf",
+      "chrome\/watch3b\/Screen.pdf",
+      "chrome\/watch3b\/SideButton Dn.pdf",
+      "chrome\/watch3b\/SideButton.pdf",
+      "chrome\/watch3b\/WatchBL.pdf",
+      "chrome\/watch3b\/WatchBottom.pdf",
+      "chrome\/watch3b\/WatchBR.pdf",
+      "chrome\/watch3b\/WatchLeft.pdf",
+      "chrome\/watch3b\/WatchRight.pdf",
+      "chrome\/watch3b\/WatchTL.pdf",
+      "chrome\/watch3b\/WatchTop.pdf",
+      "chrome\/watch3b\/WatchTR.pdf"
+    ],
+    "framebufferMask" : "framebuffer-masks\/778EF3B4-5182-46D3-A265-61B9105DF822.pdf",
+    "profilePlist" : "device-profiles\/apple-watch-series-8-45mm-watch6-15\/profile.plist",
+    "sensorBar" : null
+  }
+}

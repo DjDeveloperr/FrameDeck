@@ -1,0 +1,163 @@
+{
+  "chromeIdentifier" : "com.apple.dt.devicekit.chrome.phone2",
+  "chromeName" : "phone2",
+  "family" : "iphone",
+  "geometry" : {
+    "buttons" : [
+      {
+        "align" : "leading",
+        "anchor" : "left",
+        "height" : 35,
+        "imageDownDrawMode" : "replace",
+        "imageDownName" : "Mute BTN Dn",
+        "imageName" : "Mute BTN",
+        "label" : "Mute",
+        "name" : "mute",
+        "normalOffset" : {
+          "x" : 8,
+          "y" : 147
+        },
+        "onTop" : false,
+        "rolloverOffset" : {
+          "x" : 3,
+          "y" : 147
+        },
+        "type" : "switch",
+        "usage" : 46,
+        "usagePage" : 11,
+        "width" : 16,
+        "x" : 1,
+        "y" : 147
+      },
+      {
+        "align" : "leading",
+        "anchor" : "left",
+        "height" : 69,
+        "imageDownDrawMode" : "replace",
+        "imageDownName" : "Vol BTN Dn",
+        "imageName" : "Vol BTN",
+        "label" : "Volume Up",
+        "name" : "volume-up",
+        "normalOffset" : {
+          "x" : 8,
+          "y" : 217
+        },
+        "onTop" : false,
+        "rolloverOffset" : {
+          "x" : 3,
+          "y" : 217
+        },
+        "type" : "button",
+        "usage" : 233,
+        "usagePage" : 12,
+        "width" : 16,
+        "x" : 1,
+        "y" : 217
+      },
+      {
+        "align" : "leading",
+        "anchor" : "left",
+        "height" : 69,
+        "imageDownDrawMode" : "replace",
+        "imageDownName" : "Vol BTN Dn",
+        "imageName" : "Vol BTN",
+        "label" : "Volume Down",
+        "name" : "volume-down",
+        "normalOffset" : {
+          "x" : 8,
+          "y" : 306
+        },
+        "onTop" : false,
+        "rolloverOffset" : {
+          "x" : 3,
+          "y" : 306
+        },
+        "type" : "button",
+        "usage" : 234,
+        "usagePage" : 12,
+        "width" : 16,
+        "x" : 1,
+        "y" : 306
+      },
+      {
+        "align" : "leading",
+        "anchor" : "right",
+        "height" : 113,
+        "imageDownDrawMode" : "replace",
+        "imageDownName" : "X_Power BTN Dn",
+        "imageName" : "X_Power BTN",
+        "label" : "Sleep\/Wake",
+        "name" : "power",
+        "normalOffset" : {
+          "x" : -8,
+          "y" : 240
+        },
+        "onTop" : false,
+        "rolloverOffset" : {
+          "x" : -3,
+          "y" : 240
+        },
+        "type" : "button",
+        "usage" : 48,
+        "usagePage" : 12,
+        "width" : 16,
+        "x" : 434,
+        "y" : 240
+      }
+    ],
+    "chromeCornerRadius" : 38,
+    "chromeHeight" : 870,
+    "chromeWidth" : 433,
+    "chromeX" : 9,
+    "chromeY" : -0,
+    "contentHeight" : 812,
+    "contentWidth" : 375,
+    "contentX" : 38,
+    "contentY" : 29,
+    "cornerRadius" : 38,
+    "hasScreenMask" : false,
+    "screenHeight" : 812,
+    "screenWidth" : 375,
+    "screenX" : 38,
+    "screenY" : 29,
+    "totalHeight" : 870,
+    "totalWidth" : 451
+  },
+  "images" : {
+    "bezel" : "iphone\/iphone-11-pro-iphone12-3\/bezel.png",
+    "bezelNoButtons" : "iphone\/iphone-11-pro-iphone12-3\/bezel-no-buttons.png",
+    "screenMask" : "iphone\/iphone-11-pro-iphone12-3\/screen-mask.png"
+  },
+  "modelIdentifier" : "iPhone12,3",
+  "name" : "iPhone 11 Pro",
+  "productClass" : "D421",
+  "rendered" : {
+    "bezel" : {
+      "pixelHeight" : 2610,
+      "pixelWidth" : 1353
+    },
+    "bezelNoButtons" : {
+      "pixelHeight" : 2610,
+      "pixelWidth" : 1353
+    },
+    "screenMask" : {
+      "pixelHeight" : 2436,
+      "pixelWidth" : 1125
+    }
+  },
+  "screen" : {
+    "heightDPI" : 458,
+    "pixelHeight" : 2436,
+    "pixelWidth" : 1125,
+    "scale" : 3,
+    "widthDPI" : 458
+  },
+  "slug" : "iphone-11-pro-iphone12-3",
+  "source" : {
+    "chromeResourcesPath" : "\/Library\/Developer\/DeviceKit\/Chrome\/phone2.devicechrome\/Contents\/Resources",
+    "deviceProfilePath" : "\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPhone 11 Pro.simdevicetype\/Contents\/Resources\/profile.plist",
+    "deviceResourcesPath" : "\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPhone 11 Pro.simdevicetype\/Contents\/Resources",
+    "framebufferMask" : "CF2CF315-9771-445B-92C3-7F621428FAE8",
+    "sensorBarImage" : "sensor_bar_class_02"
+  }
+}

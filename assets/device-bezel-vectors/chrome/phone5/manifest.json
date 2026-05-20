@@ -1,0 +1,24 @@
+{
+  "bundlePath" : "\/Library\/Developer\/DeviceKit\/Chrome\/phone5.devicechrome",
+  "chromeJson" : "chrome\/phone5\/chrome.json",
+  "chromeName" : "phone5",
+  "localPath" : "chrome\/phone5",
+  "pdfs" : [
+    "chrome\/phone5\/Mute BTN Dn.pdf",
+    "chrome\/phone5\/Mute BTN.pdf",
+    "chrome\/phone5\/Phone BL.pdf",
+    "chrome\/phone5\/Phone BR.pdf",
+    "chrome\/phone5\/Phone TL.pdf",
+    "chrome\/phone5\/Phone TR.pdf",
+    "chrome\/phone5\/PhoneBase.pdf",
+    "chrome\/phone5\/PhoneLeft.pdf",
+    "chrome\/phone5\/PhoneRight.pdf",
+    "chrome\/phone5\/PhoneTop.pdf",
+    "chrome\/phone5\/Screen.pdf",
+    "chrome\/phone5\/Vol BTN Dn.pdf",
+    "chrome\/phone5\/Vol BTN.pdf",
+    "chrome\/phone5\/X_Power BTN Dn.pdf",
+    "chrome\/phone5\/X_Power BTN.pdf"
+  ],
+  "resourcesPath" : "\/Library\/Developer\/DeviceKit\/Chrome\/phone5.devicechrome\/Contents\/Resources"
+}

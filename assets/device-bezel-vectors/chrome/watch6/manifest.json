@@ -1,0 +1,26 @@
+{
+  "bundlePath" : "\/Library\/Developer\/DeviceKit\/Chrome\/watch6.devicechrome",
+  "chromeJson" : "chrome\/watch6\/chrome.json",
+  "chromeName" : "watch6",
+  "localPath" : "chrome\/watch6",
+  "pdfs" : [
+    "chrome\/watch6\/DigitalCrown Dn.pdf",
+    "chrome\/watch6\/DigitalCrown.pdf",
+    "chrome\/watch6\/Screen.pdf",
+    "chrome\/watch6\/SideButton Dn.pdf",
+    "chrome\/watch6\/SideButton.pdf",
+    "chrome\/watch6\/StingButton Dn.pdf",
+    "chrome\/watch6\/StingButton.pdf",
+    "chrome\/watch6\/WatchBL.pdf",
+    "chrome\/watch6\/WatchBottom.pdf",
+    "chrome\/watch6\/WatchBR.pdf",
+    "chrome\/watch6\/WatchComposite.pdf",
+    "chrome\/watch6\/WatchLeft.pdf",
+    "chrome\/watch6\/WatchRight.pdf",
+    "chrome\/watch6\/WatchSimpleComposite.pdf",
+    "chrome\/watch6\/WatchTL.pdf",
+    "chrome\/watch6\/WatchTop.pdf",
+    "chrome\/watch6\/WatchTR.pdf"
+  ],
+  "resourcesPath" : "\/Library\/Developer\/DeviceKit\/Chrome\/watch6.devicechrome\/Contents\/Resources"
+}

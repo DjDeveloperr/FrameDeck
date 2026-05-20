@@ -1,0 +1,27 @@
+{
+  "bundlePath" : "\/Library\/Developer\/DeviceKit\/Chrome\/phone9.devicechrome",
+  "chromeJson" : "chrome\/phone9\/chrome.json",
+  "chromeName" : "phone9",
+  "localPath" : "chrome\/phone9",
+  "pdfs" : [
+    "chrome\/phone9\/Home BTN Dn.pdf",
+    "chrome\/phone9\/Home BTN.pdf",
+    "chrome\/phone9\/Mute BTN Dn.pdf",
+    "chrome\/phone9\/Mute BTN.pdf",
+    "chrome\/phone9\/Phone BL.pdf",
+    "chrome\/phone9\/Phone BR.pdf",
+    "chrome\/phone9\/Phone TL.pdf",
+    "chrome\/phone9\/Phone TR.pdf",
+    "chrome\/phone9\/PhoneBase.pdf",
+    "chrome\/phone9\/PhoneComposite.pdf",
+    "chrome\/phone9\/PhoneLeft.pdf",
+    "chrome\/phone9\/PhoneRight.pdf",
+    "chrome\/phone9\/PhoneTop.pdf",
+    "chrome\/phone9\/Screen.pdf",
+    "chrome\/phone9\/Vol BTN Dn.pdf",
+    "chrome\/phone9\/Vol BTN.pdf",
+    "chrome\/phone9\/X_Power BTN Dn.pdf",
+    "chrome\/phone9\/X_Power BTN.pdf"
+  ],
+  "resourcesPath" : "\/Library\/Developer\/DeviceKit\/Chrome\/phone9.devicechrome\/Contents\/Resources"
+}

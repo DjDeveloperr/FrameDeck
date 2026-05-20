@@ -1,0 +1,111 @@
+{
+  "chromeIdentifier" : "com.apple.dt.devicekit.chrome.watch2b",
+  "chromeName" : "watch2b",
+  "family" : "apple-watch",
+  "geometry" : {
+    "buttons" : [
+      {
+        "align" : "leading",
+        "anchor" : "right",
+        "height" : 92,
+        "imageDownName" : "DigitalCrown Dn",
+        "imageName" : "DigitalCrown",
+        "label" : "Crown",
+        "name" : "digital-crown",
+        "normalOffset" : {
+          "x" : -14,
+          "y" : 124
+        },
+        "onTop" : true,
+        "rolloverOffset" : {
+          "x" : -14,
+          "y" : 124
+        },
+        "type" : "crown",
+        "usage" : 64,
+        "usagePage" : 12,
+        "width" : 36,
+        "x" : 422,
+        "y" : 124
+      },
+      {
+        "align" : "leading",
+        "anchor" : "right",
+        "height" : 122,
+        "imageDownName" : "SideButton Dn",
+        "imageName" : "SideButton",
+        "label" : "Side",
+        "name" : "side-button",
+        "normalOffset" : {
+          "x" : -10,
+          "y" : 300
+        },
+        "onTop" : true,
+        "rolloverOffset" : {
+          "x" : -8,
+          "y" : 300
+        },
+        "type" : "button",
+        "usage" : 149,
+        "usagePage" : 12,
+        "width" : 16,
+        "x" : 426,
+        "y" : 300
+      }
+    ],
+    "chromeCornerRadius" : 78.5,
+    "chromeHeight" : 504,
+    "chromeWidth" : 424,
+    "chromeX" : 12,
+    "chromeY" : -0,
+    "contentHeight" : 448,
+    "contentWidth" : 368,
+    "contentX" : 40,
+    "contentY" : 28,
+    "cornerRadius" : 78.5,
+    "hasScreenMask" : true,
+    "screenHeight" : 448,
+    "screenWidth" : 368,
+    "screenX" : 40,
+    "screenY" : 28,
+    "totalHeight" : 504,
+    "totalWidth" : 458
+  },
+  "images" : {
+    "bezel" : "apple-watch\/apple-watch-se-44mm-watch5-12\/bezel.png",
+    "bezelNoButtons" : "apple-watch\/apple-watch-se-44mm-watch5-12\/bezel-no-buttons.png",
+    "screenMask" : "apple-watch\/apple-watch-se-44mm-watch5-12\/screen-mask.png"
+  },
+  "modelIdentifier" : "Watch5,12",
+  "name" : "Apple Watch SE (44mm)",
+  "productClass" : "N142b",
+  "rendered" : {
+    "bezel" : {
+      "pixelHeight" : 1512,
+      "pixelWidth" : 1374
+    },
+    "bezelNoButtons" : {
+      "pixelHeight" : 1512,
+      "pixelWidth" : 1374
+    },
+    "screenMask" : {
+      "pixelHeight" : 896,
+      "pixelWidth" : 736
+    }
+  },
+  "screen" : {
+    "heightDPI" : 326,
+    "pixelHeight" : 448,
+    "pixelWidth" : 368,
+    "scale" : 2,
+    "widthDPI" : 326
+  },
+  "slug" : "apple-watch-se-44mm-watch5-12",
+  "source" : {
+    "chromeResourcesPath" : "\/Library\/Developer\/DeviceKit\/Chrome\/watch2b.devicechrome\/Contents\/Resources",
+    "deviceProfilePath" : "\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/Apple Watch SE (44mm).simdevicetype\/Contents\/Resources\/profile.plist",
+    "deviceResourcesPath" : "\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/Apple Watch SE (44mm).simdevicetype\/Contents\/Resources",
+    "framebufferMask" : "25BCD6BB-64DA-4353-8803-659CEC156E59",
+    "sensorBarImage" : null
+  }
+}

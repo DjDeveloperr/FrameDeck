@@ -1,0 +1,163 @@
+{
+  "chromeIdentifier" : "com.apple.dt.devicekit.chrome.phone7",
+  "chromeName" : "phone7",
+  "family" : "iphone",
+  "geometry" : {
+    "buttons" : [
+      {
+        "align" : "leading",
+        "anchor" : "left",
+        "height" : 35,
+        "imageDownDrawMode" : "replace",
+        "imageDownName" : "Mute BTN Dn",
+        "imageName" : "Mute BTN",
+        "label" : "Mute",
+        "name" : "mute",
+        "normalOffset" : {
+          "x" : 8,
+          "y" : 174
+        },
+        "onTop" : false,
+        "rolloverOffset" : {
+          "x" : 3,
+          "y" : 174
+        },
+        "type" : "switch",
+        "usage" : 46,
+        "usagePage" : 11,
+        "width" : 16,
+        "x" : 1,
+        "y" : 174
+      },
+      {
+        "align" : "leading",
+        "anchor" : "left",
+        "height" : 68,
+        "imageDownDrawMode" : "replace",
+        "imageDownName" : "Vol BTN Dn",
+        "imageName" : "Vol BTN",
+        "label" : "Volume Up",
+        "name" : "volume-up",
+        "normalOffset" : {
+          "x" : 8,
+          "y" : 239
+        },
+        "onTop" : false,
+        "rolloverOffset" : {
+          "x" : 3,
+          "y" : 239
+        },
+        "type" : "button",
+        "usage" : 233,
+        "usagePage" : 12,
+        "width" : 16,
+        "x" : 1,
+        "y" : 239
+      },
+      {
+        "align" : "leading",
+        "anchor" : "left",
+        "height" : 68,
+        "imageDownDrawMode" : "replace",
+        "imageDownName" : "Vol BTN Dn",
+        "imageName" : "Vol BTN",
+        "label" : "Volume Down",
+        "name" : "volume-down",
+        "normalOffset" : {
+          "x" : 8,
+          "y" : 324
+        },
+        "onTop" : false,
+        "rolloverOffset" : {
+          "x" : 3,
+          "y" : 324
+        },
+        "type" : "button",
+        "usage" : 234,
+        "usagePage" : 12,
+        "width" : 16,
+        "x" : 1,
+        "y" : 324
+      },
+      {
+        "align" : "leading",
+        "anchor" : "right",
+        "height" : 108,
+        "imageDownDrawMode" : "replace",
+        "imageDownName" : "X_Power BTN Dn",
+        "imageName" : "X_Power BTN",
+        "label" : "Sleep\/Wake",
+        "name" : "power",
+        "normalOffset" : {
+          "x" : -8,
+          "y" : 284
+        },
+        "onTop" : false,
+        "rolloverOffset" : {
+          "x" : -3,
+          "y" : 284
+        },
+        "type" : "button",
+        "usage" : 48,
+        "usagePage" : 12,
+        "width" : 16,
+        "x" : 436,
+        "y" : 284
+      }
+    ],
+    "chromeCornerRadius" : 54,
+    "chromeHeight" : 894,
+    "chromeWidth" : 435,
+    "chromeX" : 9,
+    "chromeY" : -0,
+    "contentHeight" : 852,
+    "contentWidth" : 393,
+    "contentX" : 30,
+    "contentY" : 21,
+    "cornerRadius" : 54,
+    "hasScreenMask" : false,
+    "screenHeight" : 852,
+    "screenWidth" : 393,
+    "screenX" : 30,
+    "screenY" : 21,
+    "totalHeight" : 894,
+    "totalWidth" : 453
+  },
+  "images" : {
+    "bezel" : "iphone\/iphone-14-pro-iphone15-2\/bezel.png",
+    "bezelNoButtons" : "iphone\/iphone-14-pro-iphone15-2\/bezel-no-buttons.png",
+    "screenMask" : "iphone\/iphone-14-pro-iphone15-2\/screen-mask.png"
+  },
+  "modelIdentifier" : "iPhone15,2",
+  "name" : "iPhone 14 Pro",
+  "productClass" : "D73",
+  "rendered" : {
+    "bezel" : {
+      "pixelHeight" : 2682,
+      "pixelWidth" : 1359
+    },
+    "bezelNoButtons" : {
+      "pixelHeight" : 2682,
+      "pixelWidth" : 1359
+    },
+    "screenMask" : {
+      "pixelHeight" : 2556,
+      "pixelWidth" : 1179
+    }
+  },
+  "screen" : {
+    "heightDPI" : 460,
+    "pixelHeight" : 2556,
+    "pixelWidth" : 1179,
+    "scale" : 3,
+    "widthDPI" : 460
+  },
+  "slug" : "iphone-14-pro-iphone15-2",
+  "source" : {
+    "chromeResourcesPath" : "\/Library\/Developer\/DeviceKit\/Chrome\/phone7.devicechrome\/Contents\/Resources",
+    "deviceProfilePath" : "\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPhone 14 Pro.simdevicetype\/Contents\/Resources\/profile.plist",
+    "deviceResourcesPath" : "\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPhone 14 Pro.simdevicetype\/Contents\/Resources",
+    "framebufferMask" : "A6AC96E7-C5D3-47A6-8967-A8B2D02F1C66",
+    "sensorBarImage" : "sensor_bar_class_04"
+  }
+}

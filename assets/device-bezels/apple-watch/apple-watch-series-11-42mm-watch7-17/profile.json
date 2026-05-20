@@ -1,0 +1,111 @@
+{
+  "chromeIdentifier" : "com.apple.dt.devicekit.chrome.watch5s",
+  "chromeName" : "watch5s",
+  "family" : "apple-watch",
+  "geometry" : {
+    "buttons" : [
+      {
+        "align" : "leading",
+        "anchor" : "right",
+        "height" : 83.514563106796118,
+        "imageDownName" : "DigitalCrown Dn",
+        "imageName" : "DigitalCrown",
+        "label" : "Crown",
+        "name" : "digital-crown",
+        "normalOffset" : {
+          "x" : -12.708737864077671,
+          "y" : 99.854368932038838
+        },
+        "onTop" : true,
+        "rolloverOffset" : {
+          "x" : -12.708737864077671,
+          "y" : 99.854368932038838
+        },
+        "type" : "crown",
+        "usage" : 64,
+        "usagePage" : 12,
+        "width" : 32.679611650485441,
+        "x" : 455.29126213592235,
+        "y" : 118.85436893203884
+      },
+      {
+        "align" : "leading",
+        "anchor" : "right",
+        "height" : 110.74757281553399,
+        "imageDownName" : "SideButton Dn",
+        "imageName" : "SideButton",
+        "label" : "Side",
+        "name" : "side-button",
+        "normalOffset" : {
+          "x" : -9.0776699029126213,
+          "y" : 248.72815533980582
+        },
+        "onTop" : true,
+        "rolloverOffset" : {
+          "x" : -7.2621359223300974,
+          "y" : 248.72815533980582
+        },
+        "type" : "button",
+        "usage" : 149,
+        "usagePage" : 12,
+        "width" : 14.524271844660195,
+        "x" : 458.92233009708735,
+        "y" : 267.72815533980582
+      }
+    ],
+    "chromeCornerRadius" : 94,
+    "chromeHeight" : 528,
+    "chromeWidth" : 456,
+    "chromeX" : 12,
+    "chromeY" : -0,
+    "contentHeight" : 446,
+    "contentWidth" : 374,
+    "contentX" : 53,
+    "contentY" : 41,
+    "cornerRadius" : 94,
+    "hasScreenMask" : true,
+    "screenHeight" : 484,
+    "screenWidth" : 412,
+    "screenX" : 34,
+    "screenY" : 22,
+    "totalHeight" : 528,
+    "totalWidth" : 488
+  },
+  "images" : {
+    "bezel" : "apple-watch\/apple-watch-series-11-42mm-watch7-17\/bezel.png",
+    "bezelNoButtons" : "apple-watch\/apple-watch-series-11-42mm-watch7-17\/bezel-no-buttons.png",
+    "screenMask" : "apple-watch\/apple-watch-series-11-42mm-watch7-17\/screen-mask.png"
+  },
+  "modelIdentifier" : "Watch7,17",
+  "name" : "Apple Watch Series 11 (42mm)",
+  "productClass" : "N227s",
+  "rendered" : {
+    "bezel" : {
+      "pixelHeight" : 1584,
+      "pixelWidth" : 1464
+    },
+    "bezelNoButtons" : {
+      "pixelHeight" : 1584,
+      "pixelWidth" : 1464
+    },
+    "screenMask" : {
+      "pixelHeight" : 446,
+      "pixelWidth" : 374
+    }
+  },
+  "screen" : {
+    "heightDPI" : 326,
+    "pixelHeight" : 446,
+    "pixelWidth" : 374,
+    "scale" : 2,
+    "widthDPI" : 326
+  },
+  "slug" : "apple-watch-series-11-42mm-watch7-17",
+  "source" : {
+    "chromeResourcesPath" : "\/Library\/Developer\/DeviceKit\/Chrome\/watch5s.devicechrome\/Contents\/Resources",
+    "deviceProfilePath" : "\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/Apple Watch Series 11 (42mm).simdevicetype\/Contents\/Resources\/profile.plist",
+    "deviceResourcesPath" : "\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/Apple Watch Series 11 (42mm).simdevicetype\/Contents\/Resources",
+    "framebufferMask" : "64E99C84-83F7-4FF2-B63C-35C5286F660F",
+    "sensorBarImage" : null
+  }
+}

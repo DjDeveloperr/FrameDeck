@@ -1,0 +1,139 @@
+{
+  "chromeIdentifier" : "com.apple.dt.devicekit.chrome.tablet5",
+  "chromeName" : "tablet5",
+  "family" : "ipad",
+  "geometry" : {
+    "buttons" : [
+      {
+        "align" : "leading",
+        "anchor" : "right",
+        "height" : 52,
+        "imageDownName" : "VolBTNDn",
+        "imageName" : "VolBTN",
+        "label" : "Volume Up",
+        "name" : "volume-up",
+        "normalOffset" : {
+          "x" : -8,
+          "y" : 100
+        },
+        "onTop" : false,
+        "rolloverOffset" : {
+          "x" : -3,
+          "y" : 100
+        },
+        "type" : "button",
+        "usage" : 233,
+        "usagePage" : 12,
+        "width" : 16,
+        "x" : 1116,
+        "y" : 109
+      },
+      {
+        "align" : "leading",
+        "anchor" : "right",
+        "height" : 52,
+        "imageDownName" : "VolBTNDn",
+        "imageName" : "VolBTN",
+        "label" : "Volume Down",
+        "name" : "volume-down",
+        "normalOffset" : {
+          "x" : -8,
+          "y" : 163
+        },
+        "onTop" : false,
+        "rolloverOffset" : {
+          "x" : -3,
+          "y" : 163
+        },
+        "type" : "button",
+        "usage" : 234,
+        "usagePage" : 12,
+        "width" : 16,
+        "x" : 1116,
+        "y" : 172
+      },
+      {
+        "align" : "trailing",
+        "anchor" : "top",
+        "height" : 16,
+        "imageDownName" : "iPadPowerBTNDn",
+        "imageName" : "iPadPowerBTN",
+        "label" : "Sleep\/Wake",
+        "name" : "power",
+        "normalOffset" : {
+          "x" : -74,
+          "y" : 8
+        },
+        "onTop" : false,
+        "rolloverOffset" : {
+          "x" : -74,
+          "y" : 3
+        },
+        "type" : "button",
+        "usage" : 48,
+        "usagePage" : 12,
+        "width" : 63,
+        "x" : 987,
+        "y" : 1
+      }
+    ],
+    "chromeCornerRadius" : 29,
+    "chromeHeight" : 1468,
+    "chromeWidth" : 1124,
+    "chromeX" : -0,
+    "chromeY" : 9,
+    "contentHeight" : 1376,
+    "contentWidth" : 1032,
+    "contentX" : 46,
+    "contentY" : 55,
+    "cornerRadius" : 29,
+    "hasScreenMask" : false,
+    "screenHeight" : 1376,
+    "screenWidth" : 1032,
+    "screenX" : 46,
+    "screenY" : 55,
+    "totalHeight" : 1477,
+    "totalWidth" : 1134
+  },
+  "modelIdentifier" : "iPad17,4",
+  "name" : "iPad Pro 13-inch (M5) (16GB)",
+  "productClass" : "J821",
+  "screen" : {
+    "heightDPI" : 264,
+    "pixelHeight" : 2752,
+    "pixelWidth" : 2064,
+    "scale" : 2,
+    "widthDPI" : 264
+  },
+  "slug" : "ipad-pro-13-inch-m5-16gb-ipad17-4",
+  "source" : {
+    "chromeResourcesPath" : "\/Library\/Developer\/DeviceKit\/Chrome\/tablet5.devicechrome\/Contents\/Resources",
+    "deviceProfilePath" : "\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPad Pro 13-inch (M5) (16GB).simdevicetype\/Contents\/Resources\/profile.plist",
+    "deviceResourcesPath" : "\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPad Pro 13-inch (M5) (16GB).simdevicetype\/Contents\/Resources",
+    "framebufferMask" : "75FF89F9-07DA-41E1-B66E-9AC4AF726865",
+    "sensorBarImage" : null
+  },
+  "vectors" : {
+    "capabilitiesPlist" : "device-profiles\/ipad-pro-13-inch-m5-16gb-ipad17-4\/capabilities.plist",
+    "chromeBundle" : "chrome\/tablet5",
+    "chromeJson" : "chrome\/tablet5\/chrome.json",
+    "chromePdfs" : [
+      "chrome\/tablet5\/iPadBase.pdf",
+      "chrome\/tablet5\/iPadBL.pdf",
+      "chrome\/tablet5\/iPadBR.pdf",
+      "chrome\/tablet5\/iPadLeft.pdf",
+      "chrome\/tablet5\/iPadPowerBTN.pdf",
+      "chrome\/tablet5\/iPadPowerBTNDn.pdf",
+      "chrome\/tablet5\/iPadRight.pdf",
+      "chrome\/tablet5\/iPadTL.pdf",
+      "chrome\/tablet5\/iPadTop.pdf",
+      "chrome\/tablet5\/iPadTR.pdf",
+      "chrome\/tablet5\/Screen.pdf",
+      "chrome\/tablet5\/VolBTN.pdf",
+      "chrome\/tablet5\/VolBTNDn.pdf"
+    ],
+    "framebufferMask" : "framebuffer-masks\/75FF89F9-07DA-41E1-B66E-9AC4AF726865.pdf",
+    "profilePlist" : "device-profiles\/ipad-pro-13-inch-m5-16gb-ipad17-4\/profile.plist",
+    "sensorBar" : null
+  }
+}

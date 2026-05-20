@@ -1,0 +1,163 @@
+{
+  "chromeIdentifier" : "com.apple.dt.devicekit.chrome.phone11",
+  "chromeName" : "phone11",
+  "family" : "iphone",
+  "geometry" : {
+    "buttons" : [
+      {
+        "align" : "leading",
+        "anchor" : "left",
+        "height" : 34,
+        "imageDownDrawMode" : "replace",
+        "imageDownName" : "Mute BTN Dn",
+        "imageName" : "Mute BTN",
+        "label" : "Action",
+        "name" : "action",
+        "normalOffset" : {
+          "x" : 8,
+          "y" : 160
+        },
+        "onTop" : false,
+        "rolloverOffset" : {
+          "x" : 3,
+          "y" : 160
+        },
+        "type" : "button",
+        "usage" : 45,
+        "usagePage" : 11,
+        "width" : 16,
+        "x" : 1,
+        "y" : 160
+      },
+      {
+        "align" : "leading",
+        "anchor" : "left",
+        "height" : 64,
+        "imageDownDrawMode" : "replace",
+        "imageDownName" : "Vol BTN Dn",
+        "imageName" : "Vol BTN",
+        "label" : "Volume Up",
+        "name" : "volume-up",
+        "normalOffset" : {
+          "x" : 8,
+          "y" : 221
+        },
+        "onTop" : false,
+        "rolloverOffset" : {
+          "x" : 3,
+          "y" : 221
+        },
+        "type" : "button",
+        "usage" : 233,
+        "usagePage" : 12,
+        "width" : 16,
+        "x" : 1,
+        "y" : 221
+      },
+      {
+        "align" : "leading",
+        "anchor" : "left",
+        "height" : 64,
+        "imageDownDrawMode" : "replace",
+        "imageDownName" : "Vol BTN Dn",
+        "imageName" : "Vol BTN",
+        "label" : "Volume Down",
+        "name" : "volume-down",
+        "normalOffset" : {
+          "x" : 8,
+          "y" : 300
+        },
+        "onTop" : false,
+        "rolloverOffset" : {
+          "x" : 3,
+          "y" : 300
+        },
+        "type" : "button",
+        "usage" : 234,
+        "usagePage" : 12,
+        "width" : 16,
+        "x" : 1,
+        "y" : 300
+      },
+      {
+        "align" : "leading",
+        "anchor" : "right",
+        "height" : 101,
+        "imageDownDrawMode" : "replace",
+        "imageDownName" : "X_Power BTN Dn",
+        "imageName" : "X_Power BTN",
+        "label" : "Sleep\/Wake",
+        "name" : "power",
+        "normalOffset" : {
+          "x" : -8,
+          "y" : 262
+        },
+        "onTop" : false,
+        "rolloverOffset" : {
+          "x" : -3,
+          "y" : 262
+        },
+        "type" : "button",
+        "usage" : 48,
+        "usagePage" : 12,
+        "width" : 16,
+        "x" : 439,
+        "y" : 262
+      }
+    ],
+    "chromeCornerRadius" : 62,
+    "chromeHeight" : 910,
+    "chromeWidth" : 438,
+    "chromeX" : 9,
+    "chromeY" : -0,
+    "contentHeight" : 874,
+    "contentWidth" : 402,
+    "contentX" : 27,
+    "contentY" : 18,
+    "cornerRadius" : 62,
+    "hasScreenMask" : false,
+    "screenHeight" : 874,
+    "screenWidth" : 402,
+    "screenX" : 27,
+    "screenY" : 18,
+    "totalHeight" : 910,
+    "totalWidth" : 456
+  },
+  "images" : {
+    "bezel" : "iphone\/iphone-17-iphone18-3\/bezel.png",
+    "bezelNoButtons" : "iphone\/iphone-17-iphone18-3\/bezel-no-buttons.png",
+    "screenMask" : "iphone\/iphone-17-iphone18-3\/screen-mask.png"
+  },
+  "modelIdentifier" : "iPhone18,3",
+  "name" : "iPhone 17",
+  "productClass" : "V57",
+  "rendered" : {
+    "bezel" : {
+      "pixelHeight" : 2730,
+      "pixelWidth" : 1368
+    },
+    "bezelNoButtons" : {
+      "pixelHeight" : 2730,
+      "pixelWidth" : 1368
+    },
+    "screenMask" : {
+      "pixelHeight" : 2622,
+      "pixelWidth" : 1206
+    }
+  },
+  "screen" : {
+    "heightDPI" : 460,
+    "pixelHeight" : 2622,
+    "pixelWidth" : 1206,
+    "scale" : 3,
+    "widthDPI" : 460
+  },
+  "slug" : "iphone-17-iphone18-3",
+  "source" : {
+    "chromeResourcesPath" : "\/Library\/Developer\/DeviceKit\/Chrome\/phone11.devicechrome\/Contents\/Resources",
+    "deviceProfilePath" : "\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPhone 17.simdevicetype\/Contents\/Resources\/profile.plist",
+    "deviceResourcesPath" : "\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPhone 17.simdevicetype\/Contents\/Resources",
+    "framebufferMask" : "4E5532ED-1470-47D1-BDF4-7AA90C26957A",
+    "sensorBarImage" : "sensor_bar_class_04"
+  }
+}

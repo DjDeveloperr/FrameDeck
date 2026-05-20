@@ -1,0 +1,111 @@
+{
+  "chromeIdentifier" : "com.apple.dt.devicekit.chrome.watch2",
+  "chromeName" : "watch2",
+  "family" : "apple-watch",
+  "geometry" : {
+    "buttons" : [
+      {
+        "align" : "leading",
+        "anchor" : "right",
+        "height" : 92,
+        "imageDownName" : "DigitalCrown Dn",
+        "imageName" : "DigitalCrown",
+        "label" : "Crown",
+        "name" : "digital-crown",
+        "normalOffset" : {
+          "x" : -14,
+          "y" : 108
+        },
+        "onTop" : true,
+        "rolloverOffset" : {
+          "x" : -14,
+          "y" : 108
+        },
+        "type" : "crown",
+        "usage" : 64,
+        "usagePage" : 12,
+        "width" : 36,
+        "x" : 378,
+        "y" : 108
+      },
+      {
+        "align" : "leading",
+        "anchor" : "right",
+        "height" : 122,
+        "imageDownName" : "SideButton Dn",
+        "imageName" : "SideButton",
+        "label" : "Side",
+        "name" : "side-button",
+        "normalOffset" : {
+          "x" : -10,
+          "y" : 266
+        },
+        "onTop" : true,
+        "rolloverOffset" : {
+          "x" : -8,
+          "y" : 266
+        },
+        "type" : "button",
+        "usage" : 149,
+        "usagePage" : 12,
+        "width" : 16,
+        "x" : 382,
+        "y" : 266
+      }
+    ],
+    "chromeCornerRadius" : 62.5,
+    "chromeHeight" : 450,
+    "chromeWidth" : 380,
+    "chromeX" : 12,
+    "chromeY" : -0,
+    "contentHeight" : 394,
+    "contentWidth" : 324,
+    "contentX" : 40,
+    "contentY" : 28,
+    "cornerRadius" : 62.5,
+    "hasScreenMask" : true,
+    "screenHeight" : 394,
+    "screenWidth" : 324,
+    "screenX" : 40,
+    "screenY" : 28,
+    "totalHeight" : 450,
+    "totalWidth" : 414
+  },
+  "images" : {
+    "bezel" : "apple-watch\/apple-watch-series-4-40mm-watch4-3\/bezel.png",
+    "bezelNoButtons" : "apple-watch\/apple-watch-series-4-40mm-watch4-3\/bezel-no-buttons.png",
+    "screenMask" : "apple-watch\/apple-watch-series-4-40mm-watch4-3\/screen-mask.png"
+  },
+  "modelIdentifier" : "Watch4,3",
+  "name" : "Apple Watch Series 4 (40mm)",
+  "productClass" : "N141s",
+  "rendered" : {
+    "bezel" : {
+      "pixelHeight" : 1350,
+      "pixelWidth" : 1242
+    },
+    "bezelNoButtons" : {
+      "pixelHeight" : 1350,
+      "pixelWidth" : 1242
+    },
+    "screenMask" : {
+      "pixelHeight" : 788,
+      "pixelWidth" : 648
+    }
+  },
+  "screen" : {
+    "heightDPI" : 326,
+    "pixelHeight" : 394,
+    "pixelWidth" : 324,
+    "scale" : 2,
+    "widthDPI" : 326
+  },
+  "slug" : "apple-watch-series-4-40mm-watch4-3",
+  "source" : {
+    "chromeResourcesPath" : "\/Library\/Developer\/DeviceKit\/Chrome\/watch2.devicechrome\/Contents\/Resources",
+    "deviceProfilePath" : "\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/Apple Watch Series 4 (40mm).simdevicetype\/Contents\/Resources\/profile.plist",
+    "deviceResourcesPath" : "\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/Apple Watch Series 4 (40mm).simdevicetype\/Contents\/Resources",
+    "framebufferMask" : "32748E1D-07E0-4A0A-9395-3DDB819F0491",
+    "sensorBarImage" : null
+  }
+}

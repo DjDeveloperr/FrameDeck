@@ -1,0 +1,23 @@
+{
+  "bundlePath" : "\/Library\/Developer\/DeviceKit\/Chrome\/watch5b.devicechrome",
+  "chromeJson" : "chrome\/watch5b\/chrome.json",
+  "chromeName" : "watch5b",
+  "localPath" : "chrome\/watch5b",
+  "pdfs" : [
+    "chrome\/watch5b\/DigitalCrown Dn.pdf",
+    "chrome\/watch5b\/DigitalCrown.pdf",
+    "chrome\/watch5b\/Screen.pdf",
+    "chrome\/watch5b\/SideButton Dn.pdf",
+    "chrome\/watch5b\/SideButton.pdf",
+    "chrome\/watch5b\/WatchBL.pdf",
+    "chrome\/watch5b\/WatchBottom.pdf",
+    "chrome\/watch5b\/WatchBR.pdf",
+    "chrome\/watch5b\/WatchComposite.pdf",
+    "chrome\/watch5b\/WatchLeft.pdf",
+    "chrome\/watch5b\/WatchRight.pdf",
+    "chrome\/watch5b\/WatchTL.pdf",
+    "chrome\/watch5b\/WatchTop.pdf",
+    "chrome\/watch5b\/WatchTR.pdf"
+  ],
+  "resourcesPath" : "\/Library\/Developer\/DeviceKit\/Chrome\/watch5b.devicechrome\/Contents\/Resources"
+}

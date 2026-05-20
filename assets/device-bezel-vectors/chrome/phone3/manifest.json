@@ -1,0 +1,24 @@
+{
+  "bundlePath" : "\/Library\/Developer\/DeviceKit\/Chrome\/phone3.devicechrome",
+  "chromeJson" : "chrome\/phone3\/chrome.json",
+  "chromeName" : "phone3",
+  "localPath" : "chrome\/phone3",
+  "pdfs" : [
+    "chrome\/phone3\/Mute BTN Dn.pdf",
+    "chrome\/phone3\/Mute BTN.pdf",
+    "chrome\/phone3\/Phone BL.pdf",
+    "chrome\/phone3\/Phone BR.pdf",
+    "chrome\/phone3\/Phone TL.pdf",
+    "chrome\/phone3\/Phone TR.pdf",
+    "chrome\/phone3\/PhoneBase.pdf",
+    "chrome\/phone3\/PhoneLeft.pdf",
+    "chrome\/phone3\/PhoneRight.pdf",
+    "chrome\/phone3\/PhoneTop.pdf",
+    "chrome\/phone3\/Screen.pdf",
+    "chrome\/phone3\/Vol BTN Dn.pdf",
+    "chrome\/phone3\/Vol BTN.pdf",
+    "chrome\/phone3\/X_Power BTN Dn.pdf",
+    "chrome\/phone3\/X_Power BTN.pdf"
+  ],
+  "resourcesPath" : "\/Library\/Developer\/DeviceKit\/Chrome\/phone3.devicechrome\/Contents\/Resources"
+}

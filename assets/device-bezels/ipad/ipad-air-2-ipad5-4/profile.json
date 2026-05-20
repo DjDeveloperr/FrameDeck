@@ -1,0 +1,155 @@
+{
+  "chromeIdentifier" : "com.apple.dt.devicekit.chrome.tablet",
+  "chromeName" : "tablet",
+  "family" : "ipad",
+  "geometry" : {
+    "buttons" : [
+      {
+        "align" : "leading",
+        "anchor" : "right",
+        "height" : 52,
+        "imageDownName" : "Vol BTN Dn",
+        "imageName" : "Vol BTN",
+        "label" : "Volume Up",
+        "name" : "volume-up",
+        "normalOffset" : {
+          "x" : -8,
+          "y" : 84
+        },
+        "onTop" : false,
+        "rolloverOffset" : {
+          "x" : -3,
+          "y" : 84
+        },
+        "type" : "button",
+        "usage" : 233,
+        "usagePage" : 12,
+        "width" : 16,
+        "x" : 854,
+        "y" : 93
+      },
+      {
+        "align" : "leading",
+        "anchor" : "right",
+        "height" : 52,
+        "imageDownName" : "Vol BTN Dn",
+        "imageName" : "Vol BTN",
+        "label" : "Volume Down",
+        "name" : "volume-down",
+        "normalOffset" : {
+          "x" : -8,
+          "y" : 147
+        },
+        "onTop" : false,
+        "rolloverOffset" : {
+          "x" : -3,
+          "y" : 147
+        },
+        "type" : "button",
+        "usage" : 234,
+        "usagePage" : 12,
+        "width" : 16,
+        "x" : 854,
+        "y" : 156
+      },
+      {
+        "align" : "trailing",
+        "anchor" : "top",
+        "height" : 16,
+        "imageDownName" : "iPad Power BTN Dn",
+        "imageName" : "iPad Power BTN",
+        "label" : "Sleep\/Wake",
+        "name" : "power",
+        "normalOffset" : {
+          "x" : -65,
+          "y" : 8
+        },
+        "onTop" : false,
+        "rolloverOffset" : {
+          "x" : -65,
+          "y" : 3
+        },
+        "type" : "button",
+        "usage" : 48,
+        "usagePage" : 12,
+        "width" : 63,
+        "x" : 734,
+        "y" : 1
+      },
+      {
+        "align" : "center",
+        "anchor" : "bottom",
+        "height" : 44,
+        "imageDownName" : "Home BTN Dn",
+        "imageName" : "Home BTN",
+        "label" : "Home",
+        "name" : "home",
+        "normalOffset" : {
+          "x" : 0,
+          "y" : -65
+        },
+        "onTop" : true,
+        "rolloverOffset" : {
+          "x" : 0,
+          "y" : -65
+        },
+        "type" : "button",
+        "usage" : 64,
+        "usagePage" : 12,
+        "width" : 44,
+        "x" : 409,
+        "y" : 1134
+      }
+    ],
+    "chromeCornerRadius" : 0,
+    "chromeHeight" : 1190,
+    "chromeWidth" : 862,
+    "chromeX" : -0,
+    "chromeY" : 9,
+    "contentHeight" : 1024,
+    "contentWidth" : 768,
+    "contentX" : 47,
+    "contentY" : 92,
+    "cornerRadius" : 0,
+    "hasScreenMask" : false,
+    "screenHeight" : 1024,
+    "screenWidth" : 768,
+    "screenX" : 47,
+    "screenY" : 92,
+    "totalHeight" : 1199,
+    "totalWidth" : 872
+  },
+  "images" : {
+    "bezel" : "ipad\/ipad-air-2-ipad5-4\/bezel.png",
+    "bezelNoButtons" : "ipad\/ipad-air-2-ipad5-4\/bezel-no-buttons.png",
+    "screenMask" : null
+  },
+  "modelIdentifier" : "iPad5,4",
+  "name" : "iPad Air 2",
+  "productClass" : "J82",
+  "rendered" : {
+    "bezel" : {
+      "pixelHeight" : 3597,
+      "pixelWidth" : 2616
+    },
+    "bezelNoButtons" : {
+      "pixelHeight" : 3597,
+      "pixelWidth" : 2616
+    }
+  },
+  "screen" : {
+    "heightDPI" : 264,
+    "pixelHeight" : 2048,
+    "pixelWidth" : 1536,
+    "scale" : 2,
+    "widthDPI" : 264
+  },
+  "slug" : "ipad-air-2-ipad5-4",
+  "source" : {
+    "chromeResourcesPath" : "\/Library\/Developer\/DeviceKit\/Chrome\/tablet.devicechrome\/Contents\/Resources",
+    "deviceProfilePath" : "\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPad Air 2.simdevicetype\/Contents\/Resources\/profile.plist",
+    "deviceResourcesPath" : "\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPad Air 2.simdevicetype\/Contents\/Resources",
+    "framebufferMask" : null,
+    "sensorBarImage" : null
+  }
+}

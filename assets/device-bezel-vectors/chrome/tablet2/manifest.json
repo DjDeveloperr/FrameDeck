@@ -1,0 +1,22 @@
+{
+  "bundlePath" : "\/Library\/Developer\/DeviceKit\/Chrome\/tablet2.devicechrome",
+  "chromeJson" : "chrome\/tablet2\/chrome.json",
+  "chromeName" : "tablet2",
+  "localPath" : "chrome\/tablet2",
+  "pdfs" : [
+    "chrome\/tablet2\/iPad BL.pdf",
+    "chrome\/tablet2\/iPad BR.pdf",
+    "chrome\/tablet2\/iPad Power BTN Dn.pdf",
+    "chrome\/tablet2\/iPad Power BTN.pdf",
+    "chrome\/tablet2\/iPad TL.pdf",
+    "chrome\/tablet2\/iPad TR.pdf",
+    "chrome\/tablet2\/iPadBase.pdf",
+    "chrome\/tablet2\/iPadLeft.pdf",
+    "chrome\/tablet2\/iPadRight.pdf",
+    "chrome\/tablet2\/iPadTop.pdf",
+    "chrome\/tablet2\/Screen.pdf",
+    "chrome\/tablet2\/Vol BTN Dn.pdf",
+    "chrome\/tablet2\/Vol BTN.pdf"
+  ],
+  "resourcesPath" : "\/Library\/Developer\/DeviceKit\/Chrome\/tablet2.devicechrome\/Contents\/Resources"
+}

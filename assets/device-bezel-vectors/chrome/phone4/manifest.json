@@ -1,0 +1,24 @@
+{
+  "bundlePath" : "\/Library\/Developer\/DeviceKit\/Chrome\/phone4.devicechrome",
+  "chromeJson" : "chrome\/phone4\/chrome.json",
+  "chromeName" : "phone4",
+  "localPath" : "chrome\/phone4",
+  "pdfs" : [
+    "chrome\/phone4\/Mute BTN Dn.pdf",
+    "chrome\/phone4\/Mute BTN.pdf",
+    "chrome\/phone4\/Phone BL.pdf",
+    "chrome\/phone4\/Phone BR.pdf",
+    "chrome\/phone4\/Phone TL.pdf",
+    "chrome\/phone4\/Phone TR.pdf",
+    "chrome\/phone4\/PhoneBase.pdf",
+    "chrome\/phone4\/PhoneLeft.pdf",
+    "chrome\/phone4\/PhoneRight.pdf",
+    "chrome\/phone4\/PhoneTop.pdf",
+    "chrome\/phone4\/Screen.pdf",
+    "chrome\/phone4\/Vol BTN Dn.pdf",
+    "chrome\/phone4\/Vol BTN.pdf",
+    "chrome\/phone4\/X_Power BTN Dn.pdf",
+    "chrome\/phone4\/X_Power BTN.pdf"
+  ],
+  "resourcesPath" : "\/Library\/Developer\/DeviceKit\/Chrome\/phone4.devicechrome\/Contents\/Resources"
+}

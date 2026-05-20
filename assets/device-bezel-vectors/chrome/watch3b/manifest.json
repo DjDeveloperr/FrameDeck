@@ -1,0 +1,22 @@
+{
+  "bundlePath" : "\/Library\/Developer\/DeviceKit\/Chrome\/watch3b.devicechrome",
+  "chromeJson" : "chrome\/watch3b\/chrome.json",
+  "chromeName" : "watch3b",
+  "localPath" : "chrome\/watch3b",
+  "pdfs" : [
+    "chrome\/watch3b\/DigitalCrown Dn.pdf",
+    "chrome\/watch3b\/DigitalCrown.pdf",
+    "chrome\/watch3b\/Screen.pdf",
+    "chrome\/watch3b\/SideButton Dn.pdf",
+    "chrome\/watch3b\/SideButton.pdf",
+    "chrome\/watch3b\/WatchBL.pdf",
+    "chrome\/watch3b\/WatchBottom.pdf",
+    "chrome\/watch3b\/WatchBR.pdf",
+    "chrome\/watch3b\/WatchLeft.pdf",
+    "chrome\/watch3b\/WatchRight.pdf",
+    "chrome\/watch3b\/WatchTL.pdf",
+    "chrome\/watch3b\/WatchTop.pdf",
+    "chrome\/watch3b\/WatchTR.pdf"
+  ],
+  "resourcesPath" : "\/Library\/Developer\/DeviceKit\/Chrome\/watch3b.devicechrome\/Contents\/Resources"
+}

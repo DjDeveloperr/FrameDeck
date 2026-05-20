@@ -1,0 +1,24 @@
+{
+  "bundlePath" : "\/Library\/Developer\/DeviceKit\/Chrome\/phone6.devicechrome",
+  "chromeJson" : "chrome\/phone6\/chrome.json",
+  "chromeName" : "phone6",
+  "localPath" : "chrome\/phone6",
+  "pdfs" : [
+    "chrome\/phone6\/Mute BTN Dn.pdf",
+    "chrome\/phone6\/Mute BTN.pdf",
+    "chrome\/phone6\/Phone BL.pdf",
+    "chrome\/phone6\/Phone BR.pdf",
+    "chrome\/phone6\/Phone TL.pdf",
+    "chrome\/phone6\/Phone TR.pdf",
+    "chrome\/phone6\/PhoneBase.pdf",
+    "chrome\/phone6\/PhoneLeft.pdf",
+    "chrome\/phone6\/PhoneRight.pdf",
+    "chrome\/phone6\/PhoneTop.pdf",
+    "chrome\/phone6\/Screen.pdf",
+    "chrome\/phone6\/Vol BTN Dn.pdf",
+    "chrome\/phone6\/Vol BTN.pdf",
+    "chrome\/phone6\/X_Power BTN Dn.pdf",
+    "chrome\/phone6\/X_Power BTN.pdf"
+  ],
+  "resourcesPath" : "\/Library\/Developer\/DeviceKit\/Chrome\/phone6.devicechrome\/Contents\/Resources"
+}

@@ -1,0 +1,29 @@
+{
+  "name": "screendeck",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Figma for screenshots — a precision compositor and editor for App Store screenshots and device mockups.",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DjDeveloperr/ScreenDeck.git"
+  },
+  "bugs": {
+    "url": "https://github.com/DjDeveloperr/ScreenDeck/issues"
+  },
+  "homepage": "https://github.com/DjDeveloperr/ScreenDeck#readme",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspace @screendeck/core && npm run build --workspace @screendeck/renderer && npm run build --workspace @screendeck/cli && npm run build --workspace @screendeck/web",
+    "check": "npm run build",
+    "lint": "npm run build",
+    "dev": "npm run dev --workspace @screendeck/web",
+    "cli": "npm run start --workspace @screendeck/cli --",
+    "render": "npm run start --workspace @screendeck/cli -- render"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

@@ -1,0 +1,169 @@
+{
+  "chromeIdentifier" : "com.apple.dt.devicekit.chrome.phone4",
+  "chromeName" : "phone4",
+  "family" : "iphone",
+  "geometry" : {
+    "buttons" : [
+      {
+        "align" : "leading",
+        "anchor" : "left",
+        "height" : 32,
+        "imageDownDrawMode" : "replace",
+        "imageDownName" : "Mute BTN Dn",
+        "imageName" : "Mute BTN",
+        "label" : "Mute",
+        "name" : "mute",
+        "normalOffset" : {
+          "x" : 8,
+          "y" : 143
+        },
+        "onTop" : false,
+        "rolloverOffset" : {
+          "x" : 3,
+          "y" : 143
+        },
+        "type" : "switch",
+        "usage" : 46,
+        "usagePage" : 11,
+        "width" : 16,
+        "x" : 1,
+        "y" : 143
+      },
+      {
+        "align" : "leading",
+        "anchor" : "left",
+        "height" : 72,
+        "imageDownDrawMode" : "replace",
+        "imageDownName" : "Vol BTN Dn",
+        "imageName" : "Vol BTN",
+        "label" : "Volume Up",
+        "name" : "volume-up",
+        "normalOffset" : {
+          "x" : 8,
+          "y" : 207
+        },
+        "onTop" : false,
+        "rolloverOffset" : {
+          "x" : 3,
+          "y" : 207
+        },
+        "type" : "button",
+        "usage" : 233,
+        "usagePage" : 12,
+        "width" : 16,
+        "x" : 1,
+        "y" : 207
+      },
+      {
+        "align" : "leading",
+        "anchor" : "left",
+        "height" : 72,
+        "imageDownDrawMode" : "replace",
+        "imageDownName" : "Vol BTN Dn",
+        "imageName" : "Vol BTN",
+        "label" : "Volume Down",
+        "name" : "volume-down",
+        "normalOffset" : {
+          "x" : 8,
+          "y" : 291
+        },
+        "onTop" : false,
+        "rolloverOffset" : {
+          "x" : 3,
+          "y" : 291
+        },
+        "type" : "button",
+        "usage" : 234,
+        "usagePage" : 12,
+        "width" : 16,
+        "x" : 1,
+        "y" : 291
+      },
+      {
+        "align" : "leading",
+        "anchor" : "right",
+        "height" : 117,
+        "imageDownDrawMode" : "replace",
+        "imageDownName" : "X_Power BTN Dn",
+        "imageName" : "X_Power BTN",
+        "label" : "Sleep\/Wake",
+        "name" : "power",
+        "normalOffset" : {
+          "x" : -8,
+          "y" : 230
+        },
+        "onTop" : false,
+        "rolloverOffset" : {
+          "x" : -3,
+          "y" : 230
+        },
+        "type" : "button",
+        "usage" : 48,
+        "usagePage" : 12,
+        "width" : 16,
+        "x" : 435,
+        "y" : 230
+      }
+    ],
+    "chromeCornerRadius" : 46,
+    "chromeHeight" : 888,
+    "chromeWidth" : 434,
+    "chromeX" : 9,
+    "chromeY" : -0,
+    "contentHeight" : 844,
+    "contentWidth" : 390,
+    "contentX" : 31,
+    "contentY" : 22,
+    "cornerRadius" : 46,
+    "hasScreenMask" : false,
+    "screenHeight" : 844,
+    "screenWidth" : 390,
+    "screenX" : 31,
+    "screenY" : 22,
+    "totalHeight" : 888,
+    "totalWidth" : 452
+  },
+  "modelIdentifier" : "iPhone14,2",
+  "name" : "iPhone 13 Pro",
+  "productClass" : "D63",
+  "screen" : {
+    "heightDPI" : 460,
+    "pixelHeight" : 2532,
+    "pixelWidth" : 1170,
+    "scale" : 3,
+    "widthDPI" : 460
+  },
+  "slug" : "iphone-13-pro-iphone14-2",
+  "source" : {
+    "chromeResourcesPath" : "\/Library\/Developer\/DeviceKit\/Chrome\/phone4.devicechrome\/Contents\/Resources",
+    "deviceProfilePath" : "\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPhone 13 Pro.simdevicetype\/Contents\/Resources\/profile.plist",
+    "deviceResourcesPath" : "\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPhone 13 Pro.simdevicetype\/Contents\/Resources",
+    "framebufferMask" : "9A0C207C-B633-46E3-ACF9-D32963533173",
+    "sensorBarImage" : "sensor_bar_class_04"
+  },
+  "vectors" : {
+    "capabilitiesPlist" : "device-profiles\/iphone-13-pro-iphone14-2\/capabilities.plist",
+    "chromeBundle" : "chrome\/phone4",
+    "chromeJson" : "chrome\/phone4\/chrome.json",
+    "chromePdfs" : [
+      "chrome\/phone4\/Mute BTN Dn.pdf",
+      "chrome\/phone4\/Mute BTN.pdf",
+      "chrome\/phone4\/Phone BL.pdf",
+      "chrome\/phone4\/Phone BR.pdf",
+      "chrome\/phone4\/Phone TL.pdf",
+      "chrome\/phone4\/Phone TR.pdf",
+      "chrome\/phone4\/PhoneBase.pdf",
+      "chrome\/phone4\/PhoneLeft.pdf",
+      "chrome\/phone4\/PhoneRight.pdf",
+      "chrome\/phone4\/PhoneTop.pdf",
+      "chrome\/phone4\/Screen.pdf",
+      "chrome\/phone4\/Vol BTN Dn.pdf",
+      "chrome\/phone4\/Vol BTN.pdf",
+      "chrome\/phone4\/X_Power BTN Dn.pdf",
+      "chrome\/phone4\/X_Power BTN.pdf"
+    ],
+    "framebufferMask" : "framebuffer-masks\/9A0C207C-B633-46E3-ACF9-D32963533173.pdf",
+    "profilePlist" : "device-profiles\/iphone-13-pro-iphone14-2\/profile.plist",
+    "sensorBar" : "device-profiles\/iphone-13-pro-iphone14-2\/sensor-bar.pdf"
+  }
+}

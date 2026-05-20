@@ -1,0 +1,27 @@
+{
+  "bundlePath" : "\/Library\/Developer\/DeviceKit\/Chrome\/phone11.devicechrome",
+  "chromeJson" : "chrome\/phone11\/chrome.json",
+  "chromeName" : "phone11",
+  "localPath" : "chrome\/phone11",
+  "pdfs" : [
+    "chrome\/phone11\/Home BTN Dn.pdf",
+    "chrome\/phone11\/Home BTN.pdf",
+    "chrome\/phone11\/Mute BTN Dn.pdf",
+    "chrome\/phone11\/Mute BTN.pdf",
+    "chrome\/phone11\/Phone Base.pdf",
+    "chrome\/phone11\/Phone BL.pdf",
+    "chrome\/phone11\/Phone BR.pdf",
+    "chrome\/phone11\/Phone Left.pdf",
+    "chrome\/phone11\/Phone Right.pdf",
+    "chrome\/phone11\/Phone TL.pdf",
+    "chrome\/phone11\/Phone Top.pdf",
+    "chrome\/phone11\/Phone TR.pdf",
+    "chrome\/phone11\/PhoneComposite.pdf",
+    "chrome\/phone11\/Screen.pdf",
+    "chrome\/phone11\/Vol BTN Dn.pdf",
+    "chrome\/phone11\/Vol BTN.pdf",
+    "chrome\/phone11\/X_Power BTN Dn.pdf",
+    "chrome\/phone11\/X_Power BTN.pdf"
+  ],
+  "resourcesPath" : "\/Library\/Developer\/DeviceKit\/Chrome\/phone11.devicechrome\/Contents\/Resources"
+}

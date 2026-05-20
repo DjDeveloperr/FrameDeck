@@ -1,0 +1,24 @@
+{
+  "bundlePath" : "\/Library\/Developer\/DeviceKit\/Chrome\/phone13.devicechrome",
+  "chromeJson" : "chrome\/phone13\/chrome.json",
+  "chromeName" : "phone13",
+  "localPath" : "chrome\/phone13",
+  "pdfs" : [
+    "chrome\/phone13\/Mute BTN Dn.pdf",
+    "chrome\/phone13\/Mute BTN.pdf",
+    "chrome\/phone13\/Phone BL.pdf",
+    "chrome\/phone13\/Phone BR.pdf",
+    "chrome\/phone13\/Phone TL.pdf",
+    "chrome\/phone13\/Phone TR.pdf",
+    "chrome\/phone13\/PhoneBase.pdf",
+    "chrome\/phone13\/PhoneLeft.pdf",
+    "chrome\/phone13\/PhoneRight.pdf",
+    "chrome\/phone13\/PhoneTop.pdf",
+    "chrome\/phone13\/Screen.pdf",
+    "chrome\/phone13\/Vol BTN Dn.pdf",
+    "chrome\/phone13\/Vol BTN.pdf",
+    "chrome\/phone13\/X_Power BTN Dn.pdf",
+    "chrome\/phone13\/X_Power BTN.pdf"
+  ],
+  "resourcesPath" : "\/Library\/Developer\/DeviceKit\/Chrome\/phone13.devicechrome\/Contents\/Resources"
+}

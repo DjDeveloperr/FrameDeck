@@ -1,0 +1,135 @@
+{
+  "chromeIdentifier" : "com.apple.dt.devicekit.chrome.tablet5",
+  "chromeName" : "tablet5",
+  "family" : "ipad",
+  "geometry" : {
+    "buttons" : [
+      {
+        "align" : "leading",
+        "anchor" : "right",
+        "height" : 52,
+        "imageDownName" : "VolBTNDn",
+        "imageName" : "VolBTN",
+        "label" : "Volume Up",
+        "name" : "volume-up",
+        "normalOffset" : {
+          "x" : -8,
+          "y" : 100
+        },
+        "onTop" : false,
+        "rolloverOffset" : {
+          "x" : -3,
+          "y" : 100
+        },
+        "type" : "button",
+        "usage" : 233,
+        "usagePage" : 12,
+        "width" : 16,
+        "x" : 918,
+        "y" : 109
+      },
+      {
+        "align" : "leading",
+        "anchor" : "right",
+        "height" : 52,
+        "imageDownName" : "VolBTNDn",
+        "imageName" : "VolBTN",
+        "label" : "Volume Down",
+        "name" : "volume-down",
+        "normalOffset" : {
+          "x" : -8,
+          "y" : 163
+        },
+        "onTop" : false,
+        "rolloverOffset" : {
+          "x" : -3,
+          "y" : 163
+        },
+        "type" : "button",
+        "usage" : 234,
+        "usagePage" : 12,
+        "width" : 16,
+        "x" : 918,
+        "y" : 172
+      },
+      {
+        "align" : "trailing",
+        "anchor" : "top",
+        "height" : 16,
+        "imageDownName" : "iPadPowerBTNDn",
+        "imageName" : "iPadPowerBTN",
+        "label" : "Sleep\/Wake",
+        "name" : "power",
+        "normalOffset" : {
+          "x" : -74,
+          "y" : 8
+        },
+        "onTop" : false,
+        "rolloverOffset" : {
+          "x" : -74,
+          "y" : 3
+        },
+        "type" : "button",
+        "usage" : 48,
+        "usagePage" : 12,
+        "width" : 63,
+        "x" : 789,
+        "y" : 1
+      }
+    ],
+    "chromeCornerRadius" : 29,
+    "chromeHeight" : 1302,
+    "chromeWidth" : 926,
+    "chromeX" : -0,
+    "chromeY" : 9,
+    "contentHeight" : 1210,
+    "contentWidth" : 834,
+    "contentX" : 46,
+    "contentY" : 55,
+    "cornerRadius" : 29,
+    "hasScreenMask" : false,
+    "screenHeight" : 1210,
+    "screenWidth" : 834,
+    "screenX" : 46,
+    "screenY" : 55,
+    "totalHeight" : 1311,
+    "totalWidth" : 936
+  },
+  "images" : {
+    "bezel" : "ipad\/ipad-pro-11-inch-m4-16gb-ipad16-4\/bezel.png",
+    "bezelNoButtons" : "ipad\/ipad-pro-11-inch-m4-16gb-ipad16-4\/bezel-no-buttons.png",
+    "screenMask" : "ipad\/ipad-pro-11-inch-m4-16gb-ipad16-4\/screen-mask.png"
+  },
+  "modelIdentifier" : "iPad16,4",
+  "name" : "iPad Pro 11-inch (M4) (16GB)",
+  "productClass" : "J718",
+  "rendered" : {
+    "bezel" : {
+      "pixelHeight" : 3933,
+      "pixelWidth" : 2808
+    },
+    "bezelNoButtons" : {
+      "pixelHeight" : 3933,
+      "pixelWidth" : 2808
+    },
+    "screenMask" : {
+      "pixelHeight" : 2420,
+      "pixelWidth" : 1668
+    }
+  },
+  "screen" : {
+    "heightDPI" : 264,
+    "pixelHeight" : 2420,
+    "pixelWidth" : 1668,
+    "scale" : 2,
+    "widthDPI" : 264
+  },
+  "slug" : "ipad-pro-11-inch-m4-16gb-ipad16-4",
+  "source" : {
+    "chromeResourcesPath" : "\/Library\/Developer\/DeviceKit\/Chrome\/tablet5.devicechrome\/Contents\/Resources",
+    "deviceProfilePath" : "\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPad Pro 11-inch (M4) (16GB).simdevicetype\/Contents\/Resources\/profile.plist",
+    "deviceResourcesPath" : "\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPad Pro 11-inch (M4) (16GB).simdevicetype\/Contents\/Resources",
+    "framebufferMask" : "DF237373-464C-4A7C-88D4-AE0B96509CE2",
+    "sensorBarImage" : null
+  }
+}

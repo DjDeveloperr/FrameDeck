@@ -1,0 +1,24 @@
+{
+  "bundlePath" : "\/Library\/Developer\/DeviceKit\/Chrome\/tablet.devicechrome",
+  "chromeJson" : "chrome\/tablet\/chrome.json",
+  "chromeName" : "tablet",
+  "localPath" : "chrome\/tablet",
+  "pdfs" : [
+    "chrome\/tablet\/Home BTN Dn.pdf",
+    "chrome\/tablet\/Home BTN.pdf",
+    "chrome\/tablet\/iPad BL.pdf",
+    "chrome\/tablet\/iPad BR.pdf",
+    "chrome\/tablet\/iPad Power BTN Dn.pdf",
+    "chrome\/tablet\/iPad Power BTN.pdf",
+    "chrome\/tablet\/iPad TL.pdf",
+    "chrome\/tablet\/iPad TR.pdf",
+    "chrome\/tablet\/iPadBase.pdf",
+    "chrome\/tablet\/iPadLeft.pdf",
+    "chrome\/tablet\/iPadRight.pdf",
+    "chrome\/tablet\/iPadTop.pdf",
+    "chrome\/tablet\/Screen.pdf",
+    "chrome\/tablet\/Vol BTN Dn.pdf",
+    "chrome\/tablet\/Vol BTN.pdf"
+  ],
+  "resourcesPath" : "\/Library\/Developer\/DeviceKit\/Chrome\/tablet.devicechrome\/Contents\/Resources"
+}

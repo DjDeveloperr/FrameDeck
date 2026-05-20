@@ -1,0 +1,163 @@
+{
+  "chromeIdentifier" : "com.apple.dt.devicekit.chrome.phone12",
+  "chromeName" : "phone12",
+  "family" : "iphone",
+  "geometry" : {
+    "buttons" : [
+      {
+        "align" : "leading",
+        "anchor" : "left",
+        "height" : 34,
+        "imageDownDrawMode" : "replace",
+        "imageDownName" : "Mute BTN Dn",
+        "imageName" : "Mute BTN",
+        "label" : "Action",
+        "name" : "action",
+        "normalOffset" : {
+          "x" : 8,
+          "y" : 180
+        },
+        "onTop" : false,
+        "rolloverOffset" : {
+          "x" : 3,
+          "y" : 180
+        },
+        "type" : "button",
+        "usage" : 45,
+        "usagePage" : 11,
+        "width" : 16,
+        "x" : 1,
+        "y" : 180
+      },
+      {
+        "align" : "leading",
+        "anchor" : "left",
+        "height" : 64,
+        "imageDownDrawMode" : "replace",
+        "imageDownName" : "Vol BTN Dn",
+        "imageName" : "Vol BTN",
+        "label" : "Volume Up",
+        "name" : "volume-up",
+        "normalOffset" : {
+          "x" : 8,
+          "y" : 268
+        },
+        "onTop" : false,
+        "rolloverOffset" : {
+          "x" : 3,
+          "y" : 268
+        },
+        "type" : "button",
+        "usage" : 233,
+        "usagePage" : 12,
+        "width" : 16,
+        "x" : 1,
+        "y" : 268
+      },
+      {
+        "align" : "leading",
+        "anchor" : "left",
+        "height" : 64,
+        "imageDownDrawMode" : "replace",
+        "imageDownName" : "Vol BTN Dn",
+        "imageName" : "Vol BTN",
+        "label" : "Volume Down",
+        "name" : "volume-down",
+        "normalOffset" : {
+          "x" : 8,
+          "y" : 354
+        },
+        "onTop" : false,
+        "rolloverOffset" : {
+          "x" : 3,
+          "y" : 354
+        },
+        "type" : "button",
+        "usage" : 234,
+        "usagePage" : 12,
+        "width" : 16,
+        "x" : 1,
+        "y" : 354
+      },
+      {
+        "align" : "leading",
+        "anchor" : "right",
+        "height" : 101,
+        "imageDownDrawMode" : "replace",
+        "imageDownName" : "X_Power BTN Dn",
+        "imageName" : "X_Power BTN",
+        "label" : "Sleep\/Wake",
+        "name" : "power",
+        "normalOffset" : {
+          "x" : -8,
+          "y" : 293
+        },
+        "onTop" : false,
+        "rolloverOffset" : {
+          "x" : -3,
+          "y" : 293
+        },
+        "type" : "button",
+        "usage" : 48,
+        "usagePage" : 12,
+        "width" : 16,
+        "x" : 477,
+        "y" : 293
+      }
+    ],
+    "chromeCornerRadius" : 62,
+    "chromeHeight" : 992,
+    "chromeWidth" : 476,
+    "chromeX" : 9,
+    "chromeY" : -0,
+    "contentHeight" : 956,
+    "contentWidth" : 440,
+    "contentX" : 27,
+    "contentY" : 18,
+    "cornerRadius" : 62,
+    "hasScreenMask" : false,
+    "screenHeight" : 956,
+    "screenWidth" : 440,
+    "screenX" : 27,
+    "screenY" : 18,
+    "totalHeight" : 992,
+    "totalWidth" : 494
+  },
+  "images" : {
+    "bezel" : "iphone\/iphone-16-pro-max-iphone17-2\/bezel.png",
+    "bezelNoButtons" : "iphone\/iphone-16-pro-max-iphone17-2\/bezel-no-buttons.png",
+    "screenMask" : "iphone\/iphone-16-pro-max-iphone17-2\/screen-mask.png"
+  },
+  "modelIdentifier" : "iPhone17,2",
+  "name" : "iPhone 16 Pro Max",
+  "productClass" : "D94",
+  "rendered" : {
+    "bezel" : {
+      "pixelHeight" : 2976,
+      "pixelWidth" : 1482
+    },
+    "bezelNoButtons" : {
+      "pixelHeight" : 2976,
+      "pixelWidth" : 1482
+    },
+    "screenMask" : {
+      "pixelHeight" : 2868,
+      "pixelWidth" : 1320
+    }
+  },
+  "screen" : {
+    "heightDPI" : 460,
+    "pixelHeight" : 2868,
+    "pixelWidth" : 1320,
+    "scale" : 3,
+    "widthDPI" : 460
+  },
+  "slug" : "iphone-16-pro-max-iphone17-2",
+  "source" : {
+    "chromeResourcesPath" : "\/Library\/Developer\/DeviceKit\/Chrome\/phone12.devicechrome\/Contents\/Resources",
+    "deviceProfilePath" : "\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPhone 16 Pro Max.simdevicetype\/Contents\/Resources\/profile.plist",
+    "deviceResourcesPath" : "\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPhone 16 Pro Max.simdevicetype\/Contents\/Resources",
+    "framebufferMask" : "EB31C0E2-52E0-430E-B4DA-4242D2881AFF",
+    "sensorBarImage" : "sensor_bar_class_05"
+  }
+}

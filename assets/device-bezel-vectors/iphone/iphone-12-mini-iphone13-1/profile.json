@@ -1,0 +1,169 @@
+{
+  "chromeIdentifier" : "com.apple.dt.devicekit.chrome.phone3",
+  "chromeName" : "phone3",
+  "family" : "iphone",
+  "geometry" : {
+    "buttons" : [
+      {
+        "align" : "leading",
+        "anchor" : "left",
+        "height" : 32,
+        "imageDownDrawMode" : "replace",
+        "imageDownName" : "Mute BTN Dn",
+        "imageName" : "Mute BTN",
+        "label" : "Mute",
+        "name" : "mute",
+        "normalOffset" : {
+          "x" : 8,
+          "y" : 138
+        },
+        "onTop" : false,
+        "rolloverOffset" : {
+          "x" : 3,
+          "y" : 138
+        },
+        "type" : "switch",
+        "usage" : 46,
+        "usagePage" : 11,
+        "width" : 16,
+        "x" : 1,
+        "y" : 138
+      },
+      {
+        "align" : "leading",
+        "anchor" : "left",
+        "height" : 72,
+        "imageDownDrawMode" : "replace",
+        "imageDownName" : "Vol BTN Dn",
+        "imageName" : "Vol BTN",
+        "label" : "Volume Up",
+        "name" : "volume-up",
+        "normalOffset" : {
+          "x" : 8,
+          "y" : 206
+        },
+        "onTop" : false,
+        "rolloverOffset" : {
+          "x" : 3,
+          "y" : 206
+        },
+        "type" : "button",
+        "usage" : 233,
+        "usagePage" : 12,
+        "width" : 16,
+        "x" : 1,
+        "y" : 206
+      },
+      {
+        "align" : "leading",
+        "anchor" : "left",
+        "height" : 72,
+        "imageDownDrawMode" : "replace",
+        "imageDownName" : "Vol BTN Dn",
+        "imageName" : "Vol BTN",
+        "label" : "Volume Down",
+        "name" : "volume-down",
+        "normalOffset" : {
+          "x" : 8,
+          "y" : 297
+        },
+        "onTop" : false,
+        "rolloverOffset" : {
+          "x" : 3,
+          "y" : 297
+        },
+        "type" : "button",
+        "usage" : 234,
+        "usagePage" : 12,
+        "width" : 16,
+        "x" : 1,
+        "y" : 297
+      },
+      {
+        "align" : "leading",
+        "anchor" : "right",
+        "height" : 117,
+        "imageDownDrawMode" : "replace",
+        "imageDownName" : "X_Power BTN Dn",
+        "imageName" : "X_Power BTN",
+        "label" : "Sleep\/Wake",
+        "name" : "power",
+        "normalOffset" : {
+          "x" : -8,
+          "y" : 229
+        },
+        "onTop" : false,
+        "rolloverOffset" : {
+          "x" : -3,
+          "y" : 229
+        },
+        "type" : "button",
+        "usage" : 48,
+        "usagePage" : 12,
+        "width" : 16,
+        "x" : 405,
+        "y" : 229
+      }
+    ],
+    "chromeCornerRadius" : 43,
+    "chromeHeight" : 824,
+    "chromeWidth" : 404,
+    "chromeX" : 9,
+    "chromeY" : -0,
+    "contentHeight" : 780,
+    "contentWidth" : 360,
+    "contentX" : 31,
+    "contentY" : 22,
+    "cornerRadius" : 43,
+    "hasScreenMask" : false,
+    "screenHeight" : 780,
+    "screenWidth" : 360,
+    "screenX" : 31,
+    "screenY" : 22,
+    "totalHeight" : 824,
+    "totalWidth" : 422
+  },
+  "modelIdentifier" : "iPhone13,1",
+  "name" : "iPhone 12 mini",
+  "productClass" : "D52g",
+  "screen" : {
+    "heightDPI" : 476,
+    "pixelHeight" : 2340,
+    "pixelWidth" : 1080,
+    "scale" : 3,
+    "widthDPI" : 476
+  },
+  "slug" : "iphone-12-mini-iphone13-1",
+  "source" : {
+    "chromeResourcesPath" : "\/Library\/Developer\/DeviceKit\/Chrome\/phone3.devicechrome\/Contents\/Resources",
+    "deviceProfilePath" : "\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPhone 12 mini.simdevicetype\/Contents\/Resources\/profile.plist",
+    "deviceResourcesPath" : "\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPhone 12 mini.simdevicetype\/Contents\/Resources",
+    "framebufferMask" : "B189ED7C-CF48-4E4D-B70B-1BD1F1C1C007",
+    "sensorBarImage" : "sensor_bar_class_03"
+  },
+  "vectors" : {
+    "capabilitiesPlist" : "device-profiles\/iphone-12-mini-iphone13-1\/capabilities.plist",
+    "chromeBundle" : "chrome\/phone3",
+    "chromeJson" : "chrome\/phone3\/chrome.json",
+    "chromePdfs" : [
+      "chrome\/phone3\/Mute BTN Dn.pdf",
+      "chrome\/phone3\/Mute BTN.pdf",
+      "chrome\/phone3\/Phone BL.pdf",
+      "chrome\/phone3\/Phone BR.pdf",
+      "chrome\/phone3\/Phone TL.pdf",
+      "chrome\/phone3\/Phone TR.pdf",
+      "chrome\/phone3\/PhoneBase.pdf",
+      "chrome\/phone3\/PhoneLeft.pdf",
+      "chrome\/phone3\/PhoneRight.pdf",
+      "chrome\/phone3\/PhoneTop.pdf",
+      "chrome\/phone3\/Screen.pdf",
+      "chrome\/phone3\/Vol BTN Dn.pdf",
+      "chrome\/phone3\/Vol BTN.pdf",
+      "chrome\/phone3\/X_Power BTN Dn.pdf",
+      "chrome\/phone3\/X_Power BTN.pdf"
+    ],
+    "framebufferMask" : "framebuffer-masks\/B189ED7C-CF48-4E4D-B70B-1BD1F1C1C007.pdf",
+    "profilePlist" : "device-profiles\/iphone-12-mini-iphone13-1\/profile.plist",
+    "sensorBar" : "device-profiles\/iphone-12-mini-iphone13-1\/sensor-bar.pdf"
+  }
+}

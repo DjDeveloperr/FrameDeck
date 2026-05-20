@@ -1,0 +1,107 @@
+{
+  "chromeIdentifier" : "com.apple.dt.devicekit.chrome.watch",
+  "chromeName" : "watch",
+  "family" : "apple-watch",
+  "geometry" : {
+    "buttons" : [
+      {
+        "align" : "leading",
+        "anchor" : "right",
+        "height" : 86,
+        "imageDownName" : "DigitalCrown Dn",
+        "imageName" : "DigitalCrown",
+        "label" : "Crown",
+        "name" : "digital-crown",
+        "normalOffset" : {
+          "x" : -12,
+          "y" : 94
+        },
+        "onTop" : true,
+        "rolloverOffset" : {
+          "x" : -12,
+          "y" : 94
+        },
+        "type" : "crown",
+        "usage" : 64,
+        "usagePage" : 12,
+        "width" : 36,
+        "x" : 340,
+        "y" : 94
+      },
+      {
+        "align" : "trailing",
+        "anchor" : "right",
+        "height" : 126,
+        "imageDownName" : "SideButton Dn",
+        "imageName" : "SideButton",
+        "label" : "Side",
+        "name" : "side-button",
+        "normalOffset" : {
+          "x" : -8,
+          "y" : -100
+        },
+        "onTop" : true,
+        "rolloverOffset" : {
+          "x" : -4,
+          "y" : -100
+        },
+        "type" : "button",
+        "usage" : 149,
+        "usagePage" : 12,
+        "width" : 28,
+        "x" : 344,
+        "y" : 182
+      }
+    ],
+    "chromeCornerRadius" : 6,
+    "chromeHeight" : 408,
+    "chromeWidth" : 340,
+    "chromeX" : 12,
+    "chromeY" : -0,
+    "contentHeight" : 340,
+    "contentWidth" : 272,
+    "contentX" : 46,
+    "contentY" : 34,
+    "cornerRadius" : 6,
+    "hasScreenMask" : false,
+    "screenHeight" : 340,
+    "screenWidth" : 272,
+    "screenX" : 46,
+    "screenY" : 34,
+    "totalHeight" : 408,
+    "totalWidth" : 376
+  },
+  "images" : {
+    "bezel" : "apple-watch\/apple-watch-series-3-38mm-watch3-3\/bezel.png",
+    "bezelNoButtons" : "apple-watch\/apple-watch-series-3-38mm-watch3-3\/bezel-no-buttons.png",
+    "screenMask" : null
+  },
+  "modelIdentifier" : "Watch3,3",
+  "name" : "Apple Watch Series 3 (38mm)",
+  "productClass" : "N121s",
+  "rendered" : {
+    "bezel" : {
+      "pixelHeight" : 1224,
+      "pixelWidth" : 1128
+    },
+    "bezelNoButtons" : {
+      "pixelHeight" : 1224,
+      "pixelWidth" : 1128
+    }
+  },
+  "screen" : {
+    "heightDPI" : 326,
+    "pixelHeight" : 340,
+    "pixelWidth" : 272,
+    "scale" : 2,
+    "widthDPI" : 326
+  },
+  "slug" : "apple-watch-series-3-38mm-watch3-3",
+  "source" : {
+    "chromeResourcesPath" : "\/Library\/Developer\/DeviceKit\/Chrome\/watch.devicechrome\/Contents\/Resources",
+    "deviceProfilePath" : "\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/Apple Watch Series 3 (38mm).simdevicetype\/Contents\/Resources\/profile.plist",
+    "deviceResourcesPath" : "\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/Apple Watch Series 3 (38mm).simdevicetype\/Contents\/Resources",
+    "framebufferMask" : null,
+    "sensorBarImage" : null
+  }
+}

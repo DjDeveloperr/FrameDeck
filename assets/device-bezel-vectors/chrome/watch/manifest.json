@@ -1,0 +1,22 @@
+{
+  "bundlePath" : "\/Library\/Developer\/DeviceKit\/Chrome\/watch.devicechrome",
+  "chromeJson" : "chrome\/watch\/chrome.json",
+  "chromeName" : "watch",
+  "localPath" : "chrome\/watch",
+  "pdfs" : [
+    "chrome\/watch\/DigitalCrown Dn.pdf",
+    "chrome\/watch\/DigitalCrown.pdf",
+    "chrome\/watch\/Screen.pdf",
+    "chrome\/watch\/SideButton Dn.pdf",
+    "chrome\/watch\/SideButton.pdf",
+    "chrome\/watch\/Watch BL.pdf",
+    "chrome\/watch\/Watch BR.pdf",
+    "chrome\/watch\/Watch TL.pdf",
+    "chrome\/watch\/Watch TR.pdf",
+    "chrome\/watch\/WatchBase.pdf",
+    "chrome\/watch\/WatchLeft.pdf",
+    "chrome\/watch\/WatchRight.pdf",
+    "chrome\/watch\/WatchTop.pdf"
+  ],
+  "resourcesPath" : "\/Library\/Developer\/DeviceKit\/Chrome\/watch.devicechrome\/Contents\/Resources"
+}

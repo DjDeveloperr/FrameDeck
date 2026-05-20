@@ -1,0 +1,163 @@
+{
+  "chromeIdentifier" : "com.apple.dt.devicekit.chrome.phone10",
+  "chromeName" : "phone10",
+  "family" : "iphone",
+  "geometry" : {
+    "buttons" : [
+      {
+        "align" : "leading",
+        "anchor" : "left",
+        "height" : 34,
+        "imageDownDrawMode" : "replace",
+        "imageDownName" : "Mute BTN Dn",
+        "imageName" : "Mute BTN",
+        "label" : "Action",
+        "name" : "action",
+        "normalOffset" : {
+          "x" : 8,
+          "y" : 175
+        },
+        "onTop" : false,
+        "rolloverOffset" : {
+          "x" : 3,
+          "y" : 175
+        },
+        "type" : "button",
+        "usage" : 45,
+        "usagePage" : 11,
+        "width" : 16,
+        "x" : 1,
+        "y" : 175
+      },
+      {
+        "align" : "leading",
+        "anchor" : "left",
+        "height" : 64,
+        "imageDownDrawMode" : "replace",
+        "imageDownName" : "Vol BTN Dn",
+        "imageName" : "Vol BTN",
+        "label" : "Volume Up",
+        "name" : "volume-up",
+        "normalOffset" : {
+          "x" : 8,
+          "y" : 255
+        },
+        "onTop" : false,
+        "rolloverOffset" : {
+          "x" : 3,
+          "y" : 255
+        },
+        "type" : "button",
+        "usage" : 233,
+        "usagePage" : 12,
+        "width" : 16,
+        "x" : 1,
+        "y" : 255
+      },
+      {
+        "align" : "leading",
+        "anchor" : "left",
+        "height" : 64,
+        "imageDownDrawMode" : "replace",
+        "imageDownName" : "Vol BTN Dn",
+        "imageName" : "Vol BTN",
+        "label" : "Volume Down",
+        "name" : "volume-down",
+        "normalOffset" : {
+          "x" : 8,
+          "y" : 345
+        },
+        "onTop" : false,
+        "rolloverOffset" : {
+          "x" : 3,
+          "y" : 345
+        },
+        "type" : "button",
+        "usage" : 234,
+        "usagePage" : 12,
+        "width" : 16,
+        "x" : 1,
+        "y" : 345
+      },
+      {
+        "align" : "leading",
+        "anchor" : "right",
+        "height" : 101,
+        "imageDownDrawMode" : "replace",
+        "imageDownName" : "X_Power BTN Dn",
+        "imageName" : "X_Power BTN",
+        "label" : "Sleep\/Wake",
+        "name" : "power",
+        "normalOffset" : {
+          "x" : -8,
+          "y" : 270
+        },
+        "onTop" : false,
+        "rolloverOffset" : {
+          "x" : -3,
+          "y" : 270
+        },
+        "type" : "button",
+        "usage" : 48,
+        "usagePage" : 12,
+        "width" : 16,
+        "x" : 467,
+        "y" : 270
+      }
+    ],
+    "chromeCornerRadius" : 56,
+    "chromeHeight" : 968,
+    "chromeWidth" : 466,
+    "chromeX" : 9,
+    "chromeY" : -0,
+    "contentHeight" : 932,
+    "contentWidth" : 430,
+    "contentX" : 27,
+    "contentY" : 18,
+    "cornerRadius" : 56,
+    "hasScreenMask" : false,
+    "screenHeight" : 932,
+    "screenWidth" : 430,
+    "screenX" : 27,
+    "screenY" : 18,
+    "totalHeight" : 968,
+    "totalWidth" : 484
+  },
+  "images" : {
+    "bezel" : "iphone\/iphone-16-plus-iphone17-4\/bezel.png",
+    "bezelNoButtons" : "iphone\/iphone-16-plus-iphone17-4\/bezel-no-buttons.png",
+    "screenMask" : "iphone\/iphone-16-plus-iphone17-4\/screen-mask.png"
+  },
+  "modelIdentifier" : "iPhone17,4",
+  "name" : "iPhone 16 Plus",
+  "productClass" : "D48",
+  "rendered" : {
+    "bezel" : {
+      "pixelHeight" : 2904,
+      "pixelWidth" : 1452
+    },
+    "bezelNoButtons" : {
+      "pixelHeight" : 2904,
+      "pixelWidth" : 1452
+    },
+    "screenMask" : {
+      "pixelHeight" : 2796,
+      "pixelWidth" : 1290
+    }
+  },
+  "screen" : {
+    "heightDPI" : 460,
+    "pixelHeight" : 2796,
+    "pixelWidth" : 1290,
+    "scale" : 3,
+    "widthDPI" : 460
+  },
+  "slug" : "iphone-16-plus-iphone17-4",
+  "source" : {
+    "chromeResourcesPath" : "\/Library\/Developer\/DeviceKit\/Chrome\/phone10.devicechrome\/Contents\/Resources",
+    "deviceProfilePath" : "\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPhone 16 Plus.simdevicetype\/Contents\/Resources\/profile.plist",
+    "deviceResourcesPath" : "\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPhone 16 Plus.simdevicetype\/Contents\/Resources",
+    "framebufferMask" : "35673A77-95F0-41BF-A6EE-BA5C7D4C8C98",
+    "sensorBarImage" : "sensor_bar_class_05"
+  }
+}

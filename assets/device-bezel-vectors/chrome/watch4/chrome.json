@@ -1,0 +1,132 @@
+{
+  "identifier": "com.apple.dt.devicekit.chrome.watch4",
+  "images": {
+    "topLeft": "WatchTL",
+    "top": "WatchTop",
+    "topRight": "WatchTR",
+    "right": "WatchRight",
+    "bottomRight": "WatchBR",
+    "bottom": "WatchBottom",
+    "bottomLeft": "WatchBL",
+    "left": "WatchLeft",
+    "composite": "WatchComposite",
+    "simpleComposite": "WatchSimpleComposite",
+    "screen": "Screen",
+    "sizing": {
+      "leftWidth": 45.5,
+      "rightWidth": 45.5,
+      "topHeight": 31,
+      "bottomHeight": 31
+    },
+    "padding": {
+        "width": 6,
+        "height": 0
+    },
+    "devicePadding": {
+        "top": 0,
+        "left": 0,
+        "bottom": 0,
+        "right": 11
+    }
+  },
+  "paths": {
+    "simpleOutsideBorder": {
+      "insets": {
+        "top": 0,
+        "left": 14.5,
+        "bottom": 0,
+        "right": 14.5
+      },
+      "cornerRadiusX": 85.2,
+      "cornerRadiusY": 85.2
+    }
+  },
+  "inputs": [
+    {
+      "name": "digital-crown",
+      "accessibilityTitle": "Crown",
+      "type": "crown",
+      "usagePage": 12,
+      "usage": 64,
+      "image": "DigitalCrown",
+      "imageDown": "DigitalCrown Dn",
+      "onTop": false,
+      "anchor": "right",
+      "align": "leading",
+      "offsets": {
+        "normal": { "x": -23, "y": 81 },
+        "rollover": { "x": -23, "y": 81 }
+      }
+    },
+    {
+      "name": "side-button",
+      "accessibilityTitle": "Side",
+      "type": "button",
+      "usagePage": 12,
+      "usage": 149,
+      "image": "SideButton",
+      "imageDown": "SideButton Dn",
+      "onTop": false,
+      "anchor": "right",
+      "align": "leading",
+      "offsets": {
+        "normal": { "x": -30, "y": 160 },
+        "rollover": { "x": -25, "y": 160 }
+      }
+    },
+    {
+      "name": "left-side-button",
+      "accessibilityTitle": "Left Side",
+      "type": "button",
+      "usagePage": 65281,
+      "usage": 512,
+      "image": "StingButton",
+      "imageDown": "StingButton Dn",
+      "onTop": true,
+      "anchor": "left",
+      "align": "leading",
+      "offsets": {
+        "normal": { "x": 20, "y": 138 },
+        "rollover": { "x": 19, "y": 138 }
+      }
+    }
+  ],
+  "resizeRects": [
+    {
+      "type": "lowerLeft",
+      "scales": true,
+      "centerPoint": { "x": 45, "y": 22 },
+      "size": {
+        "width": 18,
+        "height": 18
+      }
+    },
+    {
+      "type": "lowerRight",
+      "scales": true,
+      "centerPoint": { "x": -45, "y": 22 },
+      "size": {
+        "width": 18,
+        "height": 18
+      }
+    },
+    {
+      "type": "upperRight",
+      "scales": true,
+      "centerPoint": { "x": -45, "y": -22 },
+      "size": {
+        "width": 18,
+        "height": 18
+      }
+    },
+    {
+      "type": "upperLeft",
+      "scales": true,
+      "centerPoint": { "x": 45, "y": -22 },
+      "size": {
+        "width": 18,
+        "height": 18
+      }
+    }
+  ]
+}

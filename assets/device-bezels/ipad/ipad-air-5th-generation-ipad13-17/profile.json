@@ -1,0 +1,135 @@
+{
+  "chromeIdentifier" : "com.apple.dt.devicekit.chrome.tablet2",
+  "chromeName" : "tablet2",
+  "family" : "ipad",
+  "geometry" : {
+    "buttons" : [
+      {
+        "align" : "leading",
+        "anchor" : "right",
+        "height" : 52,
+        "imageDownName" : "Vol BTN Dn",
+        "imageName" : "Vol BTN",
+        "label" : "Volume Up",
+        "name" : "volume-up",
+        "normalOffset" : {
+          "x" : -8,
+          "y" : 113
+        },
+        "onTop" : false,
+        "rolloverOffset" : {
+          "x" : -3,
+          "y" : 113
+        },
+        "type" : "button",
+        "usage" : 233,
+        "usagePage" : 12,
+        "width" : 16,
+        "x" : 904,
+        "y" : 122
+      },
+      {
+        "align" : "leading",
+        "anchor" : "right",
+        "height" : 52,
+        "imageDownName" : "Vol BTN Dn",
+        "imageName" : "Vol BTN",
+        "label" : "Volume Down",
+        "name" : "volume-down",
+        "normalOffset" : {
+          "x" : -8,
+          "y" : 167
+        },
+        "onTop" : false,
+        "rolloverOffset" : {
+          "x" : -3,
+          "y" : 167
+        },
+        "type" : "button",
+        "usage" : 234,
+        "usagePage" : 12,
+        "width" : 16,
+        "x" : 904,
+        "y" : 176
+      },
+      {
+        "align" : "trailing",
+        "anchor" : "top",
+        "height" : 16,
+        "imageDownName" : "iPad Power BTN Dn",
+        "imageName" : "iPad Power BTN",
+        "label" : "Sleep\/Wake",
+        "name" : "power",
+        "normalOffset" : {
+          "x" : -130,
+          "y" : 8
+        },
+        "onTop" : false,
+        "rolloverOffset" : {
+          "x" : -130,
+          "y" : 3
+        },
+        "type" : "button",
+        "usage" : 48,
+        "usagePage" : 12,
+        "width" : 63,
+        "x" : 719,
+        "y" : 1
+      }
+    ],
+    "chromeCornerRadius" : 15,
+    "chromeHeight" : 1272,
+    "chromeWidth" : 912,
+    "chromeX" : -0,
+    "chromeY" : 9,
+    "contentHeight" : 1180,
+    "contentWidth" : 820,
+    "contentX" : 46,
+    "contentY" : 55,
+    "cornerRadius" : 15,
+    "hasScreenMask" : false,
+    "screenHeight" : 1180,
+    "screenWidth" : 820,
+    "screenX" : 46,
+    "screenY" : 55,
+    "totalHeight" : 1281,
+    "totalWidth" : 922
+  },
+  "images" : {
+    "bezel" : "ipad\/ipad-air-5th-generation-ipad13-17\/bezel.png",
+    "bezelNoButtons" : "ipad\/ipad-air-5th-generation-ipad13-17\/bezel-no-buttons.png",
+    "screenMask" : "ipad\/ipad-air-5th-generation-ipad13-17\/screen-mask.png"
+  },
+  "modelIdentifier" : "iPad13,17",
+  "name" : "iPad Air (5th generation)",
+  "productClass" : "J408",
+  "rendered" : {
+    "bezel" : {
+      "pixelHeight" : 3843,
+      "pixelWidth" : 2766
+    },
+    "bezelNoButtons" : {
+      "pixelHeight" : 3843,
+      "pixelWidth" : 2766
+    },
+    "screenMask" : {
+      "pixelHeight" : 2360,
+      "pixelWidth" : 1640
+    }
+  },
+  "screen" : {
+    "heightDPI" : 264,
+    "pixelHeight" : 2360,
+    "pixelWidth" : 1640,
+    "scale" : 2,
+    "widthDPI" : 264
+  },
+  "slug" : "ipad-air-5th-generation-ipad13-17",
+  "source" : {
+    "chromeResourcesPath" : "\/Library\/Developer\/DeviceKit\/Chrome\/tablet2.devicechrome\/Contents\/Resources",
+    "deviceProfilePath" : "\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPad Air (5th generation).simdevicetype\/Contents\/Resources\/profile.plist",
+    "deviceResourcesPath" : "\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPad Air (5th generation).simdevicetype\/Contents\/Resources",
+    "framebufferMask" : "1D05B7BF-7313-48A6-B2DF-964AAE76A0DC",
+    "sensorBarImage" : null
+  }
+}

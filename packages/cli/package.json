@@ -1,0 +1,25 @@
+{
+  "name": "@screendeck/cli",
+  "version": "0.1.0",
+  "type": "module",
+  "license": "Apache-2.0",
+  "bin": {
+    "screendeck": "./bin/screendeck.js"
+  },
+  "main": "./dist/index.js",
+  "files": ["dist", "bin"],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsc -p tsconfig.json --watch",
+    "start": "node bin/screendeck.js"
+  },
+  "dependencies": {
+    "@screendeck/core": "*",
+    "@screendeck/renderer": "*",
+    "chokidar": "^4.0.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.3",
+    "@types/node": "^22.7.0"
+  }
+}
