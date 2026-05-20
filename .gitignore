@@ -10,3 +10,4 @@ coverage
 projects/*/out
 projects/*/screens/.!*
 projects/*/screens/*.png
+packages/cli/assets

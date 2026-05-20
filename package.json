@@ -17,13 +17,18 @@
   ],
   "scripts": {
     "build": "npm run build --workspace @screendeck/core && npm run build --workspace @screendeck/renderer && npm run build --workspace @screendeck/cli && npm run build --workspace @screendeck/web",
-    "check": "npm run build",
+    "check": "npm run lint && npm run doctor && npm test",
     "lint": "npm run build",
+    "doctor": "react-doctor packages/web --full --offline --fail-on error --lint",
+    "test": "node --test test/*.test.mjs",
     "dev": "npm run dev --workspace @screendeck/web",
     "cli": "npm run start --workspace @screendeck/cli --",
     "render": "npm run start --workspace @screendeck/cli -- render"
   },
   "engines": {
     "node": ">=20"
+  },
+  "devDependencies": {
+    "react-doctor": "^0.2.1"
   }
 }

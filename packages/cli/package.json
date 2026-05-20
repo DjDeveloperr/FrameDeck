@@ -7,10 +7,16 @@
     "screendeck": "./bin/screendeck.js"
   },
   "main": "./dist/index.js",
-  "files": ["dist", "bin"],
+  "types": "./dist/index.d.ts",
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": ["dist", "bin", "assets"],
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "dev": "tsc -p tsconfig.json --watch",
+    "prepack": "node ../../scripts/prepare-cli-package.mjs",
+    "postpack": "node ../../scripts/clean-cli-package.mjs",
     "start": "node bin/screendeck.js"
   },
   "dependencies": {

@@ -13,6 +13,9 @@ npm run build
 # From an app repo, opens or creates ./screenshots and jumps straight to it.
 node /path/to/ScreenDeck/packages/cli/bin/screendeck.js
 
+# From an app repo, exports every screen to ./screenshots/dist.
+node /path/to/ScreenDeck/packages/cli/bin/screendeck.js build
+
 # Open the all-projects editor.
 node /path/to/ScreenDeck/packages/cli/bin/screendeck.js editor
 
@@ -32,6 +35,18 @@ automatically when opened or created, and stale entries are pruned when the
 editor lists projects. `screendeck editor` ignores the current app repo and
 opens the all-projects screen.
 
+## Build
+
+Run `screendeck build` from an app repo to render every `screens/*.screen` file
+in the detected project. By default, output is written to `screenshots/dist/`.
+Use `--out path` to choose a different destination and `--scale 2` for higher
+resolution exports.
+
+```bash
+screendeck build
+screendeck build --out screenshots/dist --scale 2
+```
+
 ## Workspace
 
 ```text
@@ -47,9 +62,16 @@ Useful scripts:
 
 ```bash
 npm run dev       # editor on http://localhost:4242
-npm run build     # core, renderer, cli, web
+npm run check     # build and test
 npm run cli -- --help
 ```
+
+## Release
+
+The CI workflow runs `npm run check` on pushes and pull requests. The npm
+release workflow publishes `@screendeck/core`, `@screendeck/renderer`, and
+`@screendeck/cli` when a `vX.Y.Z` tag is pushed, using `NPM_TOKEN` and npm
+provenance.
 
 ## License
 

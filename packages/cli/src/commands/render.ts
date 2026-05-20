@@ -11,6 +11,11 @@ import { renderDocumentNode, nodeBackend } from "@screendeck/renderer/node";
 import { resolveAssetsRoot } from "../assets.js";
 import { flag, type ParsedArgs } from "../args.js";
 
+export function createDeviceRegistry(assets?: string): DeviceRegistry {
+  const assetsRoot = resolveAssetsRoot(assets);
+  return new DeviceRegistry(assetsRoot, loadDeviceIndexFromFs(assetsRoot));
+}
+
 export async function renderCommand(args: ParsedArgs): Promise<void> {
   const input = args.positional[1];
   if (!input) {
@@ -20,8 +25,7 @@ export async function renderCommand(args: ParsedArgs): Promise<void> {
   }
   const inputPath = resolve(input);
   const scale = Number.parseFloat(flag(args, "scale", "s") ?? "1") || 1;
-  const assetsRoot = resolveAssetsRoot(flag(args, "assets"));
-  const devices = new DeviceRegistry(assetsRoot, loadDeviceIndexFromFs(assetsRoot));
+  const devices = createDeviceRegistry(flag(args, "assets"));
 
   const out = flag(args, "out", "o");
   const stats = await stat(inputPath);
@@ -49,7 +53,7 @@ export async function renderCommand(args: ParsedArgs): Promise<void> {
   console.log(target);
 }
 
-async function renderOne(
+export async function renderOne(
   source: string,
   outPath: string,
   scale: number,

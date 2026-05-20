@@ -1,0 +1,57 @@
+name: Release CLI
+
+on:
+  workflow_dispatch:
+  push:
+    tags:
+      - "v*.*.*"
+
+permissions:
+  contents: read
+  id-token: write
+
+jobs:
+  publish:
+    name: Publish npm packages
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          registry-url: https://registry.npmjs.org
+
+      - name: Install
+        run: npm ci
+
+      - name: Check
+        run: npm run check
+
+      - name: Verify tag version
+        if: startsWith(github.ref, 'refs/tags/v')
+        run: |
+          export VERSION="${GITHUB_REF_NAME#v}"
+          node -e '
+            const fs = require("node:fs");
+            const pkgs = ["packages/core/package.json", "packages/renderer/package.json", "packages/cli/package.json"];
+            const expected = process.env.VERSION;
+            for (const file of pkgs) {
+              const pkg = JSON.parse(fs.readFileSync(file, "utf8"));
+              if (pkg.version !== expected) {
+                throw new Error(`${file} version ${pkg.version} does not match tag v${expected}`);
+              }
+            }
+          '
+
+      - name: Publish packages
+        run: |
+          npm publish --workspace @screendeck/core --provenance
+          npm publish --workspace @screendeck/renderer --provenance
+          npm publish --workspace @screendeck/cli --provenance
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

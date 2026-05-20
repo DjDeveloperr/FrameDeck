@@ -1,4 +1,5 @@
 import { parseArgs } from "./args.js";
+import { buildCommand } from "./commands/build.js";
 import { renderCommand } from "./commands/render.js";
 import { initCommand } from "./commands/init.js";
 import { devicesCommand } from "./commands/devices.js";
@@ -10,6 +11,7 @@ const HELP = `screendeck — Figma for screenshots
 
 Usage:
   screendeck                                        open the current app repo's ScreenDeck project
+  screendeck build  [project-dir] [--out <dir>] [--scale N] [--assets <dir>]
   screendeck editor [--port N] [--projects <dir>] [--assets <dir>]
   screendeck serve  [--port N] [--projects <dir>] [--assets <dir>]
   screendeck render <file-or-dir> [--out <path>] [--scale N] [--assets <dir>]
@@ -28,6 +30,7 @@ Flags:
 
 Examples:
   screendeck
+  screendeck build
   screendeck editor --port 5000
   screendeck render projects/example-app/screens/hero.screen
   screendeck render projects/example-app --scale 2
@@ -55,6 +58,7 @@ export async function main(argv: string[]): Promise<void> {
   }
 
   switch (cmd) {
+    case "build":   return buildCommand(args);
     case "editor":  return serveCommand(args, { mode: "editor" });
     case "serve":   return serveCommand(args, { mode: "editor" });
     case "render":  return renderCommand(args);
