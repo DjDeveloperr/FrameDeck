@@ -12,9 +12,9 @@
 // with element interactions.
 
 import { useEffect, useRef, useState } from "react";
-import { type DeviceRegistry, type ElementPath } from "@screendeck/core";
-import { renderDocument, layoutDocument, type ElementBox, type ImageLike } from "@screendeck/renderer";
-import { webBackend } from "@screendeck/renderer/web";
+import { type DeviceRegistry, type ElementPath } from "@framedeck/core";
+import { renderDocument, layoutDocument, type ElementBox, type ImageLike } from "@framedeck/renderer";
+import { webBackend } from "@framedeck/renderer/web";
 import { useEditor } from "../EditorContext";
 import { SelectionLayer } from "./SelectionLayer";
 import { IconDuplicate, IconTrash } from "../icons";

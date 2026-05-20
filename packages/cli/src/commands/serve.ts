@@ -1,6 +1,6 @@
-// `screendeck` (no args) or `screendeck editor` — boot the editor web app.
+// `framedeck` (no args) or `framedeck editor` — boot the editor web app.
 //
-// We spawn Next.js (`next dev`) inside the workspace's @screendeck/web
+// We spawn Next.js (`next dev`) inside the workspace's @framedeck/web
 // package, with environment variables pointing to the user's projects/assets
 // directories. Once Next reports ready we print friendly URLs (localhost +
 // every non-loopback IPv4 the machine exposes).
@@ -17,7 +17,7 @@ import {
   registerProject,
   registryProjectsRoot,
   type Project,
-} from "@screendeck/core/fs";
+} from "@framedeck/core/fs";
 import { resolveAssetsRoot } from "../assets.js";
 import { flag, type ParsedArgs } from "../args.js";
 
@@ -31,8 +31,8 @@ export async function serveCommand(args: ParsedArgs, options: ServeOptions): Pro
   const webDir = findWebDir();
   if (!webDir) {
     console.error(
-      "Could not find the @screendeck/web package. Run `screendeck serve` from\n" +
-      "within the ScreenDeck workspace, or pass --web-dir <path>.",
+      "Could not find the @framedeck/web package. Run `framedeck serve` from\n" +
+      "within the FrameDeck workspace, or pass --web-dir <path>.",
     );
     process.exit(1);
   }
@@ -49,22 +49,22 @@ export async function serveCommand(args: ParsedArgs, options: ServeOptions): Pro
     PORT: port,
     HOSTNAME: flag(args, "host") ?? "0.0.0.0",
   };
-  if (projectsDir) env.SCREENDECK_PROJECTS = projectsDir;
-  if (assetsDir) env.SCREENDECK_ASSETS = assetsDir;
+  if (projectsDir) env.FRAMEDECK_PROJECTS = projectsDir;
+  if (assetsDir) env.FRAMEDECK_ASSETS = assetsDir;
   if (activeProject) {
-    env.SCREENDECK_ACTIVE_PROJECT_ID = activeProject.manifest.id;
-    env.SCREENDECK_ACTIVE_PROJECT_ROOT = activeProject.root;
-    if (activeProject.appRoot) env.SCREENDECK_ACTIVE_APP_ROOT = activeProject.appRoot;
+    env.FRAMEDECK_ACTIVE_PROJECT_ID = activeProject.manifest.id;
+    env.FRAMEDECK_ACTIVE_PROJECT_ROOT = activeProject.root;
+    if (activeProject.appRoot) env.FRAMEDECK_ACTIVE_APP_ROOT = activeProject.appRoot;
   } else {
-    delete env.SCREENDECK_ACTIVE_PROJECT_ID;
-    delete env.SCREENDECK_ACTIVE_PROJECT_ROOT;
-    delete env.SCREENDECK_ACTIVE_APP_ROOT;
+    delete env.FRAMEDECK_ACTIVE_PROJECT_ID;
+    delete env.FRAMEDECK_ACTIVE_PROJECT_ROOT;
+    delete env.FRAMEDECK_ACTIVE_APP_ROOT;
   }
 
   const dim = (s: string) => `\x1b[2m${s}\x1b[0m`;
   const bold = (s: string) => `\x1b[1m${s}\x1b[0m`;
 
-  process.stdout.write(dim("  starting ScreenDeck…\r"));
+  process.stdout.write(dim("  starting FrameDeck…\r"));
 
   const child = spawn("npx", ["next", "dev", "-p", port], {
     cwd: webDir,
@@ -80,7 +80,7 @@ export async function serveCommand(args: ParsedArgs, options: ServeOptions): Pro
     process.stdout.write("\r\x1b[2K");
     const targetPath = activeProject ? `/projects/${encodeURIComponent(activeProject.manifest.id)}` : "";
     const local = `http://localhost:${port}${targetPath}`;
-    process.stdout.write(`\n  ${bold("ScreenDeck")}  ${dim("· " + local)}\n\n`);
+    process.stdout.write(`\n  ${bold("FrameDeck")}  ${dim("· " + local)}\n\n`);
     if (activeProject) {
       process.stdout.write(`    ${"Project".padEnd(8)}${activeProject.manifest.name} ${dim(activeProject.root)}\n`);
     }
@@ -125,8 +125,8 @@ export async function serveCommand(args: ParsedArgs, options: ServeOptions): Pro
 
 function prepareActiveProject(args: ParsedArgs, appRoot: string): Project {
   const explicit = flag(args, "project", "project-dir")
-    ?? process.env.SCREENDECK_PROJECT
-    ?? process.env.SCREENDECK_PROEJCT;
+    ?? process.env.FRAMEDECK_PROJECT
+    ?? process.env.FRAMEDECK_PROEJCT;
   const root = detectProjectRoot(appRoot, explicit);
   const subdir = inferSubdir(appRoot, root);
   const project = ensureProject(root, {
@@ -140,7 +140,7 @@ function prepareActiveProject(args: ParsedArgs, appRoot: string): Project {
 
 /** Walk up from this file looking for `packages/web` (workspace install). */
 function findWebDir(): string | null {
-  const explicit = process.env.SCREENDECK_WEB_DIR;
+  const explicit = process.env.FRAMEDECK_WEB_DIR;
   if (explicit && existsSync(join(explicit, "package.json"))) return explicit;
   const here = dirname(fileURLToPath(import.meta.url));
   let dir = here;

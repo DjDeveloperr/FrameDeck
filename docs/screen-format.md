@@ -124,13 +124,13 @@ Accept all flex attributes.
 
 ```bash
 # Single file
-screendeck render screens/hero.screen
+framedeck render screens/hero.screen
 
 # Project (all screens/*.screen)
-screendeck render projects/example-app
+framedeck render projects/example-app
 
 # 2x scale (HiDPI output)
-screendeck render screens/hero.screen --scale 2
+framedeck render screens/hero.screen --scale 2
 ```
 
 Outputs land alongside the source as `<name>.png`, or under `out/` when
@@ -139,8 +139,8 @@ rendering a project directory.
 ## Programmatic API
 
 ```ts
-import { renderSourceToFile } from "@screendeck/renderer/node";
-import { DeviceRegistry } from "@screendeck/core";
+import { renderSourceToFile } from "@framedeck/renderer/node";
+import { DeviceRegistry } from "@framedeck/core";
 
 await renderSourceToFile(sourceText, "out/hero.png", {
   baseDir: "./projects/example-app/screens",
@@ -148,5 +148,5 @@ await renderSourceToFile(sourceText, "out/hero.png", {
 });
 ```
 
-Same API exists on the web (`@screendeck/renderer/web`) — it draws to an
+Same API exists on the web (`@framedeck/renderer/web`) — it draws to an
 `HTMLCanvasElement` instead of writing a file.

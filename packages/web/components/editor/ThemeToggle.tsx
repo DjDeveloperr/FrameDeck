@@ -10,7 +10,7 @@ import { useEffect, useState } from "react";
 import { IconCheck, IconEye } from "./icons";
 
 type Mode = "light" | "dark" | "system";
-const STORAGE_KEY = "screendeck:theme";
+const STORAGE_KEY = "framedeck:theme";
 
 function systemTheme(): "light" | "dark" {
   if (typeof window === "undefined") return "dark";

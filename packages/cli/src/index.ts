@@ -7,18 +7,18 @@ import { watchCommand } from "./commands/watch.js";
 import { presetsCommand } from "./commands/presets.js";
 import { serveCommand } from "./commands/serve.js";
 
-const HELP = `screendeck — Figma for screenshots
+const HELP = `framedeck — Figma for screenshots
 
 Usage:
-  screendeck                                        open the current app repo's ScreenDeck project
-  screendeck build  [project-dir] [--out <dir>] [--scale N] [--assets <dir>]
-  screendeck editor [--port N] [--projects <dir>] [--assets <dir>]
-  screendeck serve  [--port N] [--projects <dir>] [--assets <dir>]
-  screendeck render <file-or-dir> [--out <path>] [--scale N] [--assets <dir>]
-  screendeck watch  <project-dir> [--out <dir>] [--scale N]
-  screendeck init   <project-name> [--device <slug>] [--display-name <name>]
-  screendeck devices [--family iphone|ipad|apple-watch] [--json]
-  screendeck presets [--json]
+  framedeck                                        open the current app repo's FrameDeck project
+  framedeck build  [project-dir] [--out <dir>] [--scale N] [--assets <dir>]
+  framedeck editor [--port N] [--projects <dir>] [--assets <dir>]
+  framedeck serve  [--port N] [--projects <dir>] [--assets <dir>]
+  framedeck render <file-or-dir> [--out <path>] [--scale N] [--assets <dir>]
+  framedeck watch  <project-dir> [--out <dir>] [--scale N]
+  framedeck init   <project-name> [--device <slug>] [--display-name <name>]
+  framedeck devices [--family iphone|ipad|apple-watch] [--json]
+  framedeck presets [--json]
 
 Flags:
   --assets    path to assets/device-bezels (auto-detected by default)
@@ -29,21 +29,21 @@ Flags:
   --project   project directory for the current app repo (default screenshots/)
 
 Examples:
-  screendeck
-  screendeck build
-  screendeck editor --port 5000
-  screendeck render projects/example-app/screens/hero.screen
-  screendeck render projects/example-app --scale 2
-  screendeck devices --family iphone
-  screendeck init my-app --device iphone-16-pro-max
+  framedeck
+  framedeck build
+  framedeck editor --port 5000
+  framedeck render projects/example-app/screens/hero.screen
+  framedeck render projects/example-app --scale 2
+  framedeck devices --family iphone
+  framedeck init my-app --device iphone-16-pro-max
 `;
 
 export async function main(argv: string[]): Promise<void> {
   const args = parseArgs(argv);
   const cmd = args.positional[0];
 
-  // `screendeck --help` (no positional, help flag) → print help.
-  // `screendeck` (no args at all) → boot the editor.
+  // `framedeck --help` (no positional, help flag) → print help.
+  // `framedeck` (no args at all) → boot the editor.
   if (!cmd) {
     if (args.flags.help || args.flags.h) {
       console.log(HELP);
@@ -68,7 +68,7 @@ export async function main(argv: string[]): Promise<void> {
     case "watch":   return watchCommand(args);
     case "version":
     case "--version":
-      console.log("screendeck 0.1.0");
+      console.log("framedeck 0.1.0");
       return;
     default:
       console.error(`Unknown command: ${cmd}\n`);

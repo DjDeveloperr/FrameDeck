@@ -8,9 +8,9 @@
 
 import { NextRequest, NextResponse } from "next/server";
 import { join } from "node:path";
-import { DeviceRegistry, parseScreen } from "@screendeck/core";
-import { loadDeviceIndexFromFs } from "@screendeck/core/fs";
-import { renderDocumentNode } from "@screendeck/renderer/node";
+import { DeviceRegistry, parseScreen } from "@framedeck/core";
+import { loadDeviceIndexFromFs } from "@framedeck/core/fs";
+import { renderDocumentNode } from "@framedeck/renderer/node";
 import { findProject, readScreen } from "@/lib/projects";
 import { assetsRoot } from "@/lib/paths";
 

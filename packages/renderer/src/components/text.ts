@@ -1,6 +1,6 @@
-import { parseColor, parseLength, parseNumber } from "@screendeck/core";
+import { parseColor, parseLength, parseNumber } from "@framedeck/core";
 import type { Painter, RenderContext, Rect } from "../types.js";
-import type { ElementNode } from "@screendeck/core";
+import type { ElementNode } from "@framedeck/core";
 
 const DEFAULT_FONT_STACK =
   "'SF Pro Display', 'SF Pro Text', -apple-system, 'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif";

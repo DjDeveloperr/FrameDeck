@@ -42,7 +42,7 @@ import {
   type BoardsManifest,
   type ElementPath,
   type ScreenDocument,
-} from "@screendeck/core";
+} from "@framedeck/core";
 
 export type ViewMode = "visual" | "code";
 

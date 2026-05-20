@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
-import type { DeviceFamily, DeviceIndex, DeviceProfile } from "@screendeck/core";
+import type { DeviceFamily, DeviceIndex, DeviceProfile } from "@framedeck/core";
 import { Modal } from "./Popover";
 
 interface Props {

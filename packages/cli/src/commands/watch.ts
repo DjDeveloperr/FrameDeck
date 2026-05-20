@@ -1,11 +1,11 @@
-// `screendeck watch <project-dir>` — re-renders any .screen file when it
+// `framedeck watch <project-dir>` — re-renders any .screen file when it
 // changes. Great for live iteration alongside the web editor.
 
 import { resolve, join, dirname } from "node:path";
 import { stat, readFile, writeFile, mkdir } from "node:fs/promises";
-import { DeviceRegistry, parseScreen } from "@screendeck/core";
-import { loadDeviceIndexFromFs } from "@screendeck/core/fs";
-import { renderDocumentNode } from "@screendeck/renderer/node";
+import { DeviceRegistry, parseScreen } from "@framedeck/core";
+import { loadDeviceIndexFromFs } from "@framedeck/core/fs";
+import { renderDocumentNode } from "@framedeck/renderer/node";
 import { resolveAssetsRoot } from "../assets.js";
 import { flag, type ParsedArgs } from "../args.js";
 
@@ -32,7 +32,7 @@ export async function watchCommand(args: ParsedArgs): Promise<void> {
   watcher.on("all", async (event, path) => {
     if (!path.endsWith(".screen")) {
       // A shot changed — re-render every screen (cheap for small projects).
-      const { listScreens } = await import("@screendeck/core/fs");
+      const { listScreens } = await import("@framedeck/core/fs");
       for (const s of listScreens(dir)) {
         await safeRender(s.path, outDir, scale, devices);
       }

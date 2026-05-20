@@ -1,7 +1,7 @@
 // Render orchestrator: parses (if needed), builds layout, paints.
 
-import type { ScreenDocument } from "@screendeck/core";
-import { parseScreen } from "@screendeck/core";
+import type { ScreenDocument } from "@framedeck/core";
+import { parseScreen } from "@framedeck/core";
 import { buildAndComputeLayout, freeLayout, type LaidOutNode } from "./layout.js";
 import { paintBackground, paintGradient } from "./components/background.js";
 import { paintText } from "./components/text.js";
@@ -96,7 +96,7 @@ async function paint(
       } catch (err) {
         // A single misbehaving element shouldn't black out the whole screen.
         if (typeof console !== "undefined") {
-          console.warn(`[screendeck] paint failed for <${node.ast.tag}> at [${path.join(",")}]:`, err);
+          console.warn(`[framedeck] paint failed for <${node.ast.tag}> at [${path.join(",")}]:`, err);
         }
       }
     }

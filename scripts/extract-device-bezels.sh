@@ -5,7 +5,7 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 WORKSPACE_DIR="$(cd "${SCRIPT_DIR}/.." && pwd)"
 SIMDECK_ROOT="${SIMDECK_ROOT:-${HOME}/Developer/SimDeck}"
 OUTPUT_DIR="${1:-${WORKSPACE_DIR}/assets/device-bezels}"
-BUILD_DIR="${TMPDIR:-/tmp}/screendeck-device-bezel-extractor"
+BUILD_DIR="${TMPDIR:-/tmp}/framedeck-device-bezel-extractor"
 EXTRACTOR="${BUILD_DIR}/extract-device-bezels"
 
 if [[ ! -f "${SIMDECK_ROOT}/cli/XCWChromeRenderer.m" ]]; then

@@ -8,8 +8,8 @@ import test from "node:test";
 
 const repoRoot = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 
-test("screendeck build exports app-local screenshots to screenshots/dist", async () => {
-  const workspace = await mkdtemp(join(tmpdir(), "screendeck-build-"));
+test("framedeck build exports app-local screenshots to screenshots/dist", async () => {
+  const workspace = await mkdtemp(join(tmpdir(), "framedeck-build-"));
   try {
     const projectRoot = join(workspace, "screenshots");
     await mkdir(join(projectRoot, "screens"), { recursive: true });
@@ -25,7 +25,7 @@ test("screendeck build exports app-local screenshots to screenshots/dist", async
     const result = spawnSync(
       process.execPath,
       [
-        join(repoRoot, "packages", "cli", "bin", "screendeck.js"),
+        join(repoRoot, "packages", "cli", "bin", "framedeck.js"),
         "build",
         "--assets",
         join(repoRoot, "assets", "device-bezels"),
@@ -35,7 +35,7 @@ test("screendeck build exports app-local screenshots to screenshots/dist", async
         encoding: "utf8",
         env: {
           ...process.env,
-          SCREENDECK_HOME: join(workspace, ".screendeck"),
+          FRAMEDECK_HOME: join(workspace, ".framedeck"),
         },
       },
     );

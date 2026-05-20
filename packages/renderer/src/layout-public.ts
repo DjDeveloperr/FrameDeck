@@ -2,9 +2,9 @@
 //
 // The web editor uses this to render a transparent overlay of clickable boxes
 // over the canvas so users can tap an element to select it. Paths track the
-// AST element-index hierarchy and align with @screendeck/core's path helpers.
+// AST element-index hierarchy and align with @framedeck/core's path helpers.
 
-import type { ElementNode, ScreenDocument, DeviceRegistry } from "@screendeck/core";
+import type { ElementNode, ScreenDocument, DeviceRegistry } from "@framedeck/core";
 import type { Backend } from "./backend.js";
 import type { Rect } from "./types.js";
 import { buildAndComputeLayout, freeLayout, type LaidOutNode } from "./layout.js";

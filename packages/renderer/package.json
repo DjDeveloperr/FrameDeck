@@ -1,5 +1,5 @@
 {
-  "name": "@screendeck/renderer",
+  "name": "@framedeck/renderer",
   "version": "0.1.0",
   "type": "module",
   "license": "Apache-2.0",
@@ -28,7 +28,7 @@
     "dev": "tsc -p tsconfig.json --watch"
   },
   "dependencies": {
-    "@screendeck/core": "*",
+    "@framedeck/core": "*",
     "@napi-rs/canvas": "^0.1.65",
     "yoga-layout": "^3.2.1"
   },

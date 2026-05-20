@@ -1,6 +1,6 @@
 # Device Bezel Extraction
 
-ScreenDeck's initial device bezels were extracted from the local Xcode
+FrameDeck's initial device bezels were extracted from the local Xcode
 CoreSimulator and DeviceKit installation, using SimDeck's `XCWChromeRenderer` as
 the reference implementation.
 

@@ -75,7 +75,7 @@ export function loadProject(root: string): Project {
   const projectRoot = resolve(root);
   const manifestPath = join(projectRoot, "project.json");
   if (!existsSync(manifestPath)) {
-    throw new Error(`Not a ScreenDeck project (no project.json at ${projectRoot})`);
+    throw new Error(`Not a FrameDeck project (no project.json at ${projectRoot})`);
   }
   const manifest = JSON.parse(readFileSync(manifestPath, "utf8")) as ProjectManifest;
   const screens = listScreens(projectRoot);
@@ -108,16 +108,16 @@ export function discoverProjects(rootDir: string): Project[] {
   return out.sort((a, b) => a.manifest.name.localeCompare(b.manifest.name));
 }
 
-export function screendeckHome(): string {
-  return resolve(process.env.SCREENDECK_HOME ?? join(homedir(), ".screendeck"));
+export function framedeckHome(): string {
+  return resolve(process.env.FRAMEDECK_HOME ?? join(homedir(), ".framedeck"));
 }
 
 export function registryProjectsRoot(): string {
-  return join(screendeckHome(), "projects");
+  return join(framedeckHome(), "projects");
 }
 
 export function registryPath(): string {
-  return join(screendeckHome(), "registry.json");
+  return join(framedeckHome(), "registry.json");
 }
 
 export function readProjectRegistry(): ProjectRegistry {
@@ -150,7 +150,7 @@ export function readProjectRegistry(): ProjectRegistry {
 }
 
 export function writeProjectRegistry(registry: ProjectRegistry): void {
-  mkdirSync(screendeckHome(), { recursive: true });
+  mkdirSync(framedeckHome(), { recursive: true });
   writeFileSync(registryPath(), JSON.stringify({ version: 1, projects: registry.projects }, null, 2) + "\n");
 }
 
@@ -248,9 +248,9 @@ export function detectProjectRoot(appRoot: string, explicit?: string): string {
 
   for (const candidate of [
     DEFAULT_PROJECT_SUBDIR,
-    "screendeck",
-    "screen-deck",
-    ".screendeck",
+    "framedeck",
+    "frame-deck",
+    ".framedeck",
   ]) {
     const root = resolve(base, candidate);
     if (existsSync(join(root, "project.json"))) return root;
@@ -304,7 +304,7 @@ function sampleScreen(device: string): string {
       Your app, framed.
     </Text>
     <Text size="40" weight="400" color="#a1a1aa" align="center" maxWidth="900">
-      Edit this starter screen in ScreenDeck.
+      Edit this starter screen in FrameDeck.
     </Text>
     <Device model="${device}" width="820" alignSelf="center" />
   </VStack>

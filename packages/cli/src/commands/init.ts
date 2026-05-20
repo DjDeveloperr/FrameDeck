@@ -1,16 +1,16 @@
-// `screendeck init <name>` — scaffold a new project directory with project.json
+// `framedeck init <name>` — scaffold a new project directory with project.json
 // and a starter screen file. Friendly to both humans and agents.
 
 import { readdir } from "node:fs/promises";
 import { existsSync } from "node:fs";
 import { basename, resolve } from "node:path";
-import { createProject, registerProject, toSlug } from "@screendeck/core/fs";
+import { createProject, registerProject, toSlug } from "@framedeck/core/fs";
 import { flag, type ParsedArgs } from "../args.js";
 
 export async function initCommand(args: ParsedArgs): Promise<void> {
   const name = args.positional[1];
   if (!name) {
-    console.error("usage: screendeck init <project-name>");
+    console.error("usage: framedeck init <project-name>");
     process.exit(2);
   }
   const dir = resolve(name);
@@ -33,7 +33,7 @@ export async function initCommand(args: ParsedArgs): Promise<void> {
   console.log(`Created project at ${dir}\n`);
   console.log("Next steps:");
   console.log(`  cd ${name}`);
-  console.log(`  screendeck render screens/hero.screen`);
+  console.log(`  framedeck render screens/hero.screen`);
 }
 
 function toDisplayName(name: string): string {

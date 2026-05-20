@@ -1,4 +1,4 @@
-// `screendeck build` — render the current app repo's ScreenDeck project.
+// `framedeck build` — render the current app repo's FrameDeck project.
 //
 // From an app workspace this resolves screenshots/ by default, then writes all
 // screen exports into screenshots/dist/.
@@ -12,7 +12,7 @@ import {
   listScreens,
   loadProject,
   registerProject,
-} from "@screendeck/core/fs";
+} from "@framedeck/core/fs";
 import { flag, type ParsedArgs } from "../args.js";
 import { createDeviceRegistry, renderOne } from "./render.js";
 
@@ -20,15 +20,15 @@ export async function buildCommand(args: ParsedArgs): Promise<void> {
   const appRoot = resolve(flag(args, "cwd") ?? process.cwd());
   const explicitProject = args.positional[1]
     ?? flag(args, "project", "project-dir")
-    ?? process.env.SCREENDECK_PROJECT
-    ?? process.env.SCREENDECK_PROEJCT;
+    ?? process.env.FRAMEDECK_PROJECT
+    ?? process.env.FRAMEDECK_PROEJCT;
   const projectRoot = detectProjectRoot(appRoot, explicitProject);
   const manifestPath = join(projectRoot, "project.json");
 
   if (!existsSync(manifestPath)) {
     console.error(
-      `No ScreenDeck project found at ${projectRoot}\n` +
-      `Run \`screendeck\` once from the app workspace to create ${DEFAULT_PROJECT_SUBDIR}/, ` +
+      `No FrameDeck project found at ${projectRoot}\n` +
+      `Run \`framedeck\` once from the app workspace to create ${DEFAULT_PROJECT_SUBDIR}/, ` +
       "or pass a project directory.",
     );
     process.exit(1);

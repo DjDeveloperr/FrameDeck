@@ -1,11 +1,11 @@
 ---
-name: screendeck
-description: Author and render App Store screenshots using the ScreenDeck `.screen` format. Use when the user wants to create, edit, render, or organize screenshot mockups for iPhone, iPad, or Apple Watch — including authoring `.screen` files, arranging them in boards, picking device frames, and exporting PNGs.
+name: framedeck
+description: Author and render App Store screenshots using the FrameDeck `.screen` format. Use when the user wants to create, edit, render, or organize screenshot mockups for iPhone, iPad, or Apple Watch — including authoring `.screen` files, arranging them in boards, picking device frames, and exporting PNGs.
 ---
 
-# ScreenDeck
+# FrameDeck
 
-ScreenDeck is a precision compositor for App Store screenshots and device
+FrameDeck is a precision compositor for App Store screenshots and device
 mockups. Screenshots are stored as `.screen` files — small, hand-editable,
 agent-friendly JSX-ish documents that render identically through the CLI
 (Skia/Node canvas) and the web editor (DOM canvas, same code).
@@ -123,30 +123,30 @@ The canonical canvas sizes Apple expects:
 | Apple Watch Series 11 | `416x496`   |
 | Apple Watch Ultra 3   | `422x514`   |
 
-Run `screendeck presets` for the full list.
+Run `framedeck presets` for the full list.
 
 ## CLI
 
 ```bash
 # Discover bundled device frames (slug to use in `model=`)
-screendeck devices --family iphone
-screendeck devices --json
+framedeck devices --family iphone
+framedeck devices --json
 
 # List App Store canvas presets
-screendeck presets
+framedeck presets
 
 # Render a single file → PNG next to the source
-screendeck render projects/<app>/screens/01-hero.screen
-screendeck render projects/<app>/screens/01-hero.screen --scale 2
+framedeck render projects/<app>/screens/01-hero.screen
+framedeck render projects/<app>/screens/01-hero.screen --scale 2
 
 # Render every screen in a project → projects/<app>/out/*.png
-screendeck render projects/<app>
+framedeck render projects/<app>
 
 # Watch + re-render on save
-screendeck watch projects/<app>
+framedeck watch projects/<app>
 
 # Scaffold a fresh project
-screendeck init my-app --device iphone-16-pro-max
+framedeck init my-app --device iphone-16-pro-max
 ```
 
 CLI options:
@@ -159,9 +159,9 @@ CLI options:
 
 ```ts
 // Render server-side / from any Node script.
-import { parseScreen, DeviceRegistry } from "@screendeck/core";
-import { loadDeviceIndexFromFs } from "@screendeck/core/fs";
-import { renderDocumentNode } from "@screendeck/renderer/node";
+import { parseScreen, DeviceRegistry } from "@framedeck/core";
+import { loadDeviceIndexFromFs } from "@framedeck/core/fs";
+import { renderDocumentNode } from "@framedeck/renderer/node";
 
 const devices = new DeviceRegistry(
   "<repo>/assets/device-bezels",
@@ -179,8 +179,8 @@ fs.writeFileSync("out.png", canvas.toBuffer("image/png"));
 In the browser, swap `renderDocumentNode` for the web entry:
 
 ```ts
-import { renderDocument } from "@screendeck/renderer";
-import { webBackend } from "@screendeck/renderer/web";
+import { renderDocument } from "@framedeck/renderer";
+import { webBackend } from "@framedeck/renderer/web";
 ```
 
 ## Authoring tips for agents

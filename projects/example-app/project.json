@@ -1,7 +1,7 @@
 {
   "name": "Example App",
   "id": "example-app",
-  "description": "Demonstrates the ScreenDeck .screen format with representative screenshot compositions.",
+  "description": "Demonstrates the FrameDeck .screen format with representative screenshot compositions.",
   "exports": [
     { "name": "iphone-6.9-portrait", "size": "1284x2778", "device": "iphone-16-pro-max" },
     { "name": "iphone-6.5-portrait", "size": "1242x2688", "device": "iphone-11-pro-max" },

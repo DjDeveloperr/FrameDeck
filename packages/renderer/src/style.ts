@@ -10,7 +10,7 @@ import Yoga, {
   type Justify,
   type PositionType,
 } from "yoga-layout";
-import type { Attrs } from "@screendeck/core";
+import type { Attrs } from "@framedeck/core";
 
 const PCT = /^(-?\d+(?:\.\d+)?)%$/;
 

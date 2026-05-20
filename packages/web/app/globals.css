@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 /*
- * ScreenDeck design system — strict monochrome, varied surface elevation.
+ * FrameDeck design system — strict monochrome, varied surface elevation.
  *
  * Both light and dark themes share the same Tailwind token names; the actual
  * RGB values are swapped via a [data-theme=light] selector on <html>. The

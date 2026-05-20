@@ -1,10 +1,10 @@
 {
-  "name": "@screendeck/cli",
+  "name": "@framedeck/cli",
   "version": "0.1.0",
   "type": "module",
   "license": "Apache-2.0",
   "bin": {
-    "screendeck": "./bin/screendeck.js"
+    "framedeck": "./bin/framedeck.js"
   },
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -17,11 +17,11 @@
     "dev": "tsc -p tsconfig.json --watch",
     "prepack": "node ../../scripts/prepare-cli-package.mjs",
     "postpack": "node ../../scripts/clean-cli-package.mjs",
-    "start": "node bin/screendeck.js"
+    "start": "node bin/framedeck.js"
   },
   "dependencies": {
-    "@screendeck/core": "*",
-    "@screendeck/renderer": "*",
+    "@framedeck/core": "*",
+    "@framedeck/renderer": "*",
     "chokidar": "^4.0.1"
   },
   "devDependencies": {

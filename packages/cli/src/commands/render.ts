@@ -1,13 +1,13 @@
-// `screendeck render <input> [--out <path>] [--scale 2] [--assets <dir>]`
+// `framedeck render <input> [--out <path>] [--scale 2] [--assets <dir>]`
 //
 // `<input>` is either a single .screen file or a directory. When a directory
 // is passed, every .screen file inside `screens/` is rendered.
 
 import { readFile, mkdir, stat } from "node:fs/promises";
 import { dirname, join, resolve, basename, isAbsolute } from "node:path";
-import { DeviceRegistry, parseScreen } from "@screendeck/core";
-import { listScreens, loadDeviceIndexFromFs } from "@screendeck/core/fs";
-import { renderDocumentNode, nodeBackend } from "@screendeck/renderer/node";
+import { DeviceRegistry, parseScreen } from "@framedeck/core";
+import { listScreens, loadDeviceIndexFromFs } from "@framedeck/core/fs";
+import { renderDocumentNode, nodeBackend } from "@framedeck/renderer/node";
 import { resolveAssetsRoot } from "../assets.js";
 import { flag, type ParsedArgs } from "../args.js";
 
@@ -19,7 +19,7 @@ export function createDeviceRegistry(assets?: string): DeviceRegistry {
 export async function renderCommand(args: ParsedArgs): Promise<void> {
   const input = args.positional[1];
   if (!input) {
-    console.error("usage: screendeck render <file-or-dir> [--out <path>] [--scale N]");
+    console.error("usage: framedeck render <file-or-dir> [--out <path>] [--scale N]");
     process.exit(2);
     return;
   }
@@ -73,7 +73,7 @@ export async function renderOne(
   await writeFile(outPath, buf);
   // Surface a hint about which device/size was used.
   const size = doc.root.attrs.size ?? "?";
-  if (process.env.SCREENDECK_DEBUG) {
+  if (process.env.FRAMEDECK_DEBUG) {
     console.error(`  rendered ${basename(source)} @ ${size} ×${scale}`);
   }
 }

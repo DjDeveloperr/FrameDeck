@@ -12,8 +12,8 @@ import { Inspector } from "./Inspector";
 import { CanvasView } from "./CanvasView";
 import { CodeView } from "./CodeView";
 
-const TREE_KEY = "screendeck:tree-width";
-const INSP_KEY = "screendeck:inspector-width";
+const TREE_KEY = "framedeck:tree-width";
+const INSP_KEY = "framedeck:inspector-width";
 const TREE_MIN = 220;
 const TREE_MAX = 520;
 const INSP_MIN = 240;

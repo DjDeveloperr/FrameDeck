@@ -1,5 +1,5 @@
-import type { DeviceGeometry, DeviceProfile } from "@screendeck/core";
-import { parseBool } from "@screendeck/core";
+import type { DeviceGeometry, DeviceProfile } from "@framedeck/core";
+import { parseBool } from "@framedeck/core";
 import type { Painter, RenderContext } from "../types.js";
 import { loadCachedImage, roundRectPath } from "../util.js";
 
@@ -46,7 +46,7 @@ export const paintDevice: Painter = async (node, rect, ctx) => {
       await drawClippedScreen(ctx, profile, geom, screenRect, node.attrs.screenshot ?? node.attrs.screen!);
     } catch (err) {
       if (typeof console !== "undefined") {
-        console.warn(`[screendeck] failed to load screenshot for <Device model="${profile.slug}">: ${node.attrs.screenshot ?? node.attrs.screen}`, err);
+        console.warn(`[framedeck] failed to load screenshot for <Device model="${profile.slug}">: ${node.attrs.screenshot ?? node.attrs.screen}`, err);
       }
     }
   } else if (node.attrs.screenColor) {

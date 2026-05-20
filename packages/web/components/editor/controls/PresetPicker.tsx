@@ -1,6 +1,6 @@
 "use client";
 
-import { APP_STORE_PRESETS } from "@screendeck/core";
+import { APP_STORE_PRESETS } from "@framedeck/core";
 import { Select } from "./Inputs";
 
 interface Props {

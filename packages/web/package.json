@@ -1,5 +1,5 @@
 {
-  "name": "@screendeck/web",
+  "name": "@framedeck/web",
   "version": "0.1.0",
   "private": true,
   "type": "module",
@@ -14,8 +14,8 @@
     "@codemirror/state": "^6.4.1",
     "@codemirror/theme-one-dark": "^6.1.2",
     "@codemirror/view": "^6.34.1",
-    "@screendeck/core": "*",
-    "@screendeck/renderer": "*",
+    "@framedeck/core": "*",
+    "@framedeck/renderer": "*",
     "@uiw/react-codemirror": "^4.23.7",
     "chokidar": "^4.0.1",
     "next": "^15.5.18",

@@ -1,4 +1,4 @@
-import { parseColor, parseLength, parseNumber } from "@screendeck/core";
+import { parseColor, parseLength, parseNumber } from "@framedeck/core";
 import type { Painter } from "../types.js";
 import { roundRectPath } from "../util.js";
 

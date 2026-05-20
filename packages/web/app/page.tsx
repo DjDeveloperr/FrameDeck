@@ -3,19 +3,19 @@ import { redirect } from "next/navigation";
 import type { Metadata } from "next";
 import { statSync } from "node:fs";
 import { join } from "node:path";
-import { loadBoardsFromFs, registryProjectsRoot } from "@screendeck/core/fs";
+import { loadBoardsFromFs, registryProjectsRoot } from "@framedeck/core/fs";
 import { CreateProjectForm } from "@/components/projects/CreateProjectForm";
 import { listProjects } from "@/lib/projects";
 
 export const dynamic = "force-dynamic";
 export const metadata: Metadata = {
-  title: "ScreenDeck Projects",
-  description: "Create and open local ScreenDeck screenshot projects.",
+  title: "FrameDeck Projects",
+  description: "Create and open local FrameDeck screenshot projects.",
 };
 
 export default function Home() {
   const projects = listProjects();
-  const activeProjectId = process.env.SCREENDECK_ACTIVE_PROJECT_ID;
+  const activeProjectId = process.env.FRAMEDECK_ACTIVE_PROJECT_ID;
   if (activeProjectId && projects.some((p) => p.manifest.id === activeProjectId)) {
     redirect(`/projects/${activeProjectId}`);
   }
@@ -25,7 +25,7 @@ export default function Home() {
       <header className="flex select-none items-center justify-between border-b border-ink-800 bg-ink-950 px-10 py-5">
         <div className="flex items-center gap-2.5">
           <div className="size-5 rounded-[5px] bg-ink-100" />
-          <h1 className="text-[14px] font-semibold tracking-tight text-ink-50">ScreenDeck</h1>
+          <h1 className="text-[14px] font-semibold tracking-tight text-ink-50">FrameDeck</h1>
         </div>
         <div className="font-mono text-[11px] text-ink-500">
           {projects.length} project{projects.length === 1 ? "" : "s"}

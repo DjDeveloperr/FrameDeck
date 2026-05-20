@@ -1,29 +1,29 @@
 {
-  "name": "screendeck",
+  "name": "framedeck",
   "version": "0.1.0",
   "private": true,
   "description": "Figma for screenshots — a precision compositor and editor for App Store screenshots and device mockups.",
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/DjDeveloperr/ScreenDeck.git"
+    "url": "https://github.com/DjDeveloperr/FrameDeck.git"
   },
   "bugs": {
-    "url": "https://github.com/DjDeveloperr/ScreenDeck/issues"
+    "url": "https://github.com/DjDeveloperr/FrameDeck/issues"
   },
-  "homepage": "https://github.com/DjDeveloperr/ScreenDeck#readme",
+  "homepage": "https://github.com/DjDeveloperr/FrameDeck#readme",
   "workspaces": [
     "packages/*"
   ],
   "scripts": {
-    "build": "npm run build --workspace @screendeck/core && npm run build --workspace @screendeck/renderer && npm run build --workspace @screendeck/cli && npm run build --workspace @screendeck/web",
+    "build": "npm run build --workspace @framedeck/core && npm run build --workspace @framedeck/renderer && npm run build --workspace @framedeck/cli && npm run build --workspace @framedeck/web",
     "check": "npm run lint && npm run doctor && npm test",
     "lint": "npm run build",
     "doctor": "react-doctor packages/web --full --offline --fail-on error --lint",
     "test": "node --test test/*.test.mjs",
-    "dev": "npm run dev --workspace @screendeck/web",
-    "cli": "npm run start --workspace @screendeck/cli --",
-    "render": "npm run start --workspace @screendeck/cli -- render"
+    "dev": "npm run dev --workspace @framedeck/web",
+    "cli": "npm run start --workspace @framedeck/cli --",
+    "render": "npm run start --workspace @framedeck/cli -- render"
   },
   "engines": {
     "node": ">=20"

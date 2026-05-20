@@ -50,8 +50,8 @@ jobs:
 
       - name: Publish packages
         run: |
-          npm publish --workspace @screendeck/core --provenance
-          npm publish --workspace @screendeck/renderer --provenance
-          npm publish --workspace @screendeck/cli --provenance
+          npm publish --workspace @framedeck/core --provenance
+          npm publish --workspace @framedeck/renderer --provenance
+          npm publish --workspace @framedeck/cli --provenance
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

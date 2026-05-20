@@ -2,7 +2,7 @@ import "./globals.css";
 import type { Metadata, Viewport } from "next";
 
 export const metadata: Metadata = {
-  title: "ScreenDeck",
+  title: "FrameDeck",
   description: "Figma for screenshots — precision composer for App Store screenshots.",
 };
 
@@ -21,7 +21,7 @@ export const viewport: Viewport = {
 // paints, so a light-mode user on a fresh load doesn't see a flash of dark.
 const themeInit = `
 try {
-  var m = localStorage.getItem('screendeck:theme');
+  var m = localStorage.getItem('framedeck:theme');
   var sys = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
   var eff = (m === 'light' || m === 'dark') ? m : sys;
   if (eff === 'light') document.documentElement.setAttribute('data-theme', 'light');

@@ -1,10 +1,10 @@
-// `screendeck devices [--family iphone|ipad|apple-watch] [--json]`
+// `framedeck devices [--family iphone|ipad|apple-watch] [--json]`
 //
 // Lists device slugs and friendly names from the bundled bezel index. Useful
 // for agents that want to feed a value to the `model="..."` attribute.
 
-import { DeviceRegistry, type DeviceFamily } from "@screendeck/core";
-import { loadDeviceIndexFromFs } from "@screendeck/core/fs";
+import { DeviceRegistry, type DeviceFamily } from "@framedeck/core";
+import { loadDeviceIndexFromFs } from "@framedeck/core/fs";
 import { resolveAssetsRoot } from "../assets.js";
 import { flag, boolFlag, type ParsedArgs } from "../args.js";
 

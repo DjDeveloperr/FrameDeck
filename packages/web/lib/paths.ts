@@ -24,11 +24,11 @@ export function repoRoot(): string {
 }
 
 export function projectsRoot(): string {
-  return process.env.SCREENDECK_PROJECTS ?? join(repoRoot(), "projects");
+  return process.env.FRAMEDECK_PROJECTS ?? join(repoRoot(), "projects");
 }
 
 export function assetsRoot(): string {
-  return process.env.SCREENDECK_ASSETS ?? join(repoRoot(), "assets", "device-bezels");
+  return process.env.FRAMEDECK_ASSETS ?? join(repoRoot(), "assets", "device-bezels");
 }
 
 export function safeResolve(base: string, rel: string): string {
