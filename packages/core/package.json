@@ -1,6 +1,6 @@
 {
   "name": "framedeck-core",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Core parser, project, and device metadata utilities for FrameDeck.",
   "type": "module",
   "license": "Apache-2.0",
