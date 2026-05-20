@@ -21,7 +21,9 @@ jobs:
           cache: npm
 
       - name: Install
-        run: npm ci
+        run: |
+          npm ci
+          npm install --include=optional --no-audit --no-fund
 
       - name: Lint And Test
         run: npm run check

@@ -1,6 +1,6 @@
 {
   "name": "framedeck-renderer",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Node and browser renderer for FrameDeck screenshot documents.",
   "type": "module",
   "license": "Apache-2.0",
@@ -44,7 +44,7 @@
   },
   "dependencies": {
     "@napi-rs/canvas": "^0.1.65",
-    "framedeck-core": "^0.1.3",
+    "framedeck-core": "^0.1.4",
     "yoga-layout": "^3.2.1"
   },
   "engines": {
