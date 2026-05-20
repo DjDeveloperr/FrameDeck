@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { redirect } from "next/navigation";
 import type { Metadata } from "next";
 import { statSync } from "node:fs";
@@ -24,7 +25,14 @@ export default function Home() {
     <main className="flex min-h-screen w-screen flex-col bg-ink-975">
       <header className="flex select-none items-center justify-between border-b border-ink-800 bg-ink-950 px-10 py-5">
         <div className="flex items-center gap-2.5">
-          <div className="size-5 rounded-[5px] bg-ink-100" />
+          <Image
+            src="/brand/framedeck-rounded.png"
+            alt=""
+            width={22}
+            height={22}
+            className="size-[22px]"
+            priority
+          />
           <h1 className="text-[14px] font-semibold tracking-tight text-ink-50">FrameDeck</h1>
         </div>
         <div className="font-mono text-[11px] text-ink-500">

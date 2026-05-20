@@ -5,17 +5,38 @@
 // side-by-side on the canvas.
 
 import Link from "next/link";
+import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import { useEditor } from "./EditorContext";
 import { Popover } from "./controls/Popover";
 import { ThemeToggle } from "./ThemeToggle";
-import { IconChevronLeft, IconCode, IconEye, IconPlus, IconRedo, IconUndo, IconX } from "./icons";
+import {
+  IconChevronLeft,
+  IconCode,
+  IconEye,
+  IconPlus,
+  IconRedo,
+  IconSidebarLeft,
+  IconSidebarRight,
+  IconUndo,
+  IconX,
+} from "./icons";
 
 interface Props {
   projectName: string;
+  leftSidebarOpen: boolean;
+  rightSidebarOpen: boolean;
+  onToggleLeftSidebar: () => void;
+  onToggleRightSidebar: () => void;
 }
 
-export function Tabs({ projectName }: Props) {
+export function Tabs({
+  projectName,
+  leftSidebarOpen,
+  rightSidebarOpen,
+  onToggleLeftSidebar,
+  onToggleRightSidebar,
+}: Props) {
   const {
     state,
     activeBoard,
@@ -36,12 +57,37 @@ export function Tabs({ projectName }: Props) {
     <div className="flex h-11 shrink-0 select-none items-center gap-2 border-b border-ink-800/80 bg-ink-950 px-3">
       <Link
         href="/"
+        className="flex size-7 shrink-0 items-center justify-center rounded-[7px] transition hover:bg-ink-875"
+        title="FrameDeck"
+        aria-label="FrameDeck"
+      >
+        <Image
+          src="/brand/framedeck-rounded.png"
+          alt=""
+          width={22}
+          height={22}
+          className="size-[22px]"
+          priority
+        />
+      </Link>
+      <Link
+        href="/"
         className="group flex h-7 items-center gap-1.5 rounded-full bg-ink-875 px-3 text-[12px] leading-none text-ink-200 transition hover:bg-ink-825 hover:text-ink-50"
         title="Back to projects"
       >
         <IconChevronLeft className="text-ink-500 transition group-hover:text-ink-200" size={13} />
         <span className="truncate max-w-[160px] font-medium tracking-tight">{projectName}</span>
       </Link>
+      <button
+        type="button"
+        onClick={onToggleLeftSidebar}
+        className={sidebarToggleClass(leftSidebarOpen)}
+        title={leftSidebarOpen ? "Hide left sidebar" : "Show left sidebar"}
+        aria-label={leftSidebarOpen ? "Hide left sidebar" : "Show left sidebar"}
+        aria-pressed={leftSidebarOpen}
+      >
+        <IconSidebarLeft />
+      </button>
 
       <div className="scrollbar-thin flex flex-1 items-center gap-1 overflow-x-auto">
         {state.boards.map((board) => (
@@ -96,10 +142,29 @@ export function Tabs({ projectName }: Props) {
           {codeMode ? <IconEye /> : <IconCode />}
           <span>{codeMode ? "Visual" : "Code"}</span>
         </button>
+        <button
+          type="button"
+          onClick={onToggleRightSidebar}
+          className={sidebarToggleClass(rightSidebarOpen)}
+          title={rightSidebarOpen ? "Hide right sidebar" : "Show right sidebar"}
+          aria-label={rightSidebarOpen ? "Hide right sidebar" : "Show right sidebar"}
+          aria-pressed={rightSidebarOpen}
+        >
+          <IconSidebarRight />
+        </button>
         <ThemeToggle />
       </div>
     </div>
   );
+}
+
+function sidebarToggleClass(open: boolean): string {
+  return [
+    "flex size-7 shrink-0 items-center justify-center rounded-full transition",
+    open
+      ? "bg-ink-875 text-ink-100 hover:bg-ink-825"
+      : "text-ink-500 hover:bg-ink-875 hover:text-ink-100",
+  ].join(" ");
 }
 
 interface BoardChipProps {

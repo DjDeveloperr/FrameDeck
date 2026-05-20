@@ -14,6 +14,8 @@ import { CodeView } from "./CodeView";
 
 const TREE_KEY = "framedeck:tree-width";
 const INSP_KEY = "framedeck:inspector-width";
+const TREE_OPEN_KEY = "framedeck:tree-open";
+const INSP_OPEN_KEY = "framedeck:inspector-open";
 const TREE_MIN = 220;
 const TREE_MAX = 520;
 const INSP_MIN = 240;
@@ -28,15 +30,34 @@ export function EditorShell({ projectName }: Props) {
   const codeMode = state.viewMode === "code";
   const [treeWidth, setTreeWidth] = usePersistentWidth(TREE_KEY, 280, TREE_MIN, TREE_MAX);
   const [inspWidth, setInspWidth] = usePersistentWidth(INSP_KEY, 296, INSP_MIN, INSP_MAX);
+  const [treeOpen, setTreeOpen] = usePersistentBoolean(TREE_OPEN_KEY, true);
+  const [inspOpen, setInspOpen] = usePersistentBoolean(INSP_OPEN_KEY, true);
 
   return (
     <div className="editor-chrome flex h-full min-h-0 flex-1 flex-col">
-      <Tabs projectName={projectName} />
+      <Tabs
+        projectName={projectName}
+        leftSidebarOpen={treeOpen}
+        rightSidebarOpen={inspOpen}
+        onToggleLeftSidebar={() => setTreeOpen((open) => !open)}
+        onToggleRightSidebar={() => setInspOpen((open) => !open)}
+      />
       <div className="flex h-full min-h-0 flex-1">
-        <div style={{ width: treeWidth, flex: `0 0 ${treeWidth}px` }} className="min-w-0">
-          <ElementsTree />
+        <div
+          style={{
+            width: treeOpen ? treeWidth : 0,
+            flexBasis: treeOpen ? treeWidth : 0,
+            flexGrow: 0,
+            flexShrink: 0,
+          }}
+          className="min-w-0 overflow-hidden transition-[width,flex-basis] duration-200 ease-out"
+          aria-hidden={!treeOpen}
+        >
+          <div style={{ width: treeWidth }} className="h-full">
+            {treeOpen && <ElementsTree />}
+          </div>
         </div>
-        <Resizer onResize={(dx) => setTreeWidth((w) => clamp(w + dx, TREE_MIN, TREE_MAX))} />
+        {treeOpen && <Resizer onResize={(dx) => setTreeWidth((w) => clamp(w + dx, TREE_MIN, TREE_MAX))} />}
 
         <main className="flex h-full min-h-0 flex-1">
           {codeMode ? (
@@ -53,9 +74,20 @@ export function EditorShell({ projectName }: Props) {
           )}
         </main>
 
-        <Resizer onResize={(dx) => setInspWidth((w) => clamp(w - dx, INSP_MIN, INSP_MAX))} />
-        <div style={{ width: inspWidth, flex: `0 0 ${inspWidth}px` }} className="min-w-0">
-          <Inspector />
+        {inspOpen && <Resizer onResize={(dx) => setInspWidth((w) => clamp(w - dx, INSP_MIN, INSP_MAX))} />}
+        <div
+          style={{
+            width: inspOpen ? inspWidth : 0,
+            flexBasis: inspOpen ? inspWidth : 0,
+            flexGrow: 0,
+            flexShrink: 0,
+          }}
+          className="min-w-0 overflow-hidden transition-[width,flex-basis] duration-200 ease-out"
+          aria-hidden={!inspOpen}
+        >
+          <div style={{ width: inspWidth }} className="h-full">
+            {inspOpen && <Inspector />}
+          </div>
         </div>
       </div>
     </div>
@@ -84,6 +116,27 @@ function usePersistentWidth(
     });
   };
   return [width, setter];
+}
+
+function usePersistentBoolean(
+  key: string,
+  initial: boolean,
+): [boolean, (updater: (value: boolean) => boolean) => void] {
+  const [value, setValue] = useState(initial);
+  useEffect(() => {
+    const stored = window.localStorage.getItem(key);
+    if (stored === "true" || stored === "false") {
+      setValue(stored === "true");
+    }
+  }, [key]);
+  const setter = (updater: (value: boolean) => boolean) => {
+    setValue((prev) => {
+      const next = updater(prev);
+      window.localStorage.setItem(key, String(next));
+      return next;
+    });
+  };
+  return [value, setter];
 }
 
 function clamp(n: number, lo: number, hi: number): number {

@@ -1,6 +1,10 @@
-# FrameDeck
+<div align="center">
+  <img src="assets/brand/framedeck-rounded.png" alt="FrameDeck" width="96" height="96">
+  <h1>FrameDeck</h1>
+  <p><strong>Local editor and CLI for building App Store screenshot decks.</strong></p>
+  <img src="assets/screenshots/editor.png" alt="FrameDeck editor" width="960">
+</div>
 
-FrameDeck is a local editor and CLI for building App Store screenshot decks.
 Projects are plain folders with `project.json`, `screens/*.screen`, and optional
 `shots/*` images, so they can live directly inside the app repo they document.
 

@@ -117,6 +117,20 @@ export const IconSliders = makeIcon(
     <circle cx="8" cy="8" r="1.2" />
   </>
 );
+export const IconSidebarLeft = makeIcon(
+  <>
+    <rect x="2.5" y="3" width="11" height="10" rx="1.5" />
+    <path d="M6.5 3v10" />
+    <path d="M4.5 6h.1M4.5 8h.1M4.5 10h.1" />
+  </>
+);
+export const IconSidebarRight = makeIcon(
+  <>
+    <rect x="2.5" y="3" width="11" height="10" rx="1.5" />
+    <path d="M9.5 3v10" />
+    <path d="M11.5 6h.1M11.5 8h.1M11.5 10h.1" />
+  </>
+);
 export const IconText = makeIcon(
   <>
     <path d="M3 4h10" />
