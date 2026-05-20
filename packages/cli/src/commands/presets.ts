@@ -1,6 +1,6 @@
 // `framedeck presets [--json]` — list the bundled App Store size presets.
 
-import { APP_STORE_PRESETS } from "@framedeck/core";
+import { APP_STORE_PRESETS } from "framedeck-core";
 import { boolFlag, type ParsedArgs } from "../args.js";
 
 export async function presetsCommand(args: ParsedArgs): Promise<void> {

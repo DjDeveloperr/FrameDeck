@@ -1,4 +1,5 @@
 node_modules
+worker/
 .next
 .next*
 dist
@@ -15,4 +16,4 @@ projects/*/out
 projects/*/screens/.!*
 projects/*/screens/*.png
 packages/cli/assets
-worker/
+packages/cli/web

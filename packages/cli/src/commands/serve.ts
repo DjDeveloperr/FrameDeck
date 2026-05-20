@@ -6,7 +6,8 @@
 // every non-loopback IPv4 the machine exposes).
 
 import { spawn } from "node:child_process";
-import { existsSync } from "node:fs";
+import { cpSync, existsSync, mkdirSync, readdirSync, rmSync, statSync, symlinkSync } from "node:fs";
+import { createRequire } from "node:module";
 import { dirname, isAbsolute, join, relative, resolve } from "node:path";
 import { networkInterfaces } from "node:os";
 import { fileURLToPath } from "node:url";
@@ -14,10 +15,11 @@ import {
   DEFAULT_PROJECT_SUBDIR,
   detectProjectRoot,
   ensureProject,
+  framedeckHome,
   registerProject,
   registryProjectsRoot,
   type Project,
-} from "@framedeck/core/fs";
+} from "framedeck-core/fs";
 import { resolveAssetsRoot } from "../assets.js";
 import { flag, type ParsedArgs } from "../args.js";
 
@@ -28,14 +30,15 @@ interface ServeOptions {
 export async function serveCommand(args: ParsedArgs, options: ServeOptions): Promise<void> {
   const port = (flag(args, "port", "p") ?? "4242").toString();
   const verbose = !!flag(args, "verbose");
-  const webDir = findWebDir();
-  if (!webDir) {
+  const discoveredWebDir = findWebDir();
+  if (!discoveredWebDir) {
     console.error(
       "Could not find the @framedeck/web package. Run `framedeck serve` from\n" +
       "within the FrameDeck workspace, or pass --web-dir <path>.",
     );
     process.exit(1);
   }
+  const webDir = prepareWebDirForNext(discoveredWebDir, port);
 
   const appRoot = resolve(flag(args, "cwd") ?? process.cwd());
   const projectsDir = resolveDir(flag(args, "projects"), registryProjectsRoot());
@@ -48,6 +51,7 @@ export async function serveCommand(args: ParsedArgs, options: ServeOptions): Pro
     ...process.env,
     PORT: port,
     HOSTNAME: flag(args, "host") ?? "0.0.0.0",
+    FRAMEDECK_NEXT_DIST_DIR: `.next-dev-${safeDistDirPart(port)}`,
   };
   if (projectsDir) env.FRAMEDECK_PROJECTS = projectsDir;
   if (assetsDir) env.FRAMEDECK_ASSETS = assetsDir;
@@ -66,7 +70,8 @@ export async function serveCommand(args: ParsedArgs, options: ServeOptions): Pro
 
   process.stdout.write(dim("  starting FrameDeck…\r"));
 
-  const child = spawn("npx", ["next", "dev", "-p", port], {
+  const nextBin = resolveNextBin(webDir);
+  const child = spawn(process.execPath, [nextBin, "dev", "-p", port], {
     cwd: webDir,
     env,
     stdio: ["ignore", "pipe", "pipe"],
@@ -121,6 +126,64 @@ export async function serveCommand(args: ParsedArgs, options: ServeOptions): Pro
   process.on("SIGTERM", () => forwardSignal("SIGTERM"));
 
   child.on("exit", (code) => process.exit(code ?? 0));
+}
+
+function safeDistDirPart(input: string): string {
+  return input.replace(/[^a-zA-Z0-9._-]/g, "_");
+}
+
+function resolveNextBin(webDir: string): string {
+  const requireFromWeb = createRequire(join(webDir, "package.json"));
+  return requireFromWeb.resolve("next/dist/bin/next");
+}
+
+function prepareWebDirForNext(webDir: string, port: string): string {
+  if (!isEmbeddedPackageWebDir(webDir)) return webDir;
+
+  const packageRoot = dirname(webDir);
+  const runtimeWebDir = join(framedeckHome(), "editor", `web-${safeDistDirPart(port)}`);
+  rmSync(runtimeWebDir, { recursive: true, force: true });
+  mkdirSync(dirname(runtimeWebDir), { recursive: true });
+  cpSync(webDir, runtimeWebDir, {
+    recursive: true,
+    filter: (sourcePath) => {
+      const rel = relative(webDir, sourcePath);
+      if (!rel) return true;
+      return rel.split(/[\\/]/).every((part) => {
+        if (part === "node_modules" || part === "out" || part === "coverage") return false;
+        if (part === ".turbo" || part === ".vercel") return false;
+        if (part.startsWith(".next")) return false;
+        return !part.endsWith(".tsbuildinfo");
+      });
+    },
+  });
+
+  const packageNodeModules = join(packageRoot, "node_modules");
+  const runtimeNodeModules = join(runtimeWebDir, "node_modules");
+  mkdirSync(runtimeNodeModules, { recursive: true });
+  if (existsSync(packageNodeModules)) {
+    linkNodeModuleEntries(packageNodeModules, runtimeNodeModules);
+  }
+  linkNodeModuleEntries(dirname(packageRoot), runtimeNodeModules);
+  return runtimeWebDir;
+}
+
+function linkNodeModuleEntries(sourceDir: string, targetDir: string, onlyNames?: string[]): void {
+  if (!existsSync(sourceDir)) return;
+  const names = onlyNames ?? readdirSync(sourceDir);
+  for (const name of names) {
+    if (name === "framedeck") continue;
+    const source = join(sourceDir, name);
+    const target = join(targetDir, name);
+    if (!existsSync(source) || existsSync(target)) continue;
+    if (!statSync(source).isDirectory()) continue;
+    symlinkSync(source, target, "dir");
+  }
+}
+
+function isEmbeddedPackageWebDir(webDir: string): boolean {
+  return webDir.split(/[\\/]/).includes("node_modules")
+    && existsSync(join(dirname(webDir), "package.json"));
 }
 
 function prepareActiveProject(args: ParsedArgs, appRoot: string): Project {

@@ -2,8 +2,8 @@
 import "server-only";
 import { readFile, writeFile } from "node:fs/promises";
 import { join } from "node:path";
-import { discoverProjects, loadProject, loadRegisteredProjects } from "@framedeck/core/fs";
-import type { Project } from "@framedeck/core";
+import { discoverProjects, loadProject, loadRegisteredProjects } from "framedeck-core/fs";
+import type { Project } from "framedeck-core";
 import { projectsRoot, safeResolve } from "./paths";
 
 export function listProjects(): Project[] {

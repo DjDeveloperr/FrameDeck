@@ -1,4 +1,4 @@
-import type { ElementNode, ScreenDocument, DeviceRegistry } from "@framedeck/core";
+import type { ElementNode, ScreenDocument, DeviceRegistry } from "framedeck-core";
 import type { Backend, CanvasLike, Context2DLike, ImageLike } from "./backend.js";
 
 export interface RenderOptions {

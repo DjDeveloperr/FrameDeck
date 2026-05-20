@@ -1,17 +1,36 @@
 {
-  "name": "@framedeck/cli",
-  "version": "0.1.0",
+  "name": "framedeck",
+  "version": "0.1.1",
+  "description": "Local editor and CLI for building App Store screenshot decks.",
   "type": "module",
   "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DjDeveloperr/FrameDeck.git",
+    "directory": "packages/cli"
+  },
+  "bugs": {
+    "url": "https://github.com/DjDeveloperr/FrameDeck/issues"
+  },
+  "homepage": "https://github.com/DjDeveloperr/FrameDeck#readme",
+  "keywords": [
+    "app-store",
+    "screenshots",
+    "cli",
+    "editor",
+    "device-frames"
+  ],
   "bin": {
     "framedeck": "./bin/framedeck.js"
   },
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
-  "publishConfig": {
-    "access": "public"
-  },
-  "files": ["dist", "bin", "assets"],
+  "files": [
+    "dist",
+    "bin",
+    "assets",
+    "web"
+  ],
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "dev": "tsc -p tsconfig.json --watch",
@@ -20,12 +39,30 @@
     "start": "node bin/framedeck.js"
   },
   "dependencies": {
-    "@framedeck/core": "*",
-    "@framedeck/renderer": "*",
-    "chokidar": "^4.0.1"
+    "@codemirror/lang-xml": "^6.1.0",
+    "@codemirror/state": "^6.4.1",
+    "@codemirror/theme-one-dark": "^6.1.2",
+    "@codemirror/view": "^6.34.1",
+    "@tailwindcss/postcss": "^4.0.0",
+    "@types/node": "^22.7.0",
+    "@types/react": "^19.2.15",
+    "@types/react-dom": "^19.0.0",
+    "@uiw/react-codemirror": "^4.23.7",
+    "chokidar": "^4.0.1",
+    "framedeck-core": "^0.1.0",
+    "framedeck-renderer": "^0.1.0",
+    "next": "^15.5.18",
+    "postcss": "^8.5.15",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "tailwindcss": "^4.0.0",
+    "typescript": "^5.6.3"
+  },
+  "engines": {
+    "node": ">=20"
   },
   "devDependencies": {
-    "typescript": "^5.6.3",
-    "@types/node": "^22.7.0"
+    "@types/node": "^22.7.0",
+    "typescript": "^5.6.3"
   }
 }

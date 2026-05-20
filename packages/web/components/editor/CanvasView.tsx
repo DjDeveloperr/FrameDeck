@@ -15,7 +15,7 @@ import {
   boardBounds,
   type DeviceIndex,
   type ElementPath,
-} from "@framedeck/core";
+} from "framedeck-core";
 import { useEditor } from "./EditorContext";
 import { useViewport } from "./canvas/useViewport";
 import { ScreenFrame } from "./canvas/ScreenFrame";

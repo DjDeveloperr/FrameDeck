@@ -4,8 +4,8 @@
 // one); inside each focused screen, the AST is browsable as before.
 
 import { useEffect, useState } from "react";
-import type { ElementNode } from "@framedeck/core";
-import { pathEquals, type ElementPath } from "@framedeck/core";
+import type { ElementNode } from "framedeck-core";
+import { pathEquals, type ElementPath } from "framedeck-core";
 import { useEditor } from "./EditorContext";
 import { InsertMenu } from "./controls/InsertMenu";
 import { Popover } from "./controls/Popover";

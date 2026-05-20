@@ -9,8 +9,8 @@
 // correct height without forcing the author to compute it.
 
 import Yoga, { type Node as YogaNode } from "yoga-layout";
-import type { ElementNode, ScreenDocument } from "@framedeck/core";
-import { parseSize } from "@framedeck/core";
+import type { ElementNode, ScreenDocument } from "framedeck-core";
+import { parseSize } from "framedeck-core";
 import { applyStyle } from "./style.js";
 import type { RenderContext, Rect } from "./types.js";
 import { measureText } from "./components/text.js";

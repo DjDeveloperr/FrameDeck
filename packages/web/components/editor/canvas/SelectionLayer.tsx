@@ -13,8 +13,8 @@ import {
   resolvePath,
   type ElementPath,
   type ScreenDocument,
-} from "@framedeck/core";
-import type { ElementBox } from "@framedeck/renderer";
+} from "framedeck-core";
+import type { ElementBox } from "framedeck-renderer";
 import { useEditor } from "../EditorContext";
 
 interface Props {

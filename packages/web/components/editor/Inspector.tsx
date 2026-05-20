@@ -1,7 +1,7 @@
 "use client";
 
-import type { ElementNode } from "@framedeck/core";
-import { resolvePath } from "@framedeck/core";
+import type { ElementNode } from "framedeck-core";
+import { resolvePath } from "framedeck-core";
 import { useEditor } from "./EditorContext";
 import { Field, Row, Section } from "./controls/Field";
 import { ColorInput, NumberInput, Segmented, Select, TextInput } from "./controls/Inputs";

@@ -103,7 +103,7 @@ export function Tabs({ projectName }: Props) {
 }
 
 interface BoardChipProps {
-  board: import("@framedeck/core").Board;
+  board: import("framedeck-core").Board;
   isActive: boolean;
   canClose: boolean;
   onActivate: () => void;

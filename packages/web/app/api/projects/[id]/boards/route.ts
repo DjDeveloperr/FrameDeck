@@ -7,8 +7,8 @@
 //     body: { boards: [...] }   — replaces the entire manifest on disk.
 
 import { NextRequest, NextResponse } from "next/server";
-import { loadBoardsFromFs, saveBoardsToFs } from "@framedeck/core/fs";
-import type { BoardsManifest } from "@framedeck/core";
+import { loadBoardsFromFs, saveBoardsToFs } from "framedeck-core/fs";
+import type { BoardsManifest } from "framedeck-core";
 import { sanitizeBoardsManifest } from "@/lib/board-order";
 import { findProject } from "@/lib/projects";
 

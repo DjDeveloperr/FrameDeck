@@ -45,6 +45,10 @@ export async function main(argv: string[]): Promise<void> {
   // `framedeck --help` (no positional, help flag) → print help.
   // `framedeck` (no args at all) → boot the editor.
   if (!cmd) {
+    if (args.flags.version || args.flags.v) {
+      console.log("framedeck 0.1.0");
+      return;
+    }
     if (args.flags.help || args.flags.h) {
       console.log(HELP);
       return;

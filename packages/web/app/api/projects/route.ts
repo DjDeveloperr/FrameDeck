@@ -6,7 +6,7 @@ import {
   registerProject,
   registryProjectsRoot,
   toSlug,
-} from "@framedeck/core/fs";
+} from "framedeck-core/fs";
 import { listProjects } from "@/lib/projects";
 
 export const dynamic = "force-dynamic";

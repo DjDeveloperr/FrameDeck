@@ -3,7 +3,7 @@ import { redirect } from "next/navigation";
 import type { Metadata } from "next";
 import { statSync } from "node:fs";
 import { join } from "node:path";
-import { loadBoardsFromFs, registryProjectsRoot } from "@framedeck/core/fs";
+import { loadBoardsFromFs, registryProjectsRoot } from "framedeck-core/fs";
 import { CreateProjectForm } from "@/components/projects/CreateProjectForm";
 import { listProjects } from "@/lib/projects";
 

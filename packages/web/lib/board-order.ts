@@ -3,8 +3,8 @@ import "server-only";
 import { existsSync, readFileSync, readdirSync } from "node:fs";
 import { rename, rm, writeFile } from "node:fs/promises";
 import { join } from "node:path";
-import { parseScreen, type Board, type BoardScreen, type BoardsManifest, type Project } from "@framedeck/core";
-import { loadBoardsFromFs, saveBoardsToFs } from "@framedeck/core/fs";
+import { parseScreen, type Board, type BoardScreen, type BoardsManifest, type Project } from "framedeck-core";
+import { loadBoardsFromFs, saveBoardsToFs } from "framedeck-core/fs";
 
 const BOARD_GAP = 160;
 const DEFAULT_SCREEN_WIDTH = 1284;

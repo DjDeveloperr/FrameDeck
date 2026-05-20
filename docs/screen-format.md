@@ -139,8 +139,8 @@ rendering a project directory.
 ## Programmatic API
 
 ```ts
-import { renderSourceToFile } from "@framedeck/renderer/node";
-import { DeviceRegistry } from "@framedeck/core";
+import { renderSourceToFile } from "framedeck-renderer/node";
+import { DeviceRegistry } from "framedeck-core";
 
 await renderSourceToFile(sourceText, "out/hero.png", {
   baseDir: "./projects/example-app/screens",
@@ -148,5 +148,5 @@ await renderSourceToFile(sourceText, "out/hero.png", {
 });
 ```
 
-Same API exists on the web (`@framedeck/renderer/web`) — it draws to an
+Same API exists on the web (`framedeck-renderer/web`) — it draws to an
 `HTMLCanvasElement` instead of writing a file.

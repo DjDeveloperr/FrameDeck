@@ -5,9 +5,9 @@
 
 import { readFile, mkdir, stat } from "node:fs/promises";
 import { dirname, join, resolve, basename, isAbsolute } from "node:path";
-import { DeviceRegistry, parseScreen } from "@framedeck/core";
-import { listScreens, loadDeviceIndexFromFs } from "@framedeck/core/fs";
-import { renderDocumentNode, nodeBackend } from "@framedeck/renderer/node";
+import { DeviceRegistry, parseScreen } from "framedeck-core";
+import { listScreens, loadDeviceIndexFromFs } from "framedeck-core/fs";
+import { renderDocumentNode, nodeBackend } from "framedeck-renderer/node";
 import { resolveAssetsRoot } from "../assets.js";
 import { flag, type ParsedArgs } from "../args.js";
 

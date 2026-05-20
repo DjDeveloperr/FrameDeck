@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { ELEMENT_MENU } from "@framedeck/core";
+import { ELEMENT_MENU } from "framedeck-core";
 import { Modal } from "./Popover";
 
 interface Props {

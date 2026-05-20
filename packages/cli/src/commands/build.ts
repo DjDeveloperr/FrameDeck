@@ -12,7 +12,7 @@ import {
   listScreens,
   loadProject,
   registerProject,
-} from "@framedeck/core/fs";
+} from "framedeck-core/fs";
 import { flag, type ParsedArgs } from "../args.js";
 import { createDeviceRegistry, renderOne } from "./render.js";
 

@@ -4,7 +4,7 @@
 import { readdir } from "node:fs/promises";
 import { existsSync } from "node:fs";
 import { basename, resolve } from "node:path";
-import { createProject, registerProject, toSlug } from "@framedeck/core/fs";
+import { createProject, registerProject, toSlug } from "framedeck-core/fs";
 import { flag, type ParsedArgs } from "../args.js";
 
 export async function initCommand(args: ParsedArgs): Promise<void> {

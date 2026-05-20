@@ -1,13 +1,26 @@
 {
-  "name": "@framedeck/renderer",
-  "version": "0.1.0",
+  "name": "framedeck-renderer",
+  "version": "0.1.1",
+  "description": "Node and browser renderer for FrameDeck screenshot documents.",
   "type": "module",
   "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DjDeveloperr/FrameDeck.git",
+    "directory": "packages/renderer"
+  },
+  "bugs": {
+    "url": "https://github.com/DjDeveloperr/FrameDeck/issues"
+  },
+  "homepage": "https://github.com/DjDeveloperr/FrameDeck#readme",
+  "keywords": [
+    "app-store",
+    "screenshots",
+    "renderer",
+    "device-frames"
+  ],
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
-  "publishConfig": {
-    "access": "public"
-  },
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
@@ -22,18 +35,23 @@
       "import": "./dist/web.js"
     }
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "dev": "tsc -p tsconfig.json --watch"
   },
   "dependencies": {
-    "@framedeck/core": "*",
     "@napi-rs/canvas": "^0.1.65",
+    "framedeck-core": "^0.1.0",
     "yoga-layout": "^3.2.1"
   },
+  "engines": {
+    "node": ">=20"
+  },
   "devDependencies": {
-    "typescript": "^5.6.3",
-    "@types/node": "^22.7.0"
+    "@types/node": "^22.7.0",
+    "typescript": "^5.6.3"
   }
 }

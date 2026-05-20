@@ -1,5 +1,5 @@
-import type { DeviceGeometry, DeviceProfile } from "@framedeck/core";
-import { parseBool } from "@framedeck/core";
+import type { DeviceGeometry, DeviceProfile } from "framedeck-core";
+import { parseBool } from "framedeck-core";
 import type { Painter, RenderContext } from "../types.js";
 import { loadCachedImage, roundRectPath } from "../util.js";
 

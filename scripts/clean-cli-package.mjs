@@ -3,4 +3,7 @@ import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const repoRoot = resolve(dirname(fileURLToPath(import.meta.url)), "..");
-await rm(join(repoRoot, "packages", "cli", "assets"), { recursive: true, force: true });
+const packageRoot = join(repoRoot, "packages", "cli");
+
+await rm(join(packageRoot, "assets"), { recursive: true, force: true });
+await rm(join(packageRoot, "web"), { recursive: true, force: true });

@@ -6,7 +6,7 @@
 //   data: {"kind":"shots","event":"add","name":"foo.png"}
 
 import { NextRequest } from "next/server";
-import { basename } from "node:path";
+import { basename, sep } from "node:path";
 import { acquireWatcher, releaseWatcher } from "@/lib/watchers";
 
 export const dynamic = "force-dynamic";
@@ -41,8 +41,12 @@ export async function GET(req: NextRequest, { params }: { params: Promise<{ id: 
           send({ kind: "boards", event: event.event });
         } else if (path.endsWith("project.json")) {
           send({ kind: "project", event: event.event });
-        } else if (path.includes("/shots/")) {
-          send({ kind: "shots", event: event.event, name: basename(path) });
+        } else if (isImagePath(path)) {
+          send({
+            kind: path.includes(`${sep}shots${sep}`) ? "shots" : "asset",
+            event: event.event,
+            name: basename(path),
+          });
         }
       };
       entry.emitter.on("change", onChange);
@@ -84,4 +88,9 @@ export async function GET(req: NextRequest, { params }: { params: Promise<{ id: 
       "x-accel-buffering": "no",
     },
   });
+}
+
+function isImagePath(path: string): boolean {
+  if (path.includes(`${sep}dist${sep}`)) return false;
+  return /\.(png|jpe?g|webp|gif|svg)$/i.test(path);
 }

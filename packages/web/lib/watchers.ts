@@ -28,19 +28,12 @@ export async function acquireWatcher(projectId: string): Promise<ProjectWatcher 
   let entry = watchers.get(projectId);
   if (!entry) {
     const { default: chokidar } = await import("chokidar");
-    const watcher = chokidar.watch(
-      [
-        join(project.root, "screens"),
-        join(project.root, "shots"),
-        join(project.root, "boards.json"),
-        join(project.root, "project.json"),
-      ],
-      {
-        ignoreInitial: true,
-        awaitWriteFinish: { stabilityThreshold: 80, pollInterval: 20 },
-        ignorePermissionErrors: true,
-      },
-    ) as ChokidarLike;
+    const watcher = chokidar.watch(project.root, {
+      ignored: (path: string) => path.includes(`${join(project.root, "dist")}/`),
+      ignoreInitial: true,
+      awaitWriteFinish: { stabilityThreshold: 80, pollInterval: 20 },
+      ignorePermissionErrors: true,
+    }) as ChokidarLike;
     const emitter = new EventEmitter();
     watcher.on("all", (event, path) => {
       emitter.emit("change", { event, path });

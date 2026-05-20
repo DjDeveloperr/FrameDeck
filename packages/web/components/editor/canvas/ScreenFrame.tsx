@@ -12,9 +12,9 @@
 // with element interactions.
 
 import { useEffect, useRef, useState } from "react";
-import { type DeviceRegistry, type ElementPath } from "@framedeck/core";
-import { renderDocument, layoutDocument, type ElementBox, type ImageLike } from "@framedeck/renderer";
-import { webBackend } from "@framedeck/renderer/web";
+import { type DeviceRegistry, type ElementPath } from "framedeck-core";
+import { renderDocument, layoutDocument, type ElementBox, type ImageLike } from "framedeck-renderer";
+import { webBackend } from "framedeck-renderer/web";
 import { useEditor } from "../EditorContext";
 import { SelectionLayer } from "./SelectionLayer";
 import { IconDuplicate, IconTrash } from "../icons";
@@ -62,10 +62,12 @@ export function ScreenFrame({
     removeScreenFromBoard,
   } = useEditor();
   const screen = state.screens[screenName];
+  const assetRevision = state.assetRevision;
   const isFocused = state.focusedScreen === screenName;
 
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
   const imageCacheRef = useRef<Map<string, ImageLike>>(new Map());
+  const lastAssetRevisionRef = useRef(assetRevision);
   const renderVersionRef = useRef(0);
   const [layout, setLayout] = useState<ElementBox | null>(null);
 
@@ -73,6 +75,10 @@ export function ScreenFrame({
     let cancelled = false;
     const version = ++renderVersionRef.current;
     if (!screen?.doc || !devices) return;
+    if (lastAssetRevisionRef.current !== assetRevision) {
+      imageCacheRef.current.clear();
+      lastAssetRevisionRef.current = assetRevision;
+    }
     (async () => {
       try {
         const rendered = await renderDocument(screen.doc!, {
@@ -105,7 +111,7 @@ export function ScreenFrame({
     return () => {
       cancelled = true;
     };
-  }, [screen?.doc, devices, baseUrl, isFocused, editingPath]);
+  }, [screen?.doc, devices, baseUrl, isFocused, editingPath, assetRevision]);
 
   useEffect(() => {
     if (!screen || screen.loaded) return;

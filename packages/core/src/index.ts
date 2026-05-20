@@ -1,6 +1,6 @@
 // Browser-safe core: parser, AST, layout helpers, device registry data types,
 // App Store presets. Filesystem-backed helpers (project + devices-fs) live in
-// "@framedeck/core/fs" so this entry doesn't pull `node:fs` into web bundles.
+// "framedeck-core/fs" so this entry doesn't pull `node:fs` into web bundles.
 export * from "./ast.js";
 export * from "./parse.js";
 export * from "./serialize.js";

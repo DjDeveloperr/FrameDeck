@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { loadDeviceIndexFromFs } from "@framedeck/core/fs";
+import { loadDeviceIndexFromFs } from "framedeck-core/fs";
 import { assetsRoot } from "@/lib/paths";
 
 export const dynamic = "force-static";

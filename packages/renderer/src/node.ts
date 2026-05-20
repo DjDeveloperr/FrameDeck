@@ -7,7 +7,7 @@ import { writeFile } from "node:fs/promises";
 import type { Backend, CanvasLike } from "./backend.js";
 import type { RenderOptions } from "./types.js";
 import { renderDocument, renderSource } from "./render.js";
-import type { ScreenDocument } from "@framedeck/core";
+import type { ScreenDocument } from "framedeck-core";
 
 export const nodeBackend: Backend = {
   createCanvas(width, height) {

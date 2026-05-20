@@ -69,9 +69,9 @@ npm run cli -- --help
 ## Release
 
 The CI workflow runs `npm run check` on pushes and pull requests. The npm
-release workflow publishes `@framedeck/core`, `@framedeck/renderer`, and
-`@framedeck/cli` when a `vX.Y.Z` tag is pushed, using `NPM_TOKEN` and npm
-provenance.
+release workflow publishes `framedeck-core`, `framedeck-renderer`, and
+`framedeck` when a `vX.Y.Z` tag is pushed, using npm trusted publishing
+(OIDC) and provenance.
 
 ## License
 

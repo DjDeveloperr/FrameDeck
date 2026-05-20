@@ -5,7 +5,7 @@
 import { existsSync } from "node:fs";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
-import { findDefaultAssetsRoot } from "@framedeck/core/fs";
+import { findDefaultAssetsRoot } from "framedeck-core/fs";
 
 export function resolveAssetsRoot(explicit?: string): string {
   if (explicit) {

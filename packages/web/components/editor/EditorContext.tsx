@@ -42,7 +42,7 @@ import {
   type BoardsManifest,
   type ElementPath,
   type ScreenDocument,
-} from "@framedeck/core";
+} from "framedeck-core";
 
 export type ViewMode = "visual" | "code";
 
@@ -84,6 +84,8 @@ interface State {
    * after the user clicks the void to deselect). */
   lastEditedScreen: string | null;
   viewMode: ViewMode;
+  /** Bumped when an image asset changes on disk so canvases drop decoded image caches. */
+  assetRevision: number;
   /** Bumped on every boards mutation to drive auto-save. */
   boardsRevision: number;
 }
@@ -119,6 +121,7 @@ type Action =
   | { type: "move-screen-in-board"; boardId: string; screenName: string; x: number; y: number }
   | { type: "set-board-screen-order"; boardId: string; names: string[] }
   | { type: "replace-boards"; boards: Board[]; renames?: Record<string, string> }
+  | { type: "asset-change" }
   | { type: "view-mode"; mode: ViewMode };
 
 function parseSafely(source: string): { doc: ScreenDocument | null; error: string | null } {
@@ -622,6 +625,9 @@ function innerReducer(state: State, action: Action): State {
       };
     }
 
+    case "asset-change":
+      return { ...state, assetRevision: state.assetRevision + 1 };
+
     case "view-mode":
       return { ...state, viewMode: action.mode };
   }
@@ -709,6 +715,7 @@ export function EditorProvider({
       focusedScreen: null,
       lastEditedScreen: null,
       viewMode: "visual",
+      assetRevision: 0,
       boardsRevision: 0,
     };
   }, [projectId, initialBoards, initialScreens, initialActiveBoardId]);
@@ -803,6 +810,8 @@ export function EditorProvider({
         if (cancelled) return;
         if (source === existing.savedSource) return; // our own save echoing back
         dispatch({ type: "reload-screen", name, source });
+      } else if (data.kind === "asset" || data.kind === "shots") {
+        dispatch({ type: "asset-change" });
       }
     };
     es.onerror = () => {

@@ -1,7 +1,7 @@
 // Render orchestrator: parses (if needed), builds layout, paints.
 
-import type { ScreenDocument } from "@framedeck/core";
-import { parseScreen } from "@framedeck/core";
+import type { ScreenDocument } from "framedeck-core";
+import { parseScreen } from "framedeck-core";
 import { buildAndComputeLayout, freeLayout, type LaidOutNode } from "./layout.js";
 import { paintBackground, paintGradient } from "./components/background.js";
 import { paintText } from "./components/text.js";
