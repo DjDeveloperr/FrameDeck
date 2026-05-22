@@ -17,8 +17,8 @@ export interface CanvasLike {
 }
 
 export interface Context2DLike {
-  // We list every method/property the renderer actually uses so backend types
-  // are checked at the boundary, not via blanket `any`.
+    // We list every method/property the renderer actually uses so backend types
+    // are checked at the boundary, not via blanket `any`.
   fillStyle: string | CanvasGradient | unknown;
   strokeStyle: string | unknown;
   globalAlpha: number;
@@ -29,6 +29,10 @@ export interface Context2DLike {
   textBaseline: CanvasTextBaseline;
   letterSpacing?: string;
   lineWidth: number;
+  shadowColor: string;
+  shadowBlur: number;
+  shadowOffsetX: number;
+  shadowOffsetY: number;
 
   save(): void;
   restore(): void;

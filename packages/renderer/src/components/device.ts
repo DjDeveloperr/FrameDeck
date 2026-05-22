@@ -25,6 +25,11 @@ export const paintDevice: Painter = async (node, rect, ctx) => {
   const profile = ctx.devices.resolve(model);
   const geom = profile.geometry;
   const showButtons = parseBool(node.attrs.buttons, true);
+  const opacity = node.attrs.opacity;
+  const shadowColorAttr = node.attrs.shadowColor;
+  const shadowBlurAttr = node.attrs.shadowBlur;
+  const shadowOffsetXAttr = node.attrs.shadowOffsetX;
+  const shadowOffsetYAttr = node.attrs.shadowOffsetY;
 
   // Honor the layout rect; rebase coordinates from the device's native pt grid.
   const scale = rect.width / geom.totalWidth;
@@ -37,7 +42,15 @@ export const paintDevice: Painter = async (node, rect, ctx) => {
 
   const c = ctx.ctx;
   c.save();
-  if (node.attrs.opacity != null) c.globalAlpha = Number(node.attrs.opacity);
+  if (opacity != null) c.globalAlpha = Number(opacity);
+
+  // Drop shadow support.
+  if (shadowColorAttr || shadowBlurAttr !== undefined) {
+    c.shadowColor = shadowColorAttr ?? "rgba(0,0,0,0.5)";
+    c.shadowBlur = Number(shadowBlurAttr ?? 0);
+    c.shadowOffsetX = shadowOffsetXAttr ? Number(shadowOffsetXAttr) : 0;
+    c.shadowOffsetY = shadowOffsetYAttr ? Number(shadowOffsetYAttr) : 0;
+  }
 
   // Don't let a failed screenshot load kill the whole frame — paint the
   // bezel regardless, log the failure to the console for the author.

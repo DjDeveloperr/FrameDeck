@@ -93,6 +93,13 @@ export function applyStyle(node: YogaNode, tag: string, attrs: Attrs): void {
   if (attrs.wrap === "wrap") node.setFlexWrap(Yoga.WRAP_WRAP);
   if (attrs.wrap === "nowrap") node.setFlexWrap(Yoga.WRAP_NO_WRAP);
 
+  // overflow: hidden clips children to the container's bounds.
+  if (attrs.overflow === "hidden") {
+    node.setOverflow(Yoga.OVERFLOW_HIDDEN);
+  } else if (attrs.overflow === "scroll") {
+    node.setOverflow(Yoga.OVERFLOW_SCROLL);
+  }
+
   if (attrs.flex != null) {
     const f = Number.parseFloat(attrs.flex);
     if (Number.isFinite(f)) node.setFlex(f);
@@ -123,6 +130,26 @@ export function applyStyle(node: YogaNode, tag: string, attrs: Attrs): void {
 
   applyEdges(node, "padding", attrs);
   applyEdges(node, "margin", attrs);
+
+  // Auto margins must be applied AFTER the general margin call so they
+  // override any numeric auto values that the setter produced.
+  if (attrs.margin === "auto") {
+    node.setMarginAuto(Yoga.EDGE_ALL);
+  }
+
+  const marginX = attrs.marginX;
+  const marginY = attrs.marginY;
+  if (marginX === "auto") {
+    node.setMarginAuto(Yoga.EDGE_HORIZONTAL);
+  }
+  if (marginY === "auto") {
+    node.setMarginAuto(Yoga.EDGE_VERTICAL);
+  }
+
+  if (attrs.marginTop === "auto") node.setMarginAuto(Yoga.EDGE_TOP);
+  if (attrs.marginBottom === "auto") node.setMarginAuto(Yoga.EDGE_BOTTOM);
+  if (attrs.marginLeft === "auto") node.setMarginAuto(Yoga.EDGE_LEFT);
+  if (attrs.marginRight === "auto") node.setMarginAuto(Yoga.EDGE_RIGHT);
 
   const pos = parsePosition(attrs.position);
   if (pos != null) node.setPositionType(pos);
